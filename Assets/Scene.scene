@@ -9,6 +9,11 @@
   objects:
     - !<own> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
     - !<own> 95282161-46ab-45b1-a43c-896b3baaa701
+    - !<own> 5258d49e-eaeb-41bf-b1ea-09c231f330d3
+    - !<own> 106c0442-078a-4a7f-a970-c91bac7dd2c9
+    - !<own> 2de5d311-9c24-4a08-94c9-604c6ab2180b
+    - !<own> 9cdcdbb4-c54a-4145-82dc-d814a766f6d2
+    - !<own> 70cb4b59-be01-4d3c-8e7f-830ebc10869b
   Name: Scene
 - !<SceneObject/05db0f25-b067-4ad3-92a0-8b33b172748e>
   Name: Helpers
@@ -25,6 +30,21 @@
     - !<own> 3c1fd805-c04c-4b52-a159-7eac4c355d9e
     - !<own> eecfc829-0b60-4859-8056-e410334f45bc
     - !<own> e6ffcae2-08fe-498c-aaf2-6818df52d646
+  PrefabRemaps:
+    []
+- !<SceneObject/106c0442-078a-4a7f-a970-c91bac7dd2c9>
+  Name: World Mesh
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 319b8b03-2548-4b21-8e99-d725c7dda71b
+    - !<own> 93a38a25-6f71-4a6c-87e8-03826a87be37
   PrefabRemaps:
     []
 - !<SceneObject/1564525c-e97a-41d4-82f9-92c8f04c64ea>
@@ -107,6 +127,26 @@
     - !<own> dd363514-b8bc-4b1a-8c51-470f12b7f4fc
   PrefabRemaps:
     []
+- !<RenderMeshVisual/229429b4-b262-43c8-bbb8-6e1b2e8ab539>
+  Mesh: !<reference> 9d356d39-7b7d-42d7-8d29-60d54b94b2c2
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 3fe9548f-eaa6-4e14-8e87-1524f50de1e4
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<ColocatedTrackingComponent/262714d7-f3ca-4e55-a6d9-68d53dd49fb7>
   Name: Co-located Tracking
   Enabled: true
@@ -130,7 +170,7 @@
     []
 - !<SceneObject/28272b6c-e6ba-45d9-b39f-4c2c09721fe3>
   Name: Info Card [DELETE_ME]
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: -10}
@@ -143,6 +183,20 @@
     - !<own> ed8c6f6d-2d70-4eb9-9602-dcb2bb766331
   PrefabRemaps:
     []
+- !<SceneObject/2de5d311-9c24-4a08-94c9-604c6ab2180b>
+  Name: PlayerLogic
+  Enabled: false
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 317a51a8-49a5-4e39-875a-7f1da3af08a9
+  PrefabRemaps:
+    []
 - !<ScriptComponent/2f1096b4-9b5f-49b1-bc73-f58dc4a4f43c>
   ScriptAsset: !<reference> 12047e8a-fe1c-4f91-933b-28051ef9004a
   ScriptInputs:
@@ -152,6 +206,48 @@
     "":
       {}
   Name: NetworkUtils
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/317a51a8-49a5-4e39-875a-7f1da3af08a9>
+  ScriptAsset: !<reference> 715c3313-d8e6-4d6e-9f07-40fb21d5e2ee
+  ScriptInputs:
+    "":
+      sceneCamera: !<reference.Camera> d506e1ee-7994-40ca-94dd-1b77044eafeb
+      potPhysicWorld: !<reference.WorldComponent> b6a15fbe-b3d6-4392-943f-9a4a37262d94
+      pot: !<reference.SceneObject> 9cdcdbb4-c54a-4145-82dc-d814a766f6d2
+      reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ingredientPrefab: !<reference.ObjectPrefab> e33fe937-01d6-4804-b5c4-5ab48446e8d3
+      offset: !<Vec3> {x: 0, y: 0, z: 0}
+      cooldownApparition: !<float> 1
+      offsetAnim: !<float> 30
+      trajectoryHeight: 30
+      maxDistanceAimAssist: 500
+      helpTrajectoryObject: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+  Name: Player
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/319b8b03-2548-4b21-8e99-d725c7dda71b>
+  Mesh: !<reference> d5ad219f-6c55-4d46-8aa7-4b0d4ff1e236
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> f68a0d74-e4b7-4319-ae9c-5c08ea4676a8
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
   Enabled: true
   PrefabRemaps:
     []
@@ -437,6 +533,20 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/5258d49e-eaeb-41bf-b1ea-09c231f330d3>
+  Name: Physics World
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> b6a15fbe-b3d6-4392-943f-9a4a37262d94
+  PrefabRemaps:
+    []
 - !<Text/58b44d29-8f15-482c-9199-2c54079916f4>
   Text: "Steps:\n\n1. Add Device Tracking Component to Camera Object.\n2. Delete default lights in the Project.\n3. Add a new Preview Panel from Window.\n4. Switch both Preview Panels to Interactive Preview Mode.\n5. Find and click the Join Connected Lenses Session button in the lower right corner of both Preview Panels one by one.\n6. Move around to see other players.\n\nNote: Colocated is not supported for Lens Studio 5.0.\n\n"
   SizeToFit: false
@@ -493,6 +603,33 @@
   RenderOrder: 4
   Name: Text
   Enabled: true
+  PrefabRemaps:
+    []
+- !<BodyComponent/5ee87617-0fe5-4474-9f57-b62b609868eb>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 0.0099999997764825821
+  Damping: 0
+  AngularDamping: 0
+  Shape: Sphere
+  Axis: X
+  FitVisual: true
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: true
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 15, y: 15, z: 15}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: false
   PrefabRemaps:
     []
 - !<SceneObject/5f44a5cd-5974-48cc-a921-3af4cd104b7a>
@@ -603,6 +740,24 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/70cb4b59-be01-4d3c-8e7f-830ebc10869b>
+  Name: Ingredient
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    []
+  Components:
+    - !<own> 229429b4-b262-43c8-bbb8-6e1b2e8ab539
+    - !<own> 5ee87617-0fe5-4474-9f57-b62b609868eb
+  PrefabRemaps:
+    - 229429b4-b262-43c8-bbb8-6e1b2e8ab539: c39cec29-ac95-49a3-bccd-c32245797f7f
+    - 5ee87617-0fe5-4474-9f57-b62b609868eb: 5b8f297d-a131-43ab-a103-cd683bf3db83
+    - 70cb4b59-be01-4d3c-8e7f-830ebc10869b: 076154ff-d7c4-4e03-9e7f-616ba27fef27
+    - ad24195c-8157-406e-84fa-34979788ea91: 07b74a9f-2c90-4b64-a2aa-2bce37594469
 - !<RenderMeshVisual/73de5c29-d336-48d7-81c7-3a219bcb932f>
   Mesh: !<reference> 0f221129-97a2-44a5-9c77-7e3f9f296ae4
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -877,6 +1032,28 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<ColliderComponent/93a38a25-6f71-4a6c-87e8-03826a87be37>
+  Shape: Mesh
+  Axis: X
+  FitVisual: true
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 15, y: 15, z: 15}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> d5ad219f-6c55-4d46-8aa7-4b0d4ff1e236
+  Name: Physics Collider
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<ScriptComponent/93dbc4d1-eead-4868-b265-cab21b38fb3f>
   ScriptAsset: !<reference> 4e617a22-b16b-4dd1-b4ea-6696a09bc76f
   ScriptInputs:
@@ -1036,6 +1213,20 @@
       {}
   Name: SyncEntityDebug
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/9cdcdbb4-c54a-4145-82dc-d814a766f6d2>
+  Name: Pot
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    []
+  Components:
+    - !<own> e34a40e4-e31d-4627-a94d-f7558bf3fad6
   PrefabRemaps:
     []
 - !<LightSource/9de28f78-47b2-4b3b-b0c6-52b20ce8506c>
@@ -1231,6 +1422,13 @@
     - !<own> dd134241-57f9-4b39-95df-d5afd048e559
   Components:
     - !<own> 9632fdd0-7fbb-4a28-8f26-8f2c29a60f59
+  PrefabRemaps:
+    []
+- !<WorldComponent/b6a15fbe-b3d6-4392-943f-9a4a37262d94>
+  UpdateOrder: 0
+  Settings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  Name: Physics World
+  Enabled: true
   PrefabRemaps:
     []
 - !<RenderMeshVisual/b7322c4d-1406-4550-8497-ebd439c7096e>
@@ -1585,6 +1783,26 @@
     "":
       {}
   Name: SyncSnapshot
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/e34a40e4-e31d-4627-a94d-f7558bf3fad6>
+  Mesh: !<reference> a9f2d685-64fa-4585-88a7-7259ae7a3364
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 7b89406f-399b-4950-854e-5f94e01f4748
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
   Enabled: true
   PrefabRemaps:
     []
