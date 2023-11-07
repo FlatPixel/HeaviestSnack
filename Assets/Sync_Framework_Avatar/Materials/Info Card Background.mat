@@ -1,0 +1,66 @@
+- !<Material/2beaccce-3afb-4427-b654-7ea1b7c86c34>
+  PassesInfo:
+    - !<own> 452969c3-1d32-4914-a6c1-3c09bb6f54c9
+  Name: Materials/Info Card Background
+- !<PassInfo/452969c3-1d32-4914-a6c1-3c09bb6f54c9>
+  DepthWrite: true
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Normal
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 9cd92025-9fd5-47da-85b0-fd2a12576c0e
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexSize:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    borderScale:
+      typeIdx: 1
+      value: 1
+    sliceSizeBottom:
+      typeIdx: 1
+      value: 0.5
+    sliceSizeLeft:
+      typeIdx: 1
+      value: 0.5
+    sliceSizeRight:
+      typeIdx: 1
+      value: 0.5
+    sliceSizeTop:
+      typeIdx: 1
+      value: 0.5
+  Pass: !<reference> 45a8ae70-f682-4529-aca5-da4f8920c56f

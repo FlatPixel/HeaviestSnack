@@ -1,0 +1,32 @@
+- !<AssetImportMetadata/5248bb9e-0073-4e46-b0bd-9637cd4cc599>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/0fec9f53-417a-405a-91cd-db2c03dd577f>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      nonOwnerObjects: false
+      ownerObjects: false
+      syncEntityScript: false
+      targetType: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - targetType: SyncEntity
+        syncEntityScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+        ownerObjects: !<reference.SceneObject[]>
+          []
+        nonOwnerObjects: !<reference.SceneObject[]>
+          []
+  ImportedAssetIds:
+    JavaScriptAsset: 65b54eb6-ba9a-462a-bb5f-16d767af98a1
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 65b54eb6-ba9a-462a-bb5f-16d767af98a1
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

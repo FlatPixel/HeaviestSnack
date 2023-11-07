@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/c158eb4c-6619-4315-9f13-22b52ed94338>
+  ImporterSettings: !<AssetImporterSettings/26add01e-9412-4349-9796-4f0ab1f2d137>
+    {}
+  ImportedAssetIds:
+    Font: 22fafc90-a0a6-421d-93be-ae8d6e5f28ac
+  ImporterName: FontImporter
+  PrimaryAsset: !<reference> 22fafc90-a0a6-421d-93be-ae8d6e5f28ac
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

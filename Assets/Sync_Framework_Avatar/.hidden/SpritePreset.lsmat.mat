@@ -1,0 +1,67 @@
+- !<Material/ab9a9f79-b257-4bd5-a748-781015cbe223>
+  PassesInfo:
+    - !<own> 84c82240-e58b-43e1-bf2d-26997f7f7353
+  Name: .hidden/SpritePreset.lsmat
+- !<PassInfo/84c82240-e58b-43e1-bf2d-26997f7f7353>
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - ENABLE_BASE_TEX
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+  BlendMode: Normal
+  Properties:
+    Port_Default_N204:
+      typeIdx: 1
+      value: 1
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: e8b35eec-7028-4fbf-b832-d644e0b078f2
+        sampler:
+          filteringMode: Bilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 649149fb-8f58-491e-acf5-a9082bd4e756

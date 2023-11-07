@@ -1,0 +1,358 @@
+- !<ObjectPrefab/16792e49-5718-48d5-af6a-6d6b756ae7b4>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 3ad4b070-f689-4359-8c00-c0265801b2a7
+  Name: ""
+- !<RenderMeshVisual/1b18032e-5648-42d1-a714-491b2dd988ee>
+  Mesh: !<reference> 1eaf118a-d715-45c5-a5e5-cb59b6fae856
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> e2bf7637-4820-41c8-b5b0-d40abedce706
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 1
+  Name: component_1
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/20b54c67-de0b-4e15-9a17-9ac23f516104>
+  Name: hinges_hearts
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -1.4668643474578857, z: -2.2538247108459473}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 4c8a4aa7-557c-4d69-a928-9fcea079e18f
+  PrefabRemaps:
+    []
+- !<SceneObject/2f3a9be3-3cf5-4a52-b044-1421ace4a4ad>
+  Name: screws_hearts
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -1.4668643474578857, z: -2.2538247108459473}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 93fec272-f434-4738-942a-13528f7bb149
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/398c4963-0efe-48f9-a18b-5a9b1bf57b55>
+  Mesh: !<reference> e74f28b0-73ea-43e7-a540-0f6178afa9e7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b1947e8d-fb94-40a3-ada3-cc11fc3e4904
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 1
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/3ad4b070-f689-4359-8c00-c0265801b2a7>
+  Name: Heart Glasses (Avatar)
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 102.76997375488281, z: -163.3133544921875}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.066713660955429077, y: 0.066713660955429077, z: 0.066713660955429077}
+  Children:
+    - !<own> 7458b07b-0847-4024-a2df-69fb3e37331b
+    - !<own> f12cb2b8-d1e2-4af7-bb0d-ff18bf94df5a
+    - !<own> 57e8616d-8f17-42ec-a4f9-03105e803bf7
+    - !<own> 20b54c67-de0b-4e15-9a17-9ac23f516104
+    - !<own> 2f3a9be3-3cf5-4a52-b044-1421ace4a4ad
+    - !<own> 90fb0476-8f5c-4517-8f97-c03f16f35c35
+  Components:
+    - !<own> f03376d8-f6dd-4a52-8c04-18a111d1be2e
+    - !<own> 7f041b50-3f88-4c73-b0ff-91eb41f578db
+    - !<own> 5c2acda3-4dc8-4b25-99ad-243dda091c5a
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/4929edac-2046-4558-84e1-e22ab25aa433>
+  Mesh: !<reference> b211eb80-0cab-4fa8-b807-e6db65a5d219
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b1947e8d-fb94-40a3-ada3-cc11fc3e4904
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 1
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/4c8a4aa7-557c-4d69-a928-9fcea079e18f>
+  Mesh: !<reference> 41860bc9-7416-4bb0-8be8-475772f85526
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b1947e8d-fb94-40a3-ada3-cc11fc3e4904
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 1
+  Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/57e8616d-8f17-42ec-a4f9-03105e803bf7>
+  Name: temples_hearts
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -1.4668643474578857, z: -2.2538247108459473}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 4929edac-2046-4558-84e1-e22ab25aa433
+  PrefabRemaps:
+    []
+- !<ScriptComponent/5c2acda3-4dc8-4b25-99ad-243dda091c5a>
+  ScriptAsset: !<reference> 65b54eb6-ba9a-462a-bb5f-16d767af98a1
+  ScriptInputs:
+    "":
+      targetType: NetworkRoot
+      syncEntityScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      ownerObjects: !<reference.SceneObject[]>
+        []
+      nonOwnerObjects: !<reference.SceneObject[]>
+        - !<reference> 7458b07b-0847-4024-a2df-69fb3e37331b
+        - !<reference> f12cb2b8-d1e2-4af7-bb0d-ff18bf94df5a
+        - !<reference> 57e8616d-8f17-42ec-a4f9-03105e803bf7
+        - !<reference> 20b54c67-de0b-4e15-9a17-9ac23f516104
+        - !<reference> 2f3a9be3-3cf5-4a52-b044-1421ace4a4ad
+        - !<reference> 90fb0476-8f5c-4517-8f97-c03f16f35c35
+  ScriptTypes:
+    "":
+      {}
+  Name: SetEnabledIfOwner
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/6ed8cdd9-efc7-4b9b-a619-6d89034f7d63>
+  Text: Owner
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  DepthTest: false
+  FontSize: 128
+  Fill:
+    mode: Solid
+    color: {x: 1, y: 1, z: 1, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.25
+    offsetY: 0.25
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.25
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -7.5
+    bottom: -2.25
+    right: 7.5
+    top: 2.25
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/7458b07b-0847-4024-a2df-69fb3e37331b>
+  Name: frame_hearts
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -1.4668643474578857, z: -2.2538247108459473}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 398c4963-0efe-48f9-a18b-5a9b1bf57b55
+  PrefabRemaps:
+    []
+- !<ScriptComponent/7f041b50-3f88-4c73-b0ff-91eb41f578db>
+  ScriptAsset: !<reference> 69ebc9e4-10cf-42e0-93c3-1220891c4079
+  ScriptInputs:
+    "":
+      autoClone: true
+      mainMaterial: !<reference.Material> b1947e8d-fb94-40a3-ada3-cc11fc3e4904
+      propertyNames: !<string[]>
+        - baseColor
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncMaterials
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/90fb0476-8f5c-4517-8f97-c03f16f35c35>
+  Name: owner
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 78.366798400878906, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 19.98851203918457, y: 19.98851203918457, z: 19.98851203918457}
+  Children:
+    []
+  Components:
+    - !<own> 6ed8cdd9-efc7-4b9b-a619-6d89034f7d63
+    - !<own> 9647e9fc-f093-44cd-a9e7-aded6c5e0d92
+    - !<own> fbc9e070-7108-450f-8336-ca9d15003ec3
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/93fec272-f434-4738-942a-13528f7bb149>
+  Mesh: !<reference> 0f221129-97a2-44a5-9c77-7e3f9f296ae4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b1947e8d-fb94-40a3-ada3-cc11fc3e4904
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 1
+  Name: component_4
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/9647e9fc-f093-44cd-a9e7-aded6c5e0d92>
+  ScriptAsset: !<reference> 05cba0ee-8f6e-4746-a47c-dae6bb46a7ed
+  ScriptInputs:
+    "":
+      targetType: NetworkRoot
+      syncEntityScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      networkIdText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      ownerDisplayNameText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      ownershipButton: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      ownerIdText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      storagePropertyText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncEntityDebug
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/f03376d8-f6dd-4a52-8c04-18a111d1be2e>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: local
+      rotationSync: local
+      scaleSync: none
+      persistence: Owner
+      sendsPerSecondLimit: !<float> 15
+      useSmoothing: true
+      interpolationTarget: -0.20000000298023224
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/f12cb2b8-d1e2-4af7-bb0d-ff18bf94df5a>
+  Name: lenses_hearts
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -1.4668643474578857, z: -2.2538247108459473}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 1b18032e-5648-42d1-a714-491b2dd988ee
+  PrefabRemaps:
+    []
+- !<ScriptComponent/fbc9e070-7108-450f-8336-ca9d15003ec3>
+  ScriptAsset: !<reference> f9a5d4f3-d68c-4c3a-9248-2369a179883b
+  ScriptInputs:
+    "":
+      text: !<reference.Text> 6ed8cdd9-efc7-4b9b-a619-6d89034f7d63
+      setRenderOrder: false
+      renderOrder: 9999
+  ScriptTypes:
+    "":
+      {}
+  Name: TextDepthHelper
+  Enabled: true
+  PrefabRemaps:
+    []

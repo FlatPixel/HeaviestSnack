@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/b2dc6402-72e7-4ce2-af20-abcfdc5e7a8b>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/64e3aeea-4262-4526-9ca8-47e2e99b4db4>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      networkIdText: false
+      ownerDisplayNameText: false
+      ownerIdText: false
+      ownershipButton: false
+      storagePropertyText: false
+      syncEntityScript: false
+      targetType: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - targetType: SyncEntity
+        syncEntityScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+        networkIdText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        ownerDisplayNameText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        ownershipButton: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+        ownerIdText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        storagePropertyText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ImportedAssetIds:
+    JavaScriptAsset: 05cba0ee-8f6e-4746-a47c-dae6bb46a7ed
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 05cba0ee-8f6e-4746-a47c-dae6bb46a7ed
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

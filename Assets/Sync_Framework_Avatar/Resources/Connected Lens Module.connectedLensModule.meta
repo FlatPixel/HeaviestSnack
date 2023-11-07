@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/5a7dc8a9-a314-491c-ac77-077b5adcb2a0>
+  ImporterSettings: !<AssetImporterSettings/63e0a16c-c389-44f8-aa9d-88949ba46ed1>
+    {}
+  ImportedAssetIds:
+    ConnectedLensModule: eab70cfc-1afc-4d65-bf8a-323dfc80fef8
+  ImporterName: ConnectedLensModuleImporter
+  PrimaryAsset: !<reference> eab70cfc-1afc-4d65-bf8a-323dfc80fef8
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

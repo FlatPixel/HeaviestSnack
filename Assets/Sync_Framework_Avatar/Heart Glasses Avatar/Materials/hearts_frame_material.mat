@@ -1,0 +1,100 @@
+- !<Material/b1947e8d-fb94-40a3-ada3-cc11fc3e4904>
+  PassesInfo:
+    - !<own> 1bc90fea-9072-4bc8-83dd-129f248f6e5b
+  Name: Heart Glasses Avatar/Materials/hearts_frame_material
+- !<PassInfo/1bc90fea-9072-4bc8-83dd-129f248f6e5b>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_181_DROPLIST_ITEM 0
+    - NODE_184_DROPLIST_ITEM 0
+    - NODE_221_DROPLIST_ITEM 0
+    - NODE_228_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_315_DROPLIST_ITEM 0
+    - NODE_38_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NODE_76_DROPLIST_ITEM 0
+  BlendMode: Disabled
+  Properties:
+    Port_Default_N103:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N134:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N173:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N204:
+      typeIdx: 1
+      value: 1
+    Port_Default_N326:
+      typeIdx: 4
+      value: {x: 1, y: 0.999969482421875, z: 0.9999847412109375}
+    Port_Default_N369:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Port_Input2_N072:
+      typeIdx: 1
+      value: 1
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 0.97256428003311157, y: 0.45148393511772156, z: 0.61503010988235474, w: 1}
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: 8651ca53-be1a-47d3-b522-c53c6c6c2f87
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    materialParamsTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    materialParamsTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    materialParamsTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    materialParamsTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallic:
+      typeIdx: 1
+      value: 0.30799999833106995
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    roughness:
+      typeIdx: 1
+      value: 0
+  Pass: !<reference> 44d9ab11-1c33-46cd-ab8b-bf6a25ebfd21

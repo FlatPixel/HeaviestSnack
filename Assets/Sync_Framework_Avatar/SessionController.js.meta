@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/36c3e0ca-cc35-4330-829e-b0d3bd527e0f>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/bad6ef01-f7ec-42fd-9182-35d3f3b439a2>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      colocatedStatusText: false
+      colocatedTrackingComponent: false
+      connectedLensModule: false
+      debugLogging: false
+      deviceTrackingComponent: false
+      isColocated: false
+      landmarksVisual2d: false
+      landmarksVisual3d: false
+      requireInvite: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - connectedLensModule: !<reference.ConnectedLensModule> 00000000-0000-0000-0000-000000000000
+        isColocated: false
+        colocatedTrackingComponent: !<reference.ColocatedTrackingComponent> 00000000-0000-0000-0000-000000000000
+        deviceTrackingComponent: !<reference.DeviceTracking> 00000000-0000-0000-0000-000000000000
+        colocatedStatusText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        landmarksVisual2d: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
+        landmarksVisual3d: !<reference.MaterialMeshVisual> 00000000-0000-0000-0000-000000000000
+        requireInvite: false
+        debugLogging: false
+  ImportedAssetIds:
+    JavaScriptAsset: 60576298-f86f-4fe2-bd23-8cba1ac55f53
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 60576298-f86f-4fe2-bd23-8cba1ac55f53
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

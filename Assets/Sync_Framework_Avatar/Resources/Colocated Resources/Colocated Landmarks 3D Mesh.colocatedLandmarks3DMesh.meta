@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/607ab065-c303-4f2c-9132-5f8a30558afa>
+  ImporterSettings: !<AssetImporterSettings/4c073345-9d85-436e-88f7-196643f62e58>
+    {}
+  ImportedAssetIds:
+    ColocatedLandmarks3DMesh: 02965ffd-02de-4374-a2d1-9a10d8882e1b
+  ImporterName: ColocatedLandmarks3DMeshImporter
+  PrimaryAsset: !<reference> 02965ffd-02de-4374-a2d1-9a10d8882e1b
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
