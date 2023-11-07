@@ -1,0 +1,16 @@
+- !<AnimationLayer/b9d1b351-5b6a-451b-a9be-f17d555c3997>
+  BlendMode: Additive
+  ScaleMode: Multiply
+  Positions:
+    []
+  Rotations:
+    []
+  Scales:
+    []
+  VertexCacheAnimations:
+    []
+  Visibilities:
+    []
+  BlendShapeAnimations:
+    {}
+  Name: AnimationLayer2

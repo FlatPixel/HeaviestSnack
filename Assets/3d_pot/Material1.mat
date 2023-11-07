@@ -1,0 +1,108 @@
+- !<Material/5d09fbe4-9f52-4db0-8841-c0973141283d>
+  PassesInfo:
+    - !<own> b6c49915-5edb-4512-8c94-159062bbad8a
+  Name: Material1
+- !<PassInfo/b6c49915-5edb-4512-8c94-159062bbad8a>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - ENABLE_BASE_TEX
+    - ENABLE_EMISSIVE
+    - ENABLE_LIGHTING
+    - ENABLE_NORMALMAP
+    - ENABLE_RIM_HIGHLIGHT
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_181_DROPLIST_ITEM 0
+    - NODE_184_DROPLIST_ITEM 0
+    - NODE_221_DROPLIST_ITEM 0
+    - NODE_228_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_315_DROPLIST_ITEM 0
+    - NODE_38_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NODE_76_DROPLIST_ITEM 0
+  BlendMode: Disabled
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 2b2e5a0a-3053-4b6a-aacb-a8b94f837af0
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    emissiveColor:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    emissiveIntensity:
+      typeIdx: 1
+      value: 1
+    emissiveTex:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: 950d291e-fe72-4b07-9e1e-1eef3ca18246
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    metallic:
+      typeIdx: 1
+      value: 0
+    normalTex:
+      typeIdx: 9
+      value:
+        id: b2101321-3ce6-4647-934e-96aefad2fda4
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    rimColor:
+      typeIdx: 4
+      value: {x: 1, y: 0.3333333432674408, z: 0.21568627655506134}
+    rimExponent:
+      typeIdx: 1
+      value: 6.2199997901916504
+    rimIntensity:
+      typeIdx: 1
+      value: 4.3600001335144043
+    roughness:
+      typeIdx: 1
+      value: 1
+  Pass: !<reference> 2d4abd2d-26f9-4c44-9e9e-8cf6be5f30bd

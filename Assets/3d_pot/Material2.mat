@@ -1,0 +1,90 @@
+- !<Material/38be8f4e-5fad-4ef0-82a5-c73ea08947f4>
+  PassesInfo:
+    - !<own> 1a9c77d3-31ae-4583-b965-5042d70993ba
+  Name: Material2
+- !<PassInfo/1a9c77d3-31ae-4583-b965-5042d70993ba>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - ENABLE_BASE_TEX
+    - ENABLE_LIGHTING
+    - ENABLE_NORMALMAP
+    - ENABLE_RIM_HIGHLIGHT
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_181_DROPLIST_ITEM 0
+    - NODE_184_DROPLIST_ITEM 0
+    - NODE_221_DROPLIST_ITEM 0
+    - NODE_228_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_315_DROPLIST_ITEM 0
+    - NODE_38_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NODE_76_DROPLIST_ITEM 0
+  BlendMode: Disabled
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 2b2e5a0a-3053-4b6a-aacb-a8b94f837af0
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: 950d291e-fe72-4b07-9e1e-1eef3ca18246
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    metallic:
+      typeIdx: 1
+      value: 1
+    normalTex:
+      typeIdx: 9
+      value:
+        id: b2101321-3ce6-4647-934e-96aefad2fda4
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    rimColor:
+      typeIdx: 4
+      value: {x: 1, y: 0.42745098471641541, z: 0.20000000298023224}
+    rimExponent:
+      typeIdx: 1
+      value: 4.7599997520446777
+    rimIntensity:
+      typeIdx: 1
+      value: 0.64999997615814209
+    roughness:
+      typeIdx: 1
+      value: 0.75999999046325684
+  Pass: !<reference> 2d4abd2d-26f9-4c44-9e9e-8cf6be5f30bd
