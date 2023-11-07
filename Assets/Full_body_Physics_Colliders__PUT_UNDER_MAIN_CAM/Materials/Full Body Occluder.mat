@@ -1,0 +1,25 @@
+- !<Material/9b822789-25cd-4546-9a15-07a47fdb034e>
+  PassesInfo:
+    - !<own> 7ba7283e-b4d6-461d-b488-7546d516fe96
+  Name: Materials/Full Body Occluder
+- !<PassInfo/7ba7283e-b4d6-461d-b488-7546d516fe96>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: Less
+  TwoSided: false
+  ColorMask: {x: false, y: false, z: false, w: false}
+  CullMode: Front
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_FinalColor_N004:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 8f663fcb-22cb-4022-9e74-5002ca47c8f6

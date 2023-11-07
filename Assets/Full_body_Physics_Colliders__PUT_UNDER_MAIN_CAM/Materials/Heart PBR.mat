@@ -1,0 +1,69 @@
+- !<Material/b12903b5-f56d-4588-b094-45c9402640c8>
+  PassesInfo:
+    - !<own> b8722ed5-2def-4aea-af38-24ae72325251
+  Name: Materials/Heart PBR
+- !<PassInfo/b8722ed5-2def-4aea-af38-24ae72325251>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_AO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_Emissive_N006:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_SpecularAO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 9dc89f0f-237c-478a-826c-d29d89bd784d
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallic:
+      typeIdx: 1
+      value: 0
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    roughness:
+      typeIdx: 1
+      value: 0.76999998092651367
+  Pass: !<reference> 8b7f836f-794a-417d-998c-ff63388fa571

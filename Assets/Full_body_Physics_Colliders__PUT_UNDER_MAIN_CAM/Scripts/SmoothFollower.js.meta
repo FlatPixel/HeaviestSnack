@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/42dac68e-559c-4024-a963-cc5b8bcecaf3>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/6afaab2c-b880-4c1d-86e3-c74b7f018dd7>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      followPosition: false
+      followRotation: false
+      followScale: false
+      follower: false
+      maxPosSpeed: false
+      maxRotSpeed: false
+      maxScaleSpeed: false
+      posDamping: false
+      posMode: false
+      rotDamping: false
+      rotMode: false
+      scaleDamping: false
+      scaleMode: false
+      target: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - follower: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        followPosition: true
+        maxPosSpeed: !<float> 50
+        posDamping: !<float> 5
+        posMode: 0
+        followRotation: true
+        maxRotSpeed: !<float> 50
+        rotDamping: !<float> 5
+        rotMode: 0
+        followScale: true
+        maxScaleSpeed: !<float> 50
+        scaleDamping: !<float> 5
+        scaleMode: 0
+  ImportedAssetIds:
+    JavaScriptAsset: e0f981dc-a05f-4123-bc6f-7b5bf0ba4679
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> e0f981dc-a05f-4123-bc6f-7b5bf0ba4679
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

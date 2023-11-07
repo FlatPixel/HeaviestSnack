@@ -1,0 +1,25 @@
+- !<Material/20a7cd9e-9470-4c2d-b347-81a3bb464213>
+  PassesInfo:
+    - !<own> 97ee8512-0c25-4605-91dc-d581f730a984
+  Name: 3D Body Tracking References/Guides/Materials/Reference
+- !<PassInfo/97ee8512-0c25-4605-91dc-d581f730a984>
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: false, y: false, z: false, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_FinalColor_N004:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> ab624fd3-59d8-41ac-a338-293c0533facf
