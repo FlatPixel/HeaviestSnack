@@ -1,0 +1,16 @@
+- !<AnimationMixerLayer/7c9a5354-9a6a-4973-b9ab-be221df3d39f>
+  Layer: BaseLayer
+  Weight: 1
+  SpeedRatio: 1
+  From: 0
+  To: 81
+  Offset: 0
+  FPS: 30
+  NumCycles: -1
+  Reversed: false
+  Disabled: false
+  PostInfinity: Cycle
+  BlendMode: Additive
+  ScaleMode: Multiply
+  RangeType: FrameIndex
+  Name: BaseLayer
