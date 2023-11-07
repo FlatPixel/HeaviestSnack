@@ -1,0 +1,33 @@
+studioVersion:
+  major: 5
+  minor: 0
+  patch: 0
+  build: 1104
+sceneId: 1e4cae11-cf66-49fa-b479-1f6bf46388cc
+viewConfig:
+  simulation:
+    device: No Simulation
+    cameraFov: 66.519996643066406
+    fullFrameAspect: .nan
+    viewport: Normal
+    output: Live
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  lensName: Untitled
+  lensDescriptors:
+    []
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Mobile
+    - Web
+  iconHash: ""
+  isSGEnabled: false
+  fromTemplateName: Empty Project
+  fromTemplateUrl: Lens Studio Fiji 5.0.0.1104
+  activationCamera: Front
+  hasVideoPreview: false
+  apiAccessLevel: Public

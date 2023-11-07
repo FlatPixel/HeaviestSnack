@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/45cf74bf-ccd3-453b-9a66-91c45f7fdbb6>
+  ImporterSettings: !<AssetImporterSettings/cb944413-f513-4cb5-a770-3b956145d913>
+    {}
+  ImportedAssetIds:
+    Scene: 1e4cae11-cf66-49fa-b479-1f6bf46388cc
+  ImporterName: SceneImporter
+  PrimaryAsset: !<reference> 1e4cae11-cf66-49fa-b479-1f6bf46388cc
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
