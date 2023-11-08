@@ -1,0 +1,217 @@
+- !<ObjectPrefab/aae61948-591f-430a-bca2-7bf873c4852f>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> a415dc0c-bbd6-4ef7-89fd-50029f7eb550
+  Name: ""
+- !<ScriptComponent/013dc787-3b79-4335-9011-3b59a2bbc7d7>
+  ScriptAsset: !<reference> a7106021-7c3a-428f-9bf5-318b45cfcbc6
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: Tween
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/1d426ecb-f58c-4fc3-83f1-93a2886e8b43>
+  Name: Confirm_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 100, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> aeff7493-5dfc-46ff-8ed8-d9208a7e5dd4
+  PrefabRemaps:
+    []
+- !<SceneObject/1dddbf5c-79ea-46c1-9a9c-af23a116b5f9>
+  Name: Smoke_Burst_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> d80f2b51-50e3-4d57-bfdd-8522b8daf8c8
+  PrefabRemaps:
+    []
+- !<VFXComponent/2f7fe79e-cddf-42b1-be42-2624048dcf86>
+  VFXAsset: !<reference> 719097f8-4949-4bec-8843-d4e44fd4963e
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/41ce1d8d-dba4-4523-9602-3af85811b03a>
+  Name: VFX_Controller
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1.6947920322418213, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> ef70be3b-cf45-46ff-bfe2-daa3063e9731
+  PrefabRemaps:
+    []
+- !<SceneObject/56500d3a-997d-4f3f-bb4f-70a50d1c099d>
+  Name: Fire_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> e049e958-6164-4b3b-9768-ee2e1e2635ff
+  PrefabRemaps:
+    []
+- !<ScriptComponent/5fcc81c7-ab64-4c62-a962-b16715134771>
+  ScriptAsset: !<reference> 7d083b43-b0ca-40ec-8280-4e4afc816d7f
+  ScriptInputs:
+    "":
+      printDebugLog: false
+  ScriptTypes:
+    "":
+      {}
+  Name: TweenManager
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/9620caf7-f8c9-4eb6-ad8b-3d4257547c6a>
+  Name: TweenManager
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 013dc787-3b79-4335-9011-3b59a2bbc7d7
+    - !<own> 5fcc81c7-ab64-4c62-a962-b16715134771
+  PrefabRemaps:
+    []
+- !<SceneObject/a415dc0c-bbd6-4ef7-89fd-50029f7eb550>
+  Name: Cauldron <PLACEHOLDER>
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 9620caf7-f8c9-4eb6-ad8b-3d4257547c6a
+    - !<own> 41ce1d8d-dba4-4523-9602-3af85811b03a
+    - !<own> cea9ea7f-f9f3-4062-a902-85f2ab201415
+    - !<own> f2777c05-b26a-4bfb-9d3f-fcb239cf3ed9
+    - !<own> 1d426ecb-f58c-4fc3-83f1-93a2886e8b43
+    - !<own> 1dddbf5c-79ea-46c1-9a9c-af23a116b5f9
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<VFXComponent/aeff7493-5dfc-46ff-8ed8-d9208a7e5dd4>
+  VFXAsset: !<reference> 6b62a498-38fb-4015-894d-e29480d63f03
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/cea9ea7f-f9f3-4062-a902-85f2ab201415>
+  Name: Fire
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 100, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 56500d3a-997d-4f3f-bb4f-70a50d1c099d
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<VFXComponent/d80f2b51-50e3-4d57-bfdd-8522b8daf8c8>
+  VFXAsset: !<reference> f2161da8-09f8-4085-81b2-e14e0e440d22
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<VFXComponent/e049e958-6164-4b3b-9768-ee2e1e2635ff>
+  VFXAsset: !<reference> 06022dc6-58f7-4e9f-bb54-7d4770bb3a50
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/ef70be3b-cf45-46ff-bfe2-daa3063e9731>
+  ScriptAsset: !<reference> 7a7fc250-b14a-486e-babd-2073ab573d35
+  ScriptInputs:
+    "":
+      fire_VFX: !<reference.VFXComponent> e049e958-6164-4b3b-9768-ee2e1e2635ff
+      confirm_VFX: !<reference.VFXComponent> aeff7493-5dfc-46ff-8ed8-d9208a7e5dd4
+      confirm_burst_duration: 0.25
+      smoke_VFX: !<reference.VFXComponent> 2f7fe79e-cddf-42b1-be42-2624048dcf86
+      smoke_burst_VFX: !<reference.VFXComponent> d80f2b51-50e3-4d57-bfdd-8522b8daf8c8
+      smoke_burst_duration: 0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: VFX_Controller
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/f2777c05-b26a-4bfb-9d3f-fcb239cf3ed9>
+  Name: Smoke_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 2f7fe79e-cddf-42b1-be42-2624048dcf86
+  PrefabRemaps:
+    []

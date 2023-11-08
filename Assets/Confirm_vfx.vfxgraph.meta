@@ -1,0 +1,32 @@
+- !<AssetImportMetadata/249208c8-d3a9-4439-9992-d632ce5f1b27>
+  ImporterSettings: !<VFXGraphImporterSettings/f3ade0f4-96ac-4249-9e73-d46d5491a3c8>
+    NGSCommit: 1.1
+    CrossCompilerCommit: 1.1
+    SystemPassProperties:
+      39: !<VFXSystemPassProperties/cd9a36d3-b224-486f-b37b-a5abbb3693b6>
+        FeedbackProperties:
+          {}
+        SimulateProperties:
+          burstDuration:
+            typeIdx: 1
+            value: 0
+          startColor:
+            typeIdx: 5
+            value: {x: 1, y: 1, z: 1, w: 1}
+          endColor:
+            typeIdx: 5
+            value: {x: 1, y: 1, z: 1, w: 1}
+          amountWhite:
+            typeIdx: 1
+            value: 0.10000000149011612
+          Tweak_N52:
+            typeIdx: 5
+            value: {x: 1, y: 1, z: 1, w: 1}
+        RenderProperties:
+          {}
+  ImportedAssetIds:
+    VFXGraph: 6b62a498-38fb-4015-894d-e29480d63f03
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> 6b62a498-38fb-4015-894d-e29480d63f03
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
