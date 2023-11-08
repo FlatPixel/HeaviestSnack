@@ -1,0 +1,40 @@
+- !<ObjectPrefab/8f86798e-a91c-47f3-9601-9672fdfc94e7>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> ee75a504-6d46-4a21-9a76-07acf3f89cd1
+  Name: ""
+- !<RenderMeshVisual/41c45aa3-4c1f-4228-9a4e-75747599a3c0>
+  Mesh: !<reference> bdad8443-8a5d-4f60-8927-5b41bdc08fca
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_6
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/ee75a504-6d46-4a21-9a76-07acf3f89cd1>
+  Name: broccoli
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 41c45aa3-4c1f-4228-9a4e-75747599a3c0
+  PrefabRemaps:
+    []

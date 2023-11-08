@@ -1,0 +1,40 @@
+- !<ObjectPrefab/5a42d428-770e-47c5-bdbf-7804c2d9edfb>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> daa42c97-0d36-41e9-9b2c-3e8b384dc0f8
+  Name: ""
+- !<RenderMeshVisual/3f146d3d-e9a7-4967-9444-e5f8c84f4322>
+  Mesh: !<reference> 2af7b83a-1ed5-4e3d-aa51-2ed2bd91a4f4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/daa42c97-0d36-41e9-9b2c-3e8b384dc0f8>
+  Name: steak
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 3f146d3d-e9a7-4967-9444-e5f8c84f4322
+  PrefabRemaps:
+    []

@@ -1,0 +1,40 @@
+- !<ObjectPrefab/4956d964-0be6-4e31-af9c-e96278088799>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 31f96552-93e8-46a1-a040-f382fd6f036d
+  Name: ""
+- !<RenderMeshVisual/161e00fb-335f-402b-a482-e7331c5259dd>
+  Mesh: !<reference> 330e1384-df34-4266-8186-8ebe46a6e3cd
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/31f96552-93e8-46a1-a040-f382fd6f036d>
+  Name: sausage
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 161e00fb-335f-402b-a482-e7331c5259dd
+  PrefabRemaps:
+    []

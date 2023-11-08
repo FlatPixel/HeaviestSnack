@@ -1,0 +1,40 @@
+- !<ObjectPrefab/82f5320e-9ba4-4052-bff6-ef95fd5555db>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> f6a874ce-b39c-463d-842e-6dc860e1e9b3
+  Name: ""
+- !<RenderMeshVisual/c22a45da-c131-45d7-942d-ac97e461cd6e>
+  Mesh: !<reference> d3ce53e7-7fa6-4dda-9a3e-d7bc58b3b24a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_4
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/f6a874ce-b39c-463d-842e-6dc860e1e9b3>
+  Name: chili
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> c22a45da-c131-45d7-942d-ac97e461cd6e
+  PrefabRemaps:
+    []

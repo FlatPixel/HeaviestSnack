@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/00d98fcc-b782-4cb4-bc40-92b3313d3640>
+  ImporterSettings: !<FbxImporterSettings/a56456c3-ee02-4b76-b4e0-af71917d5363>
+    RegenerateNormalsForSkinnedMeshes: true
+    GeneratePivots: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+    ImportVertexColor: true
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30
+  ImportedAssetIds:
+    Mesh1: 4ba3a1c4-4138-4f10-b4ae-ba8760a9feb6
+    Mesh2: a31c4bbd-2df9-43c4-90d9-6d9fa3835f58
+    Mesh3: 330e1384-df34-4266-8186-8ebe46a6e3cd
+    Mesh4: 2af7b83a-1ed5-4e3d-aa51-2ed2bd91a4f4
+    Mesh5: d3ce53e7-7fa6-4dda-9a3e-d7bc58b3b24a
+    Mesh6: 08b21986-646b-4e50-9266-11621505f33b
+    Mesh7: bdad8443-8a5d-4f60-8927-5b41bdc08fca
+    Scene: 3dbee27b-439f-4cd7-b72c-0662e56e09d6
+    "|_3DSceneImportRoot_0|": a5a8f9b1-dad9-4360-be4b-bf1a99cbb83e
+    "|_3DSceneImportRoot_0|_Broc_low_0|": 403f0f0f-9cdf-4565-9c3b-9d89b2e218de
+    "|_3DSceneImportRoot_0|_Object002_1|": fc853490-573e-4ab3-bbfa-89af5dd6bd71
+    "|_3DSceneImportRoot_0|_Object002_1|_RenderMeshVisual_0|": 55801cb8-6b99-4899-bb04-85c9cbf0de00
+    "|_3DSceneImportRoot_0|_Object003_2|": 55e31983-6833-4c4d-87cb-55f2ccf9bcbc
+    "|_3DSceneImportRoot_0|_Object003_2|_RenderMeshVisual_0|": 28818d67-37ac-4fa5-aef7-986ab9eeca6b
+    "|_3DSceneImportRoot_0|_Object004_3|": a8e69d57-c7f3-4cf4-bfc9-0710a0d8fbfe
+    "|_3DSceneImportRoot_0|_Object004_3|_RenderMeshVisual_0|": b1c5d828-f158-4e4c-9341-c33f8916128c
+    "|_3DSceneImportRoot_0|_Object005_4|": 8ab785db-1fe8-48b2-8972-cfb51df5fbe5
+    "|_3DSceneImportRoot_0|_Object005_4|_RenderMeshVisual_0|": e6c33ca4-dea1-4bdd-ad25-b32290e89b5e
+    "|_3DSceneImportRoot_0|_Object006_5|": 3a9a43c8-2814-4630-a046-e0aebfa3b756
+    "|_3DSceneImportRoot_0|_Object006_5|_RenderMeshVisual_0|": cfe3143f-bdaa-406f-b62e-2ef5961426f6
+    "|_3DSceneImportRoot_0|_Object007_6|": 16985898-f443-417f-a6be-e5b7e1bdfeec
+    "|_3DSceneImportRoot_0|_Object007_6|_RenderMeshVisual_0|": 348e26aa-191d-4342-bb87-249064071b96
+    "|_3DSceneImportRoot_0|_Object008_7|": edd9f45e-53cb-4836-bc66-60767494c730
+    "|_3DSceneImportRoot_0|_Object008_7|_RenderMeshVisual_0|": 6b9ce334-c7ef-4b1b-aa5e-91f7882389df
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 3dbee27b-439f-4cd7-b72c-0662e56e09d6
+  PackageType: CanBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

@@ -1,0 +1,40 @@
+- !<ObjectPrefab/ea579450-42eb-4fd8-b0a4-addfb4bc02e2>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> df388212-f0be-4113-a618-07926507d30d
+  Name: ""
+- !<RenderMeshVisual/a5fcccc0-f311-4e40-900d-af114d42b76f>
+  Mesh: !<reference> 08b21986-646b-4e50-9266-11621505f33b
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_5
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/df388212-f0be-4113-a618-07926507d30d>
+  Name: burger
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> a5fcccc0-f311-4e40-900d-af114d42b76f
+  PrefabRemaps:
+    []
