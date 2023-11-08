@@ -32,3 +32,12 @@ Support/**
 jsconfig.json
 .DS_Store
 # Shipped by Lens Studio
+
+# Shipped by Lens Studio
+Cache/**
+PluginsUserPreferences/**
+.vscode/**
+Support/**
+jsconfig.json
+.DS_Store
+# Shipped by Lens Studio
