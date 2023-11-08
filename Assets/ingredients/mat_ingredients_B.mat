@@ -35,11 +35,11 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 1, y: 1, z: 1, w: 1}
+      value: {x: 1, y: 0.89019608497619629, z: 0.71764707565307617, w: 1}
     baseTex:
       typeIdx: 9
       value:
-        id: 7d58d243-a387-498d-aa8b-841663185c6c
+        id: efde1225-dd27-4e76-816e-e405b71e554a
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -50,7 +50,7 @@
     materialParamsTex:
       typeIdx: 9
       value:
-        id: ccde1924-de80-421f-9cf3-14fc537d19d3
+        id: 8651ca53-be1a-47d3-b522-c53c6c6c2f87
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -60,11 +60,11 @@
           mipmaps: false
     metallic:
       typeIdx: 1
-      value: 1
+      value: 0
     normalTex:
       typeIdx: 9
       value:
-        id: 7b1ce2cb-8571-41de-814e-84336b14e289
+        id: 877cc66b-c50d-4657-b969-cb82c0b2bce1
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -80,10 +80,10 @@
       value: {x: 1, y: 1, z: 1}
     rimExponent:
       typeIdx: 1
-      value: 3.9599997997283936
+      value: 5
     rimIntensity:
       typeIdx: 1
-      value: 0.81000000238418579
+      value: 0.5
     roughness:
       typeIdx: 1
       value: 1

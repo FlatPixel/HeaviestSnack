@@ -16,6 +16,7 @@
     - !<own> 70cb4b59-be01-4d3c-8e7f-830ebc10869b
     - !<own> 3d72b014-765e-448b-9bc5-3bbd88de11d6
     - !<own> 46378c88-80c6-4e72-acfb-18ddcf90621d
+    - !<own> 40a4a9f7-5406-4cdb-8c33-b11aef3804b8
   Name: Scene
 - !<RenderMeshVisual/003cf7d3-69cd-4eee-959b-a3e7af1265c0>
   Mesh: !<reference> a7d21f75-942f-446f-a099-b579a2875a0f
@@ -246,6 +247,20 @@
     - !<own> 00e50afe-9136-43c0-b490-476fca8fc6e4
   Components:
     - !<own> 81d4112d-3116-4f02-a396-312c144091a7
+  PrefabRemaps:
+    []
+- !<SceneObject/098ece44-4e4a-44c9-b30f-7840d16e4e59>
+  Name: Light Source
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 98c09e41-e91b-419e-84dc-3d9f5318d71a
   PrefabRemaps:
     []
 - !<SceneObject/0acb200a-d29e-4ba7-8201-2e5aa22a7cf1>
@@ -802,20 +817,6 @@
   Enabled: true
   PrefabRemaps:
     []
-- !<SceneObject/27aba235-073b-4eba-884b-697ae63364b2>
-  Name: Light Source
-  Enabled: true
-  Layer: 0
-  LocalTransform:
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
-  Children:
-    []
-  Components:
-    - !<own> cb65225f-0656-4d93-98a0-5fa089346979
-  PrefabRemaps:
-    []
 - !<SceneObject/27bf583f-92e6-496b-9d2d-69959c93c715>
   Name: rig_GRP
   Enabled: true
@@ -1236,7 +1237,6 @@
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
-    - !<own> 27aba235-073b-4eba-884b-697ae63364b2
     - !<own> ab1974d1-20f0-453c-8f85-cd408fbbf0a7
     - !<own> ecdeffd1-17d7-478a-8810-1d1bcdcc72e1
     - !<own> 7960ac1d-57da-4ac6-9066-12af037dcbfa
@@ -1315,6 +1315,23 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/40a4a9f7-5406-4cdb-8c33-b11aef3804b8>
+  Name: lighting
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 098ece44-4e4a-44c9-b30f-7840d16e4e59
+  Components:
+    - !<own> d28d4fad-bd85-4fa8-863a-d1fbcafee624
+  PrefabRemaps:
+    - 098ece44-4e4a-44c9-b30f-7840d16e4e59: ee026971-daad-4f42-b968-ff87bcb84ad1
+    - 40a4a9f7-5406-4cdb-8c33-b11aef3804b8: 8f152c12-7851-4f65-ab5f-ddcf24c1b352
+    - 98c09e41-e91b-419e-84dc-3d9f5318d71a: 61dcd51f-025f-4071-8377-00db756114af
+    - d28d4fad-bd85-4fa8-863a-d1fbcafee624: 4a25daba-6fe2-4e52-9c27-8b1b909bc519
 - !<SceneObject/426ffddb-cfd8-4be9-bf68-63c94c51fef4>
   Name: screws_hearts
   Enabled: true
@@ -2197,6 +2214,8 @@
       scene: !<reference.SceneObject> ecdeffd1-17d7-478a-8810-1d1bcdcc72e1
       cursor: !<reference.SceneObject> e4253c4e-6d1c-4307-8248-70721eb05268
       debug: !<reference.Text> 98358832-78f4-4457-b688-db162724eca5
+      counter: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      collider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -3415,6 +3434,37 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<LightSource/98c09e41-e91b-419e-84dc-3d9f5318d71a>
+  LightType: Directional
+  DecayType: Quadratic
+  Intensity: 1
+  CastShadows: false
+  ShadowDensity: 1
+  ShadowBlurRadius: 0
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2
+  ShadowFrustumSize: 30
+  ShadowFrustumNearClipPlane: 1
+  ShadowFrustumFarClipPlane: 1000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1
+  UseEnvMap: true
+  EnvMapExposure: 1
+  EnvMapRotation: 0
+  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1, y: 1, z: 1, w: 1}
+  ShadowColor: {x: 0, y: 0, z: 0, w: 1}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  renderLayer: 1
+  Name: Light Source
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<ScriptComponent/9971146c-1eec-43f5-9cec-8dc20b971f89>
   ScriptAsset: !<reference> 05cba0ee-8f6e-4746-a47c-dae6bb46a7ed
   ScriptInputs:
@@ -4427,37 +4477,6 @@
   Enabled: true
   PrefabRemaps:
     []
-- !<LightSource/cb65225f-0656-4d93-98a0-5fa089346979>
-  LightType: Point
-  DecayType: Quadratic
-  Intensity: 1
-  CastShadows: false
-  ShadowDensity: 1
-  ShadowBlurRadius: 0
-  ShadowTextureSize: 512
-  AutoLightSourcePosition: false
-  AutoShadowFrustumSize: false
-  AutoShadowFrustumSizeExtend: 2
-  ShadowFrustumSize: 30
-  ShadowFrustumNearClipPlane: 1
-  ShadowFrustumFarClipPlane: 1000
-  UseEnvMapFromCamera: false
-  EnvMapFromCameraMode: Auto
-  UseEstimation: false
-  EstimationIntensity: 1
-  UseEnvMap: true
-  EnvMapExposure: 1
-  EnvMapRotation: 0
-  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  Color: {x: 1, y: 1, z: 1, w: 1}
-  ShadowColor: {x: 0, y: 0, z: 0, w: 1}
-  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  renderLayer: 1
-  Name: Light Source
-  Enabled: true
-  PrefabRemaps:
-    []
 - !<ScreenTransform/cba4c3b8-83db-4536-9a1c-b5d8ff21eb8d>
   IsAdvanced: false
   Constraints:
@@ -4595,6 +4614,37 @@
     "":
       {}
   Name: SyncEntity
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<LightSource/d28d4fad-bd85-4fa8-863a-d1fbcafee624>
+  LightType: EnvMap
+  DecayType: Quadratic
+  Intensity: 1
+  CastShadows: false
+  ShadowDensity: 1
+  ShadowBlurRadius: 0
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2
+  ShadowFrustumSize: 30
+  ShadowFrustumNearClipPlane: 1
+  ShadowFrustumFarClipPlane: 1000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1
+  UseEnvMap: true
+  EnvMapExposure: 1.1100000000000001
+  EnvMapRotation: 0
+  DiffuseEnvTexture: !<reference> 05392cad-48ba-43b5-b9dd-9167524ca51e
+  SpecularEnvTexture: !<reference> cc7494e2-a989-43c8-86e6-49cd1d3cb6be
+  Color: {x: 1, y: 1, z: 1, w: 1}
+  ShadowColor: {x: 0, y: 0, z: 0, w: 1}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  renderLayer: 1
+  Name: Light Source
   Enabled: true
   PrefabRemaps:
     []
