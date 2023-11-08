@@ -1,0 +1,121 @@
+- !<ObjectPrefab/972b3dce-6136-42ad-a1e7-555026506161>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> ff3ad889-126f-46f0-b170-76d612946046
+  Name: ""
+- !<ScriptComponent/40b8fcfe-7117-4f1b-adb6-9d5bf842b6b2>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/828a3fc0-43ac-4194-a118-2357d24e827b>
+  Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []
+- !<SceneObject/9e2c2fcd-6a71-4482-8ee3-515d88d5e400>
+  Name: chili
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.019999999552965164, y: 0.019999999552965164, z: 0.019999999552965164}
+  Children:
+    []
+  Components:
+    - !<own> c5ac93bb-ed10-44d6-8ba5-14f39d8b2daa
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/c5ac93bb-ed10-44d6-8ba5-14f39d8b2daa>
+  Mesh: !<reference> d3ce53e7-7fa6-4dda-9a3e-d7bc58b3b24a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_4
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/ff3ad889-126f-46f0-b170-76d612946046>
+  Name: item-chili
+  Enabled: true
+  Layer: 1
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> 9e2c2fcd-6a71-4482-8ee3-515d88d5e400
+  Components:
+    - !<own> 828a3fc0-43ac-4194-a118-2357d24e827b
+    - !<own> ff7c36b2-5000-4036-a019-a5c9dd5ff898
+    - !<own> 40b8fcfe-7117-4f1b-adb6-9d5bf842b6b2
+  PrefabRemaps:
+    []
+- !<BodyComponent/ff7c36b2-5000-4036-a019-a5c9dd5ff898>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Box
+  Axis: X
+  FitVisual: false
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 1, y: 0.5, z: 2}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []
