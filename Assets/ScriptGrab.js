@@ -97,7 +97,7 @@ function doTap(obj) {
         tapped = true;
         holding = obj;
         holding.setParentPreserveWorldTransform(camera.getSceneObject());
-        holding.getTransform().setWorldPosition(camera.getTransform().getWorldPosition().add(camera.getTransform().back.uniformScale(80)).add(camera.getTransform().down.uniformScale(30)).add(camera.getTransform().right.uniformScale(30)));
+        holding.getTransform().setWorldPosition(camera.getTransform().getWorldPosition().add(camera.getTransform().back.uniformScale(70)).add(camera.getTransform().down.uniformScale(20)).add(camera.getTransform().right.uniformScale(20)));
 
         holding.getComponent("Physics.BodyComponent").dynamic = false;
     } else {
