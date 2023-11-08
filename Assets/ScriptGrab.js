@@ -31,11 +31,16 @@ var moments = new Array();
 var sec = 0;
 
 script.collider.onOverlapEnter.add(function (e) {
-    global.counter++;
-    ingredients.push({ name: holding.name });
-    showCounter();
-
-    print(JSON.stringify(ingredients));
+    
+    if (holding) {
+        global.counter++
+        ingredients.push({ name: holding.name });
+        showCounter();
+    
+        print(JSON.stringify(ingredients));
+        
+    }
+    
 });
 
 script.collider.onOverlapExit.add(function (e) {
@@ -91,6 +96,11 @@ function doTap(obj) {
         if (holding) {
             holding.setParentPreserveWorldTransform(script.scene);
             holding.getComponent("Physics.BodyComponent").dynamic = true;
+            print(holding.name);
+            print(holding.getComponents("Component.ScriptComponent")[1]);
+            
+            holding.getComponents("Component.ScriptComponent")[1].api.dropped();
+            
         }
     }
 

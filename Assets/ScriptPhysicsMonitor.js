@@ -7,13 +7,26 @@ var timer =0;
 
 var physics = true;
 
+script.api.dropped = function() {
+    
+    sec = 0;
+    physics = true;
+}
+
 script.createEvent("UpdateEvent").bind(function(a){
     
-   
     dt=getDeltaTime();
     
-  
+    sec+=dt;
     
+  if (physics) {
+        
+        if (sec>4) {
+            setPhysics(false);
+            
+        }
+    }
+    /*
     pos = script.getSceneObject().getTransform().getWorldPosition();
     
     if (lastpos == null) {
@@ -59,6 +72,8 @@ script.createEvent("UpdateEvent").bind(function(a){
         }
     
     }
+    
+    */
     
 });
     
