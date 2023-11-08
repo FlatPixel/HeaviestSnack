@@ -14,10 +14,9 @@
   ImportedAssetIds:
     .hidden/uber: 7800e249-63d0-4d71-a98d-e4b3c47a2eea
     09 - Default: a2ba8016-ca82-4027-8f8d-439cae823a7f
-    101e0812-678b-4204-bd81-67f9595f5254: 30fb9256-11a7-4677-a720-e957924d9269
     15 - Default: 6b99037b-8fb0-4311-b0cf-68e21ed95b8b
-    2c80862d-f80a-4a2c-bd4c-b89b794829a7: 5f1b65e6-4695-4271-a494-c4b22a05b633
-    95e2b460-def0-478f-a86b-fe20b9f59ae7: 5db66867-a57f-4ae0-a96d-90bc6d5b867f
+    422cb4b8-5254-4ee3-8fd4-b84da0fa1a8b: b544d06c-bbfd-4114-8136-fc8f354e22af
+    7b8a1692-102e-4add-b6b3-b7d4d89186cb: 1a3ea3b9-aabb-461e-b1bb-395c240ddbca
     Animation1: 4f76fe3e-20fa-44c3-ba5c-dcd05e78afe4
     Animation2: 4d8a8b36-a62d-4004-95be-f8b60c66690c
     Mesh1: 1718358f-c7f7-4b47-a900-9fd2ff01d7ae
@@ -25,6 +24,7 @@
     Mesh3: e39eced0-e5ec-452a-ab18-c048fad91807
     Mesh4: c5ead00c-9444-4dc1-ab5e-80658d485b66
     Scene: 59e99be0-5143-474c-88a6-0ae194dc15b6
+    c4d88527-e0a4-4715-a07c-fcd32a4dfb06: cc4fe88d-d183-4662-ae2c-4cb942fa18df
     component_6|BaseLayer: 18d88f5c-d42e-4cd5-b973-a380763af1a8
     white: 295e0b70-bfad-47d0-bdcd-8a7b7098d9c9
     "|_3DSceneImportRoot_0|": 4c3eef1f-7458-444a-9c86-359f1db9af33
