@@ -80,14 +80,12 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
         var camForward = camera.getTransform().back;
         var camPos = camera.getTransform().getWorldPosition();
         probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
-        print("touch ended rayCast");
     }
 });
 
 function LaunchIngredient(hit) {
     if (instantiatedIngredient === null) return;
 
-    print("LaunchIngredient");
     var camForward = camera.getTransform().back;
     var physicsBody = instantiatedIngredient.getComponent('Physics.BodyComponent');
 
@@ -142,21 +140,21 @@ function launchIngredientMessage(ingredientStartPos, velocity) {
         params: plan
     };
 
-    print("An ingredient is launched");
     syncEntity.sendEvent(ingredient_op, encodeApi(message));
 }
 
 // On message Received
 syncEntity.onEventReceived.add(ingredient_op, function (networkMessage) {
-    print(networkMessage.message);
-    print(networkMessage.data);
-    print(networkMessage.senderUserId);
+    if (networkMessage.senderUserId == global.sessionController.getLocalUserId()) return;
+    // print(networkMessage.message);
+    // print(networkMessage.data);
+    // print(networkMessage.senderUserId);
     var message = decodeApi(networkMessage.data);
 
     // print("all users " + encodeApi(global.sessionController.getUsers()));
     // print("all users " + global.sessionController.getUsers());
     // print("An ingredient has been launched by " + global.sessionController.getUsers()[networkMessage.senderUserId].displayName);
-    print("An ingredient has been launched");
+    // print("An ingredient has been launched");
     var startPos = global.getLocalPosFromPlan(message.params);
     var velocity = global.getLocalScaleFromPlan(message.params);
     var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
