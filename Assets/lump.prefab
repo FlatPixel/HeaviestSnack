@@ -1,0 +1,92 @@
+- !<ObjectPrefab/133d8f39-5c5f-4b5a-b5e7-d40756ca1899>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 30fead07-0259-4da9-b344-6098652f9fee
+  Name: ""
+- !<SceneObject/30fead07-0259-4da9-b344-6098652f9fee>
+  Name: lump
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 88bb2a73-37b9-40fe-965c-63046b61e3fd
+  Components:
+    - !<own> e13a8c56-da34-4585-8108-e35812564976
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/72889022-74f9-4795-a034-cfb29b60cf46>
+  Mesh: !<reference> a2836001-a3ab-442a-8745-dbda141c15ce
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 467094b8-a483-4676-b5e5-af0a19720bfa
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/88bb2a73-37b9-40fe-965c-63046b61e3fd>
+  Name: lump
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 72889022-74f9-4795-a034-cfb29b60cf46
+    - !<own> a43abcd2-f738-4518-8cf2-8cccef09d512
+    - !<own> d5b08fb8-5e9c-41e8-bda2-b0af89daa299
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/a43abcd2-f738-4518-8cf2-8cccef09d512>
+  Mesh: !<reference> 543a30a6-a500-40f6-b72a-0c8bf6912f2e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 2d0cdd6b-f079-4084-89f1-86a38c345e2b
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_1
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Animation/d5b08fb8-5e9c-41e8-bda2-b0af89daa299>
+  AnimationLayers:
+    BaseLayer: !<reference> 6ba5f748-4c8c-4358-8f98-c771e37a4df3
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<AnimationMixer/e13a8c56-da34-4585-8108-e35812564976>
+  Layers:
+    - !<reference> 9ce82876-bca6-4a53-975a-c95ca8665ba0
+  Autoplay: true
+  Version: FBX
+  Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []

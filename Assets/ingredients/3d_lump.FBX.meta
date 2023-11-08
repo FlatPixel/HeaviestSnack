@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/526ffb1d-9e67-4fcc-add2-b110f3b19ec0>
+  ImporterSettings: !<FbxImporterSettings/26d8c0f2-61c0-4c14-b6ee-a33d97091cb3>
+    RegenerateNormalsForSkinnedMeshes: true
+    GeneratePivots: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+    ImportVertexColor: true
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30
+  ImportedAssetIds:
+    .hidden/uber: b8d344e3-e8dc-4bfb-b0f3-3fe87db556b5
+    03 - Default: 0dd04433-a4d8-43ac-8d85-d97f7715b4e6
+    09 - Default: bf577165-0c57-4d32-bd4f-5cc4f77aed95
+    0d238a2b-ad8a-47e9-be1c-198a9847086e: 8dc007ac-f8d6-4a9e-b557-5b9e5debcd7b
+    Animation1: 6ba5f748-4c8c-4358-8f98-c771e37a4df3
+    Mesh1: a2836001-a3ab-442a-8745-dbda141c15ce
+    Mesh2: 543a30a6-a500-40f6-b72a-0c8bf6912f2e
+    Scene: 50bb8341-3338-4b76-a94a-762fb3a07efc
+    c119c60e-961d-4537-bfdd-19accbd85da1: 677624c9-38bc-46d7-b78b-80759a2976bb
+    component_3|BaseLayer: 9ce82876-bca6-4a53-975a-c95ca8665ba0
+    fca2207d-873e-4cbb-abd2-c1d3a3241285: 775d6615-78d0-4bc4-b57e-86507bfafec6
+    white: 05b990c5-f9f6-4123-b389-45809da7f515
+    "|_3DSceneImportRoot_0|": 6a4700d0-af15-422f-a3fa-e55ac058c1f2
+    "|_3DSceneImportRoot_0|_AnimationMixer_0|": bd2c16d8-5c6d-4f0f-8555-b4c9240305da
+    "|_3DSceneImportRoot_0|_lump_0|": 51095db9-ab24-4b03-9f20-bd7da51ebf0a
+    "|_3DSceneImportRoot_0|_lump_0|_Animation_2|": 9ed5f91f-cdaf-49e4-8668-c5078a3da7f8
+    "|_3DSceneImportRoot_0|_lump_0|_RenderMeshVisual_0|": 5e82f6a6-dad1-4633-aa98-0bfcb4ea7c85
+    "|_3DSceneImportRoot_0|_lump_0|_RenderMeshVisual_1|": 9f59ac19-fc68-45da-b582-b270629b0483
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 50bb8341-3338-4b76-a94a-762fb3a07efc
+  PackageType: CanBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

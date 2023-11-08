@@ -1,0 +1,92 @@
+- !<ObjectPrefab/670b9bc9-77f7-4431-80ef-6a8e98403539>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 7440c8f4-126a-4c73-a068-4a305dea7d67
+  Name: ""
+- !<RenderMeshVisual/5b3c4da9-6e9d-4a15-be5e-0168fad21921>
+  Mesh: !<reference> 543a30a6-a500-40f6-b72a-0c8bf6912f2e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 2d0cdd6b-f079-4084-89f1-86a38c345e2b
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_1
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/6cdc2b9b-1da6-4906-b855-1840bd104079>
+  Mesh: !<reference> a2836001-a3ab-442a-8745-dbda141c15ce
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 467094b8-a483-4676-b5e5-af0a19720bfa
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/7440c8f4-126a-4c73-a068-4a305dea7d67>
+  Name: lump
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> bf7ff1ed-56ea-422e-95a7-0c451da3d08f
+  Components:
+    - !<own> d3dd433e-1a34-4d94-921e-2a6abd4f79bf
+  PrefabRemaps:
+    []
+- !<SceneObject/bf7ff1ed-56ea-422e-95a7-0c451da3d08f>
+  Name: lump
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 6cdc2b9b-1da6-4906-b855-1840bd104079
+    - !<own> 5b3c4da9-6e9d-4a15-be5e-0168fad21921
+    - !<own> dc586c32-a673-4628-86d7-d598ed0063d4
+  PrefabRemaps:
+    []
+- !<AnimationMixer/d3dd433e-1a34-4d94-921e-2a6abd4f79bf>
+  Layers:
+    - !<reference> 9ce82876-bca6-4a53-975a-c95ca8665ba0
+  Autoplay: true
+  Version: FBX
+  Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Animation/dc586c32-a673-4628-86d7-d598ed0063d4>
+  AnimationLayers:
+    BaseLayer: !<reference> 6ba5f748-4c8c-4358-8f98-c771e37a4df3
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []

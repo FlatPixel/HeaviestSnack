@@ -1,8 +1,8 @@
-- !<Material/b64a4c0e-90f8-4850-8e72-60822db58780>
+- !<Material/2d0cdd6b-f079-4084-89f1-86a38c345e2b>
   PassesInfo:
-    - !<own> 9c60e80d-4219-453c-8d08-8d140d6327d7
+    - !<own> befc1fa5-7eb6-4717-83ed-0ff3ac7a4c30
   Name: ""
-- !<PassInfo/9c60e80d-4219-453c-8d08-8d140d6327d7>
+- !<PassInfo/befc1fa5-7eb6-4717-83ed-0ff3ac7a4c30>
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -16,7 +16,6 @@
     - ENABLE_BASE_TEX
     - ENABLE_LIGHTING
     - ENABLE_NORMALMAP
-    - ENABLE_RIM_HIGHLIGHT
     - NODE_13_DROPLIST_ITEM 0
     - NODE_181_DROPLIST_ITEM 0
     - NODE_184_DROPLIST_ITEM 0
@@ -28,7 +27,8 @@
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
     - NODE_76_DROPLIST_ITEM 0
-  BlendMode: Disabled
+    - ENABLE_RIM_HIGHLIGHT
+  BlendMode: PremultipliedAlphaAuto
   Properties:
     PreviewEnabled:
       typeIdx: 0
@@ -39,7 +39,7 @@
     baseTex:
       typeIdx: 9
       value:
-        id: 2bffb10d-29bb-4b5d-8346-ebd432624dd6
+        id: 69865afb-978b-404b-94f3-d497e9faa1de
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -64,7 +64,7 @@
     normalTex:
       typeIdx: 9
       value:
-        id: ab5e3967-2268-4884-b23c-1ba1336ea1a6
+        id: a78d0c58-3af1-497c-9b7c-5f151f3a85ed
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat

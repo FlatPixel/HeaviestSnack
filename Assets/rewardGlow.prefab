@@ -1,0 +1,54 @@
+- !<ObjectPrefab/5d6f000e-a354-4579-a326-11485dcb1172>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> a2b4b65a-7853-441a-a551-57b8b14fb080
+  Name: ""
+- !<RenderMeshVisual/46e3c5ae-2c88-46b2-beed-8d581f3a58a3>
+  Mesh: !<reference> e9ee873a-d761-4404-ad1e-ff934b6fcb1f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 13becf15-2f4a-4f0e-a5ef-2fb1a89d2068
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/a2b4b65a-7853-441a-a551-57b8b14fb080>
+  Name: rewardGlow
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -165.85700988769531}
+    rotation: {x: -90.000007629394531, y: -0, z: 0}
+    scale: {x: 1, y: 1.0000001192092896, z: 1.0000001192092896}
+  Children:
+    - !<own> a34bb698-c5f7-4ab1-b739-ed8c3897f10b
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/a34bb698-c5f7-4ab1-b739-ed8c3897f10b>
+  Name: rewardGlow | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 115.21277618408203}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 46e3c5ae-2c88-46b2-beed-8d581f3a58a3
+  PrefabRemaps:
+    []
