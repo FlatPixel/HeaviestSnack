@@ -7,6 +7,7 @@
   RenderPreviewOutput: !<reference> 2b873e67-1067-46a2-8192-933c33081dd3
   RenderOverlayOutput: !<reference> 00000000-0000-0000-0000-000000000000
   objects:
+    - !<own> d0e3e065-7099-4e99-8239-786fb1e5e09a
     - !<own> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
     - !<own> 95282161-46ab-45b1-a43c-896b3baaa701
     - !<own> 5258d49e-eaeb-41bf-b1ea-09c231f330d3
@@ -1044,7 +1045,7 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: Render Mesh Visual
-  Enabled: true
+  Enabled: false
   PrefabRemaps:
     []
 - !<SceneObject/3434ac59-7491-4e92-8cb8-3a5f37392ee4>
@@ -3680,6 +3681,18 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<ScriptComponent/b3ee8020-c16c-4a34-a9c6-ee01c724b77f>
+  ScriptAsset: !<reference> 39f86e15-a37b-4479-b289-125f33da59d5
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: SetupTouchBlocking
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/b464963b-4446-4938-91b4-7017807b417e>
   Name: FloorBox
   Enabled: true
@@ -4287,6 +4300,20 @@
       {}
   Name: SyncEntity
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/d0e3e065-7099-4e99-8239-786fb1e5e09a>
+  Name: TouchBlocking
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> b3ee8020-c16c-4a34-a9c6-ee01c724b77f
   PrefabRemaps:
     []
 - !<SceneObject/d22a30c8-9d20-4220-9658-238d351dad75>
