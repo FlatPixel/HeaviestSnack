@@ -1,6 +1,7 @@
 //@input Component.Camera sceneCamera
 var camera = script.sceneCamera;
 
+//@input SceneObject scene
 //@input Component.Text debug
 
 //@input Component.Text counter
@@ -12,6 +13,10 @@ var tapped = false;
 var holding = null;
 
 global.counter = 0;
+
+var ingredients = [];
+
+var hasWon = false;
 
 var item = 0;
 
@@ -27,7 +32,10 @@ var sec = 0;
 
 script.collider.onOverlapEnter.add(function (e) {
     global.counter++;
+    ingredients.push({ name: holding.name });
     showCounter();
+
+    print(JSON.stringify(ingredients));
 });
 
 script.collider.onOverlapExit.add(function (e) {
@@ -45,9 +53,12 @@ script.createEvent("UpdateEvent").bind(function (a) {
 
     sec += dt;
 
-    for (i = 0; i < item; item++) {
-
-
+    if (global.counter >= 5 && hasWon == false) {
+        print("You made a receipe.");
+        print(JSON.stringify(ingredients));
+        print("TODO call ChatGPT API + show texte");
+        print("TODO call animation Pot + Gfx");
+        hasWon = true;
     }
 
 });
@@ -76,6 +87,11 @@ function doTap(obj) {
     } else {
         tapped = false;
         script.debug.text = "";
+
+        if (holding) {
+            holding.setParentPreserveWorldTransform(script.scene);
+            holding.getComponent("Physics.BodyComponent").dynamic = true;
+        }
     }
 
 }
@@ -85,30 +101,39 @@ function doRay(screenPos) {
     var probe = Physics.createGlobalProbe();
 
     // Set some properties on it.
-    probe.debugDrawEnabled = true;
+    // probe.debugDrawEnabled = true;
     probe.filter.includeStatic = true;
     probe.filter.includeDynamic = true;
     probe.filter.includeIntangible = true;
 
     // Find the first hit.
     var rayStart = camera.getTransform().getWorldPosition();
-    // var rayEnd = camera.getTransform().back.uniformScale(300);
     var rayEnd = camera.screenSpaceToWorldSpace(screenPos, 300);
     probe.rayCast(rayStart, rayEnd, function (hit) {
 
         if (hit === null) {
-            // print("no hit");
+            print("no hit");
             tapped = false;
             script.debug.text = "";
+
+            if (holding) {
+                holding.setParentPreserveWorldTransform(script.scene);
+                holding.getComponent("Physics.BodyComponent").dynamic = true;
+            }
             return;
         }
         var obj = hit.collider.getSceneObject();
 
-        // print("hit collider: " + obj.name);
+        print("hit collider: " + obj.name);
 
         if (obj.name.substring(0, 4) != "item") {
             tapped = false;
             script.debug.text = "";
+
+            if (holding) {
+                holding.setParentPreserveWorldTransform(script.scene);
+                holding.getComponent("Physics.BodyComponent").dynamic = true;
+            }
             return;
         }
 

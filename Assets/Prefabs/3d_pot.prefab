@@ -32,7 +32,7 @@
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  ShowCollider: true
+  ShowCollider: false
   Intangible: false
   EnableSmoothing: false
   Radius: 6
@@ -86,6 +86,7 @@
     - !<own> 0a8e2965-d851-41fb-9922-8657139c303f
     - !<own> 16cf8bb6-6277-4ddb-89ee-4ec9c84cf1cc
     - !<own> afb55129-0a3a-40c3-9956-db4a9a3acc34
+    - !<own> b6dc702a-8fb2-4058-8e26-0797df781616
   Components:
     - !<own> 8e14309d-d6e6-4d1e-a223-02235c0b74e2
   PrefabRemaps:
@@ -98,7 +99,7 @@
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  ShowCollider: true
+  ShowCollider: false
   Intangible: true
   EnableSmoothing: false
   Radius: 6
@@ -136,6 +137,28 @@
   AnimationLayers:
     BaseLayer: !<reference> b9d1b351-5b6a-451b-a9be-f17d555c3997
   Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ColliderComponent/8364781e-280a-4739-a2c2-0e3defc624d9>
+  Shape: Sphere
+  Axis: X
+  FitVisual: true
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  ShowCollider: false
+  Intangible: true
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 15, y: 15, z: 15}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Collider
   Enabled: true
   PrefabRemaps:
     []
@@ -219,6 +242,20 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/b6dc702a-8fb2-4058-8e26-0797df781616>
+  Name: PotWorld
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> e6d957fe-556a-4cae-a947-0b6e531f8e51
+  Components:
+    []
+  PrefabRemaps:
+    []
 - !<RenderMeshVisual/e1faf09f-d007-475a-9a8f-6b4370e19a3a>
   Mesh: !<reference> 6a5453d9-b2aa-4818-b158-09e1440d8fd7
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -237,6 +274,20 @@
   RenderOrder: 0
   Name: component_2
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/e6d957fe-556a-4cae-a947-0b6e531f8e51>
+  Name: Physics Collider - Selector
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 110, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 12, y: 12, z: 12}
+  Children:
+    []
+  Components:
+    - !<own> 8364781e-280a-4739-a2c2-0e3defc624d9
   PrefabRemaps:
     []
 - !<SceneObject/fed916e3-e771-45e8-ac54-6299909be668>

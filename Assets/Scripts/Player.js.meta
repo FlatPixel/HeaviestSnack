@@ -17,6 +17,7 @@
       maxDistanceAimAssist: false
       physicWorld: false
       pot: false
+      potSelector: false
       reticle: false
       sceneCamera: false
       trajectoryHeight: false
@@ -40,6 +41,7 @@
         ingredientPrefabs: !<reference.ObjectPrefab[]>
           []
         physicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
+        potSelector: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ImportedAssetIds:
     JavaScriptAsset: 715c3313-d8e6-4d6e-9f07-40fb21d5e2ee
   ImporterName: JavaScriptAssetImporter

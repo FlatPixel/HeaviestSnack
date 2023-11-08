@@ -1530,6 +1530,7 @@
   ScriptInputs:
     "":
       sceneCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      scene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       debug: !<reference.Text> 98358832-78f4-4457-b688-db162724eca5
       counter: !<reference.Text> 4c0ebf5b-b6b1-4dab-bf92-58a348f3a40a
       collider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
