@@ -8,14 +8,52 @@
 
 //@input Component.Text debug
 
+//@input Component.Text counter
+
+//@input Physics.ColliderComponent collider
+
 var tapped = false;
 
 var holding = null;
 
+var counter = 0;
+
+var item = 00;
+
+var items = new Array();
+
+for(i=0;i<999;i++) {
+    
+    items[i]=null;
+}
+var moments = new Array();
+
+var sec = 0;
+
+script.collider.onOverlapEnter.add(function (e) {
+    counter++;
+    showCounter();
+});
+
+script.collider.onOverlapExit.add(function (e) {
+    counter--;
+    showCounter();
+});
+
+function showCounter(){
+    script.counter.text = ""+counter;
+    
+}
 script.createEvent("UpdateEvent").bind(function(a){
+
+    dt= getDeltaTime();
     
+    sec +=dt;
     
-    
+    for(i=0;i<item;item++) {
+        
+        
+    }
     
 });
 
@@ -31,6 +69,9 @@ function doTap(obj) {
 
     print(obj.name);
    if (!tapped) {
+        
+        items[item]=obj;
+        moments[item]=sec;
         
         tapped=true;
         holding = obj;
