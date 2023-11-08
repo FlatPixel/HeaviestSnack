@@ -13,6 +13,7 @@
     ScriptInputsHidden:
       cam: false
       cursor: false
+      debug: false
       scene: false
     ScriptTypesHidden:
       {}

@@ -6,6 +6,8 @@
 
 //@input SceneObject cursor
 
+//@input Component.Text debug
+
 var tapped = false;
 
 var holding = null;
@@ -78,6 +80,8 @@ function doRay() {
             return;
             
         }
+        
+        script.debug.text = ""+obj.name;
         
         doTap(obj);
         
