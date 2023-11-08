@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/9e4a6780-9a32-48f2-976c-08c9bf5c5c32>
+  ImporterSettings: !<AssetImporterSettings/cf50ce3c-53e6-4ee0-85eb-a89f0f328447>
+    {}
+  ImportedAssetIds:
+    Filter: 395d34a5-1573-4f19-9b4c-57a04db6ffdc
+  ImporterName: FilterImporter
+  PrimaryAsset: !<reference> 395d34a5-1573-4f19-9b4c-57a04db6ffdc
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

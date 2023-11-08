@@ -100,8 +100,10 @@ function doRay(screenPos) {
     // Create a probe to raycast through all worlds.
     var probe = Physics.createGlobalProbe();
 
+    var objectLayer = script.getSceneObject().layer;
     // Set some properties on it.
     // probe.debugDrawEnabled = true;
+    probe.filter.onlyLayers = probe.filter.onlyLayers.union(objectLayer);
     probe.filter.includeStatic = true;
     probe.filter.includeDynamic = true;
     probe.filter.includeIntangible = true;

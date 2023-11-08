@@ -1,7 +1,7 @@
 - !<Scene/1e4cae11-cf66-49fa-b479-1f6bf46388cc>
   layers: !<Layers/382ccb3f-e09a-4c47-a842-4f9f47ce4353>
     userLayers:
-      []
+      - "id: 1\nname: Ingredients\ncolor: 0"
     HasOrtho: true
   RenderOutput: !<reference> 2b873e67-1067-46a2-8192-933c33081dd3
   RenderPreviewOutput: !<reference> 2b873e67-1067-46a2-8192-933c33081dd3
@@ -386,7 +386,7 @@
 - !<SceneObject/1df3f509-9d17-4024-bebb-b43cd3fc1cf8>
   Name: item-onion
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -17.471832275390625, y: 28.010322570800781, z: 140.97335815429688}
     rotation: {x: 0, y: -0, z: 0}
@@ -420,7 +420,7 @@
 - !<SceneObject/226510d8-197e-4300-bfdb-16a502ffb229>
   Name: tapper prefab
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
@@ -554,7 +554,7 @@
 - !<SceneObject/23cf7217-ebae-46d4-af1b-c5cf99e42591>
   Name: item-ham
   Enabled: false
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 11.998146057128906, y: 34.493236541748047, z: 5.0425796508789062}
     rotation: {x: 0, y: -0, z: 0}
@@ -622,7 +622,7 @@
 - !<SceneObject/266e2766-cf86-4b86-80ba-996d1649762f>
   Name: item-redpepper
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 115.55197143554688, y: 0, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
@@ -825,7 +825,7 @@
 - !<SceneObject/34620b6a-6e2b-44b6-9423-b5e6c81665c3>
   Name: item-pepperoni
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 112.36849212646484, y: 0, z: -11.667045593261719}
     rotation: {x: 0, y: -0, z: 0}
@@ -923,7 +923,7 @@
 - !<SceneObject/3a02bc91-c638-422b-b40f-20a9f1073977>
   Name: item-redpepper
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -17.471832275390625, y: 0, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
@@ -1343,7 +1343,7 @@
 - !<SceneObject/4e59641b-d119-4d1e-aae5-b6c7b55b4898>
   Name: item-chocolate
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -81.467529296875, y: 28.947551727294922, z: 57.089927673339844}
     rotation: {x: 0, y: -0, z: 0}
@@ -1479,7 +1479,7 @@
 - !<SceneObject/535c5121-ca3d-42d2-9678-a4b0fb0636b4>
   Name: item-greenpepper
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 44.857192993164062, y: 0, z: 15.318447113037109}
     rotation: {x: 0, y: -0, z: 0}
@@ -1560,7 +1560,7 @@
 - !<SceneObject/5825dc04-49fe-489a-90be-67d40290f8fc>
   Name: item-greenpepper
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -119.21731567382812, y: 0, z: 15.318447113037109}
     rotation: {x: 0, y: -0, z: 0}
@@ -2271,7 +2271,7 @@
 - !<SceneObject/83ed714a-dca0-4372-af3c-138d05627e1a>
   Name: item-pepperoni
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -45.616859436035156, y: 0, z: -11.667045593261719}
     rotation: {x: 0, y: -0, z: 0}
@@ -2448,7 +2448,7 @@
 - !<SceneObject/90365928-68f1-4db7-92b0-db8a25b68f79>
   Name: item-eggplant
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -122.10700988769531, y: 24.313941955566406, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
@@ -3819,7 +3819,7 @@
 - !<SceneObject/d30f4519-c493-4fb5-9144-174c1f9d7417>
   Name: item-chocolate
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 47.85906982421875, y: 28.947551727294922, z: 116.56211090087891}
     rotation: {x: 0, y: -0, z: 0}
@@ -3897,7 +3897,7 @@
 - !<SceneObject/d9d932d6-4fd3-4b10-84d0-b55305db6276>
   Name: item-eggplant
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 28.285659790039062, y: 24.313941955566406, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
@@ -4110,7 +4110,7 @@
 - !<SceneObject/df7cc6a8-d46b-49d9-a59b-748d7f95e771>
   Name: item-anchovy
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: 16.487159729003906, y: 0, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
@@ -4647,7 +4647,7 @@
 - !<SceneObject/fda9d333-4118-4acd-884b-194dac161d84>
   Name: item-onion
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
     position: {x: -17.471832275390625, y: 28.010322570800781, z: -47.447319030761719}
     rotation: {x: 0, y: -0, z: 0}
