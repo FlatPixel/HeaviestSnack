@@ -1,0 +1,467 @@
+- !<ObjectPrefab/8fbc4fb7-5a3a-48a9-825e-e798c9546d02>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 0493a764-4470-47bd-8bd6-a17d96a2e428
+  Name: ""
+- !<SceneObject/0493a764-4470-47bd-8bd6-a17d96a2e428>
+  Name: GPT
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 163.75042724609375, y: 59.094367980957031, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 5b80ea26-8dca-479c-98ca-30f859af8d33
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<Canvas/05a1a96a-73ea-4a39-b890-74bc8f165015>
+  UnitType: World
+  WorldSpaceRect:
+    left: -10
+    bottom: -10
+    right: 10
+    top: 10
+  Name: Canvas
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/0f771ea2-09ad-4bfd-b041-4356c4b91ab1>
+  Text: A delightful dish inspired by a quirky candy shop in the heart of New Orleans, combining the smoky flavors of sausage with the unexpected sweetness of caramelized onions and a touch of candy for a truly unique culinary experience.
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: false
+  FontSize: 24
+  Fill:
+    mode: Solid
+    color: {x: 0.0078431377187371254, y: 0.17254902422428131, z: 0.32941177487373352, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.5
+    offsetY: 1
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScreenTransform/14edb54d-7dad-4404-990d-96f65c1a92cc>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0.030486583709716797, y: -6.0365867614746094, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -0.65853679180145264
+    bottom: -0.89634120464324951
+    right: 0.664634108543396
+    top: -0.31097611784934998
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/164027d3-eb92-4f28-8def-890f873e3f58>
+  Name: PromptController
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> bcfed918-60a6-461a-8999-69ca9f92aed1
+  PrefabRemaps:
+    []
+- !<ScriptComponent/211fc640-420f-4730-a350-c305a986ba3f>
+  ScriptAsset: !<reference> 68dcb917-c068-4f37-8eca-039cc5b932bf
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ChatGPT Helper
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/4477642d-c891-4ea8-8e9b-823852fdcdd7>
+  Name: Text Description
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 0f771ea2-09ad-4bfd-b041-4356c4b91ab1
+    - !<own> 14edb54d-7dad-4404-990d-96f65c1a92cc
+  PrefabRemaps:
+    []
+- !<ScriptComponent/58379d98-4316-47b5-8dab-75152ade614a>
+  ScriptAsset: !<reference> 1ee472c2-5d76-4dbe-9684-a3a1fde97a08
+  ScriptInputs:
+    "":
+      promptController: !<reference.ScriptComponent> bcfed918-60a6-461a-8999-69ca9f92aed1
+  ScriptTypes:
+    "":
+      {}
+  Name: Test
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/5b80ea26-8dca-479c-98ca-30f859af8d33>
+  Name: Canvas
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -163.75042724609375, y: -0.54168319702148438, z: -445.4820556640625}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 10, y: 10, z: 10}
+  Children:
+    - !<own> ac959222-b227-462e-a44a-8478a9af8e67
+    - !<own> 164027d3-eb92-4f28-8def-890f873e3f58
+    - !<own> 7202769a-4729-46a8-b2d8-6e4342b490ce
+    - !<own> d8c0adbc-7462-4e22-81d3-ad3af842b1a6
+  Components:
+    - !<own> 05a1a96a-73ea-4a39-b890-74bc8f165015
+    - !<own> b569a0be-24eb-4842-b922-0c7802337e75
+  PrefabRemaps:
+    []
+- !<ScreenTransform/5feb8cb7-b6cd-4dcf-928f-ac45aa94efc9>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/642cf479-9bf2-4025-9aaf-1403ced85da4>
+  Text: Sweet and Savory Sausage Surprise with Onion and Candy
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: true
+  FontSize: 48
+  Fill:
+    mode: Solid
+    color: {x: 0.99215686321258545, y: 0.94901961088180542, z: 0.27058824896812439, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: true
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.25
+    offsetY: 0.25
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScreenTransform/69845c3c-cba3-4a9b-b2df-a59b3c98117c>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0.067080497741699219, y: -0.27438938617706299, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -0.83902418613433838
+    bottom: -0.28048813343048096
+    right: 0.8524402379989624
+    top: 0.22561025619506836
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/7202769a-4729-46a8-b2d8-6e4342b490ce>
+  Name: ChatGPT Helper
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> 211fc640-420f-4730-a350-c305a986ba3f
+  PrefabRemaps:
+    []
+- !<ScreenTransform/822492ad-e7bd-4a83-b309-1f36899f9e7b>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/ac959222-b227-462e-a44a-8478a9af8e67>
+  Name: Test <DELETE ME>
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552694320678711, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> 58379d98-4316-47b5-8dab-75152ade614a
+  PrefabRemaps:
+    []
+- !<SceneObject/adead76c-cafa-4f8b-bc91-8075b0e99740>
+  Name: Text Title
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 642cf479-9bf2-4025-9aaf-1403ced85da4
+    - !<own> 69845c3c-cba3-4a9b-b2df-a59b3c98117c
+  PrefabRemaps:
+    []
+- !<LookAtComponent/b569a0be-24eb-4842-b922-0c7802337e75>
+  LookAtMode: LookAtDirection
+  AimVectors: ZAimYUp
+  WorldUpVector: SceneUp
+  Target: !<reference> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
+  OffsetRotation: {x: 0, y: 0, z: 0}
+  Name: LookAtComponent
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/bcfed918-60a6-461a-8999-69ca9f92aed1>
+  ScriptAsset: !<reference> e12760b7-9f8a-4057-bae9-e31d281644ca
+  ScriptInputs:
+    "":
+      text_title: !<reference.Text> 642cf479-9bf2-4025-9aaf-1403ced85da4
+      text_description: !<reference.Text> 0f771ea2-09ad-4bfd-b041-4356c4b91ab1
+      text_color: !<Vec4> {x: 0.94509804248809814, y: 0.91372549533843994, z: 0.42352941632270813, w: 1}
+      outline_color: !<Vec4> {x: 0.89019608497619629, y: 0.58431375026702881, z: 0.23137255012989044, w: 1}
+      shadow_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0.35396352410316467}
+      convert_to_uppercase: true
+      maxIngredients: 3
+      prompt_temp: 0.5
+  ScriptTypes:
+    "":
+      {}
+  Name: PromptController
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Image/d1b32ad8-14c5-450e-a733-51d90d253cde>
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0, y: 0}
+  Size: {x: 1, y: 1}
+  Materials:
+    - !<reference> 769927a4-b203-4e48-be06-833b37ab238a
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Image
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/d8c0adbc-7462-4e22-81d3-ad3af842b1a6>
+  Name: Board
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> f46becdd-329b-4d1c-91dc-a2b7495e3628
+    - !<own> adead76c-cafa-4f8b-bc91-8075b0e99740
+    - !<own> 4477642d-c891-4ea8-8e9b-823852fdcdd7
+  Components:
+    - !<own> 5feb8cb7-b6cd-4dcf-928f-ac45aa94efc9
+  PrefabRemaps:
+    []
+- !<SceneObject/f46becdd-329b-4d1c-91dc-a2b7495e3628>
+  Name: Screen Image
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 822492ad-e7bd-4a83-b309-1f36899f9e7b
+    - !<own> d1b32ad8-14c5-450e-a733-51d90d253cde
+  PrefabRemaps:
+    []

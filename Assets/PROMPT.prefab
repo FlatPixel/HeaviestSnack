@@ -1,0 +1,409 @@
+- !<ObjectPrefab/c4d264cb-6459-4fcd-a118-ba2cd62eb536>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 9d32e6e9-8c14-4aba-b41d-10ff20eb80de
+  Name: ""
+- !<ScreenTransform/2e15d1cc-df04-4a71-a66c-20ba3d2f987c>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 0
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/30d1262a-47d8-4b40-887b-17c6ab9cb0c5>
+  Text: Description
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: false
+  FontSize: 24
+  Fill:
+    mode: Solid
+    color: {x: 0.25490197539329529, y: 0, z: 0.60000002384185791, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.5
+    offsetY: 1
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/40a499ed-8f07-474e-8d00-12636baa0c82>
+  Name: Text Description
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 30d1262a-47d8-4b40-887b-17c6ab9cb0c5
+    - !<own> 2e15d1cc-df04-4a71-a66c-20ba3d2f987c
+  PrefabRemaps:
+    []
+- !<ScreenTransform/40cd3c37-3dbf-4356-8946-df2f48e92ad0>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: 0
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/763a718c-e659-4a02-8672-757e541ddb29>
+  Name: Canvas
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -163.75042724609375, y: -0.54168319702148438, z: -445.4820556640625}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 10, y: 10, z: 10}
+  Children:
+    - !<own> f1b4cbcc-fb54-454e-9d35-053e49c1ce27
+    - !<own> d354b652-e448-4df8-9981-85e81ee9e26c
+    - !<own> 9d201f5f-c453-490d-9746-3b463d403471
+    - !<own> 907b886b-70ad-4422-a66c-45b44149b7db
+  Components:
+    - !<own> eec87aa9-46be-4fcb-895f-2a75b4c9a573
+  PrefabRemaps:
+    []
+- !<ScreenTransform/7e1868a7-e6ec-4d35-87e7-ec3526b72aea>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/8ca19bc1-4dd0-4e6f-88f6-926cea6d129b>
+  Text: "Title\n"
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: false
+  FontSize: 48
+  Fill:
+    mode: Solid
+    color: {x: 1, y: 1, z: 1, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: true
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.5
+    offsetY: 1
+  Outline:
+    enabled: true
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/907b886b-70ad-4422-a66c-45b44149b7db>
+  Name: ChatGPT Helper
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> a97b2c77-8972-4155-8297-4a521f126f3a
+  PrefabRemaps:
+    []
+- !<SceneObject/9d201f5f-c453-490d-9746-3b463d403471>
+  Name: Screen Image
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> db1d88af-5bd0-411a-81ed-83c0ceba42a1
+    - !<own> 40a499ed-8f07-474e-8d00-12636baa0c82
+  Components:
+    - !<own> 7e1868a7-e6ec-4d35-87e7-ec3526b72aea
+    - !<own> a2985ca6-4a8e-403e-bb54-1e25e101fcd7
+  PrefabRemaps:
+    []
+- !<SceneObject/9d32e6e9-8c14-4aba-b41d-10ff20eb80de>
+  Name: PROMPT
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 163.75042724609375, y: 59.094367980957031, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 763a718c-e659-4a02-8672-757e541ddb29
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<Image/a2985ca6-4a8e-403e-bb54-1e25e101fcd7>
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0, y: 0}
+  Size: {x: 1, y: 1}
+  Materials:
+    - !<reference> 33547a15-d1e8-44b5-86c4-fa37e11cff95
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Image
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/a97b2c77-8972-4155-8297-4a521f126f3a>
+  ScriptAsset: !<reference> 68dcb917-c068-4f37-8eca-039cc5b932bf
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ChatGPT Helper
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/d354b652-e448-4df8-9981-85e81ee9e26c>
+  Name: PromptController
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> fa4a07bb-bd34-4bfe-95c2-7e907802db64
+  PrefabRemaps:
+    []
+- !<SceneObject/db1d88af-5bd0-411a-81ed-83c0ceba42a1>
+  Name: Text Title
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 8ca19bc1-4dd0-4e6f-88f6-926cea6d129b
+    - !<own> 40cd3c37-3dbf-4356-8946-df2f48e92ad0
+  PrefabRemaps:
+    []
+- !<ScriptComponent/e5ab2018-521c-4350-8a15-2f20a0fa50b6>
+  ScriptAsset: !<reference> 1ee472c2-5d76-4dbe-9684-a3a1fde97a08
+  ScriptInputs:
+    "":
+      promptController: !<reference.ScriptComponent> fa4a07bb-bd34-4bfe-95c2-7e907802db64
+  ScriptTypes:
+    "":
+      {}
+  Name: Test
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Canvas/eec87aa9-46be-4fcb-895f-2a75b4c9a573>
+  UnitType: World
+  WorldSpaceRect:
+    left: -8
+    bottom: -4.5
+    right: 8
+    top: 4.5
+  Name: Canvas
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/f1b4cbcc-fb54-454e-9d35-053e49c1ce27>
+  Name: Test <DELETE ME>
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552694320678711, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> e5ab2018-521c-4350-8a15-2f20a0fa50b6
+  PrefabRemaps:
+    []
+- !<ScriptComponent/fa4a07bb-bd34-4bfe-95c2-7e907802db64>
+  ScriptAsset: !<reference> e12760b7-9f8a-4057-bae9-e31d281644ca
+  ScriptInputs:
+    "":
+      text_title: !<reference.Text> 8ca19bc1-4dd0-4e6f-88f6-926cea6d129b
+      text_description: !<reference.Text> 30d1262a-47d8-4b40-887b-17c6ab9cb0c5
+      text_color: !<Vec4> {x: 0.94509804248809814, y: 0.91372549533843994, z: 0.42352941632270813, w: 1}
+      outline_color: !<Vec4> {x: 0.89019608497619629, y: 0.58431375026702881, z: 0.23137255012989044, w: 1}
+      shadow_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0.35396352410316467}
+      convert_to_uppercase: true
+      maxIngredients: 3
+      prompt_temp: 0.5
+  ScriptTypes:
+    "":
+      {}
+  Name: PromptController
+  Enabled: true
+  PrefabRemaps:
+    []
