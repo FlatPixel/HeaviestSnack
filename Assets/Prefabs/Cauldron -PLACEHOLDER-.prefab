@@ -21,7 +21,7 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 100, z: 0}
+    position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
@@ -194,6 +194,12 @@
       smoke_VFX: !<reference.VFXComponent> 2f7fe79e-cddf-42b1-be42-2624048dcf86
       smoke_burst_VFX: !<reference.VFXComponent> d80f2b51-50e3-4d57-bfdd-8522b8daf8c8
       smoke_burst_duration: 0.25
+      smake_rim_active: false
+      color_0: !<Vec4> {x: 0.97254902124404907, y: 0.83529412746429443, z: 0.066666670143604279, w: 1}
+      color_1: !<Vec4> {x: 0.89411765336990356, y: 0.086274512112140656, z: 0.43921568989753723, w: 1}
+      color_2: !<Vec4> {x: 0, y: 0.68676280975341797, z: 0.97709619998931885, w: 1}
+      color_3: !<Vec4> {x: 0.69767302274703979, y: 0, z: 0.60000002384185791, w: 1}
+      color_4: !<Vec4> {x: 0, y: 0.80599677562713623, z: 0.50000762939453125, w: 1}
   ScriptTypes:
     "":
       {}

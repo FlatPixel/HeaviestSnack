@@ -1,0 +1,7 @@
+- !<Filter/395d34a5-1573-4f19-9b4c-57a04db6ffdc>
+  IncludeStatic: true
+  IncludeDynamic: true
+  IncludeIntangible: false
+  OnlyLayers: 2
+  SkipLayers: 0
+  Name: ""
