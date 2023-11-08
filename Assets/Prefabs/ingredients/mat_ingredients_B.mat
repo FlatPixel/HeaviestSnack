@@ -39,7 +39,7 @@
     baseTex:
       typeIdx: 9
       value:
-        id: efde1225-dd27-4e76-816e-e405b71e554a
+        id: fd875bae-0805-49b3-bb2e-6ce1c06d9c43
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -64,7 +64,7 @@
     normalTex:
       typeIdx: 9
       value:
-        id: 877cc66b-c50d-4657-b969-cb82c0b2bce1
+        id: da62e4ed-f7d0-4943-bca0-5a8152c38602
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
