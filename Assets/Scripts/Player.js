@@ -73,6 +73,8 @@ script.createEvent("TapEvent").bind(function (eventData) {
         var camPos = camera.getTransform().getWorldPosition();
         var camForward = camera.getTransform().back;
         globalProbe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), function (hit) {
+            if (hit == null) return;
+
             script.pot.enabled = true;
             script.pot.getTransform().setWorldPosition(hit.position);
             isInitialized = true;
