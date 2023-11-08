@@ -8,6 +8,8 @@ var camera = script.sceneCamera;
 
 //@input Physics.ColliderComponent collider
 
+//@input Component.AnimationMixer potAnimationMixer
+
 var tapped = false;
 
 var holding = null;
@@ -58,6 +60,7 @@ script.createEvent("UpdateEvent").bind(function (a) {
         print(JSON.stringify(ingredients));
         print("TODO call ChatGPT API + show texte");
         print("TODO call animation Pot + Gfx");
+        script.potAnimationMixer.start("BaseLayer", 0, 1);
         hasWon = true;
     }
 

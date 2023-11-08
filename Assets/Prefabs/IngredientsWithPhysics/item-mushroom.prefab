@@ -1,0 +1,135 @@
+- !<ObjectPrefab/36f84334-1b77-426c-a6df-6582bd843edf>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> f0923e29-8646-4092-81e2-060128e87538
+  Name: ""
+- !<RenderMeshVisual/0cbc1b62-7c40-4fe2-a10b-d01e4ef1fd4e>
+  Mesh: !<reference> c7713dee-2f01-44ef-89e4-17af8259014e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_16
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/0fc4c032-c8cd-40be-ab7e-f1ee4fce981e>
+  Name: chocolate
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.029999999329447746, y: 0.029999999329447746, z: 0.029999999329447746}
+  Children:
+    - !<own> 75b430fa-49a2-4e2f-b971-f2811480874b
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<ScriptComponent/1623f64c-a9ab-4da0-87c9-8e4c64cbae3f>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: local
+      rotationSync: local
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<BodyComponent/3a2c2707-d802-41f0-9853-76574349663b>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Box
+  Axis: X
+  FitVisual: true
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 15, y: 15, z: 15}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/75b430fa-49a2-4e2f-b971-f2811480874b>
+  Name: whole_chocolate | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -6.0006484985351562, z: 1.9073486328125e-06}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 0cbc1b62-7c40-4fe2-a10b-d01e4ef1fd4e
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/e46d4139-7646-4dbd-a005-5fd5399fb084>
+  Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []
+- !<SceneObject/f0923e29-8646-4092-81e2-060128e87538>
+  Name: item-chocolate
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 47.85906982421875, y: 28.947551727294922, z: 116.56211090087891}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> 0fc4c032-c8cd-40be-ab7e-f1ee4fce981e
+  Components:
+    - !<own> e46d4139-7646-4dbd-a005-5fd5399fb084
+    - !<own> 3a2c2707-d802-41f0-9853-76574349663b
+    - !<own> 1623f64c-a9ab-4da0-87c9-8e4c64cbae3f
+  PrefabRemaps:
+    []
