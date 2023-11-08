@@ -19,6 +19,7 @@
       promptController: false
       scene: false
       sceneCamera: false
+      vfxController: false
     ScriptTypesHidden:
       {}
     DefaultScriptInputs:

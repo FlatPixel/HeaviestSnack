@@ -1,29 +1,29 @@
 
 //@ui {"widget":"group_start","label":"FIRE"}
-    //@input Component.VFXComponent fire_VFX
+//@input Component.VFXComponent fire_VFX
 //@ui {"widget":"group_end"}
 
 
 //@ui {"widget":"group_start","label":"CONFIRM"}
-    //@input Component.VFXComponent confirm_VFX
-    // @input float confirm_burst_duration = 0 {"label": "Confirm Burst Duration"}
+//@input Component.VFXComponent confirm_VFX
+// @input float confirm_burst_duration = 0 {"label": "Confirm Burst Duration"}
 //@ui {"widget":"group_end"}
 
 
 //@ui {"widget":"group_start","label":"SMOKE"}
-    //@input Component.VFXComponent smoke_VFX
-    //@input Component.VFXComponent smoke_burst_VFX
-    // @input float smoke_burst_duration = 0 {"label": "Smoke Burst Duration"}
-    //@input bool smake_rim_active = false
+//@input Component.VFXComponent smoke_VFX
+//@input Component.VFXComponent smoke_burst_VFX
+// @input float smoke_burst_duration = 0 {"label": "Smoke Burst Duration"}
+//@input bool smake_rim_active = false
 
 //@ui {"widget":"group_end"}
 
 //@ui {"widget":"group_start","label":"Colors"}
-    //@input vec4 color_0 {"widget":"color"}
-    //@input vec4 color_1 {"widget":"color"}
-    //@input vec4 color_2 {"widget":"color"}
-    //@input vec4 color_3 {"widget":"color"}
-    //@input vec4 color_4 {"widget":"color"}
+//@input vec4 color_0 {"widget":"color"}
+//@input vec4 color_1 {"widget":"color"}
+//@input vec4 color_2 {"widget":"color"}
+//@input vec4 color_3 {"widget":"color"}
+//@input vec4 color_4 {"widget":"color"}
 //@ui {"widget":"group_end"}
 
 var colorCounter = 0;
@@ -41,8 +41,8 @@ var smoke_burst_VFX = script.smoke_burst_VFX;
 var confirm_VFX = script.confirm_VFX;
 var fire_VFX = script.fire_VFX;
 
-    /** @type {boolean} */
-    var smake_rim_active = script.smake_rim_active;
+/** @type {boolean} */
+var smake_rim_active = script.smake_rim_active;
 
 script.api.setFireStrength = setFireStrength
 script.api.startSmoke = startSmoke
@@ -54,11 +54,12 @@ let confirm_burst_duration = script.confirm_burst_duration;
 let smoke_burst_duration = script.smoke_burst_duration;
 let smoke_rim_duration = script.smoke_rim_duration;
 
-function setFireStrength(){
+function setFireStrength() {
 
 }
 
-function startSmoke(){
+// Trigger on lit close
+function startSmoke() {
 
     var burstDur = 1000 + getTime();
 
@@ -67,14 +68,16 @@ function startSmoke(){
 
 }
 
-function endSmoke(){
-    
+// triggers on lit final opens
+function endSmoke() {
+
     var burstDur = 0.1 + getTime();
     script.smoke_VFX.asset.properties["burstDuration"] = burstDur;
 }
 
-function onLidOpened(){
-  
+// triggers on lit final opens
+function onLidOpened() {
+
     var burstDur = smoke_burst_duration + getTime();
     script.smoke_burst_VFX.asset.properties["burstDuration"] = burstDur;
 }
@@ -84,11 +87,11 @@ function onLidOpened(){
  * @method onIngredientAdded()
  * Triggers VFX ring every time an ingredient is succesfully added to cauldron
  */
-function onIngredientAdded(){
+function onIngredientAdded() {
     print("onIngredientAdded")
     var burstDur = smoke_burst_duration + getTime();
 
-    var color = colors[colorCounter%colors.length];
+    var color = colors[colorCounter % colors.length];
 
     script.confirm_VFX.asset.properties["burstDuration"] = burstDur;
     script.confirm_VFX.asset.properties["startColor"] = color;
@@ -100,16 +103,16 @@ function onIngredientAdded(){
 
 ///SIMULATE PLEASE DELETE
 script.api.simulateAddIngredient = simulateAddIngredient;
-function simulateAddIngredient(){
+function simulateAddIngredient() {
     var data = {
-        name : "strawberry"
+        name: "strawberry"
     }
 
     onIngredientAdded(data)
 }
 
 script.api.simulateOpeningLid = simulateOpeningLid;
-function simulateOpeningLid(){
+function simulateOpeningLid() {
 
     onLidOpened()
 }

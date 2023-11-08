@@ -14,6 +14,10 @@ var camera = script.sceneCamera;
 /** @type {ScriptComponent} */
 var promptController = script.promptController;
 
+//@input Component.ScriptComponent vfxController
+/** @type {ScriptComponent} */
+var vfxController = script.vfxController;
+
 //@input SceneObject GPTBoxBoard
 
 var tapped = false;
@@ -66,14 +70,15 @@ script.createEvent("UpdateEvent").bind(function (a) {
 
     sec += dt;
 
-    if (global.counter >= 5 && hasWon == false) {
-        print("You made a receipe.");
+    if (global.counter >= 1 && hasWon == false) {
+        // print("You made a receipe.");
         print(JSON.stringify(ingredients));
-        print("TODO call ChatGPT API + show texte");
+        // print("TODO call ChatGPT API + show texte");
         script.GPTBoxBoard.enabled = true;
-        promptController.api.build(ingredients);
-        print("TODO call animation Pot + Gfx");
+        // promptController.api.build(ingredients);
+        // print("TODO call animation Pot + Gfx");
         script.potAnimationMixer.start("BaseLayer", 0, 1);
+        vfxController.api.startSmoke();
         hasWon = true;
     }
 
@@ -107,8 +112,8 @@ function doTap(obj) {
         if (holding) {
             holding.setParentPreserveWorldTransform(script.scene);
             holding.getComponent("Physics.BodyComponent").dynamic = true;
-            print(holding.name);
-            print(holding.getComponents("Component.ScriptComponent")[1]);
+            // print(holding.name);
+            // print(holding.getComponents("Component.ScriptComponent")[1]);
 
             var component = holding.getComponents("Component.ScriptComponent")[1];
             if (component)
@@ -166,24 +171,6 @@ function doRay(screenPos) {
         script.debug.text = "" + obj.name;
 
         doTap(obj);
-
-        // print("skip remaining: " + hit.skipRemaining);
-        // print("collider: " + hit.collider);
-        // print("position: " + hit.position);
-        // print("nortmal: " + hit.normal);
-        // print("distance: " + hit.distance);
-        // print("ray interpolant: " + hit.t);
-
-        // Triangle hit information, available when a ray cast intersects a collision mesh.
-        var tri = hit.triangle;
-        if (tri) {
-            // print("triangle: " + tri);
-            // print("mesh: " + tri.mesh);
-            // print("index: " + tri.index);
-            // print("vertexIndices: " + tri.vertexIndices);
-            // print("vertexPositions: " + tri.vertexPositions);
-            // print("barycentricCoordinate: " + tri.barycentricCoordinate);
-        }
 
         // Skip remaining hits past a certain distance.
         if (hit.distance > 350.0) {

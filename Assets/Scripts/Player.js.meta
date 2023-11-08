@@ -18,7 +18,6 @@
       physicWorld: false
       pot: false
       potSelector: false
-      reticle: false
       sceneCamera: false
       trajectoryHeight: false
     ScriptTypesHidden:

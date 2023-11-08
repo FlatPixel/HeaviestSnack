@@ -18,6 +18,38 @@
     - !<own> b8d96e05-e49b-4565-a7c4-18564bb8eb58
   PrefabRemaps:
     []
+- !<ScreenTransform/09f7a0fc-9acf-4e51-9905-85a78637d344>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<VFXComponent/173841fa-c9d1-47f2-a9c0-8ef2fdf49730>
   VFXAsset: !<reference> 719097f8-4949-4bec-8843-d4e44fd4963e
   StretchMode: Stretch
@@ -43,6 +75,37 @@
     []
   Components:
     - !<own> 37823067-4fce-48c4-9656-1546b8d28ac9
+  PrefabRemaps:
+    []
+- !<SceneObject/2e37a398-5726-4251-b472-a51b1c7fb406>
+  Name: Text Title
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> cf39124a-4da5-4410-9971-a3a5ac28f82d
+    - !<own> 680cddf2-3372-45de-a893-5cb33474482e
+  PrefabRemaps:
+    []
+- !<SceneObject/355fcc74-c6ba-4f79-a83c-ead0aea692ce>
+  Name: Board
+  Enabled: false
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 74c48876-03d0-4997-a072-b369624a60e2
+    - !<own> 2e37a398-5726-4251-b472-a51b1c7fb406
+    - !<own> 6515c8b2-d311-4b22-be75-e79398df2e9f
+  Components:
+    - !<own> 09f7a0fc-9acf-4e51-9905-85a78637d344
   PrefabRemaps:
     []
 - !<ColliderComponent/37823067-4fce-48c4-9656-1546b8d28ac9>
@@ -101,6 +164,110 @@
     - !<own> 642d5414-68b1-40b8-a638-01dec6f55d0d
   PrefabRemaps:
     []
+- !<Text/45b8ec09-ea55-4cd2-b10b-b6a7ee8084e8>
+  Text: ""
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: false
+  FontSize: 24
+  Fill:
+    mode: Solid
+    color: {x: 0.0078431377187371254, y: 0.17254902422428131, z: 0.32941177487373352, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.5
+    offsetY: 1
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScreenTransform/48061045-5517-4e70-8ef9-338777f080a0>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0.030486583709716797, y: -6.0365867614746094, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -0.65853679180145264
+    bottom: -0.89634120464324951
+    right: 0.664634108543396
+    top: -0.31097611784934998
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/4c4d7660-f88e-4fb9-9da5-fe37ee032c16>
+  Name: Test <DELETE ME>
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552694320678711, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> ec4a7fdc-d2f5-45a2-8d7c-6aadb6c8e34d
+  PrefabRemaps:
+    []
 - !<RenderMeshVisual/52a37b47-561d-4bf2-9066-2647dc97a219>
   Mesh: !<reference> e39eced0-e5ec-452a-ab18-c048fad91807
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -118,6 +285,56 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/55ab7c76-cd8e-4258-aad7-2408211b1de3>
+  Name: Canvas
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 342.43316650390625, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 15, y: 15, z: 15}
+  Children:
+    - !<own> 4c4d7660-f88e-4fb9-9da5-fe37ee032c16
+    - !<own> 82b87fbf-98d5-4370-8445-fcbd32adbf10
+    - !<own> b8ceefe7-b087-42c1-a2bb-8b42c35d801d
+    - !<own> 355fcc74-c6ba-4f79-a83c-ead0aea692ce
+  Components:
+    - !<own> dbe88fb2-c8ff-4ddb-a1e0-ca69741fee86
+    - !<own> bcdeccfa-c65d-495b-9965-6a90568e185f
+  PrefabRemaps:
+    []
+- !<ScreenTransform/567b1f1a-76e8-4e00-a93e-6aa052dad2a3>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
   Enabled: true
   PrefabRemaps:
     []
@@ -165,6 +382,53 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/6515c8b2-d311-4b22-be75-e79398df2e9f>
+  Name: Text Description
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 43.75042724609375, y: 59.094367980957031, z: 40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 45b8ec09-ea55-4cd2-b10b-b6a7ee8084e8
+    - !<own> 48061045-5517-4e70-8ef9-338777f080a0
+  PrefabRemaps:
+    []
+- !<ScreenTransform/680cddf2-3372-45de-a893-5cb33474482e>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0.067080497741699219, y: -0.27438938617706299, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -0.83902418613433838
+    bottom: -0.28048813343048096
+    right: 0.8524402379989624
+    top: 0.22561025619506836
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/69d3816c-db4d-4d48-8b6b-ab786644530e>
   Name: VFX_Controller
   Enabled: true
@@ -177,6 +441,21 @@
     []
   Components:
     - !<own> cd933484-41ec-44ca-9208-a35ab69df9bd
+  PrefabRemaps:
+    []
+- !<SceneObject/74c48876-03d0-4997-a072-b369624a60e2>
+  Name: Screen Image
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 567b1f1a-76e8-4e00-a93e-6aa052dad2a3
+    - !<own> f678370e-3649-4ff4-b070-e71926994511
   PrefabRemaps:
     []
 - !<SceneObject/78556c62-440d-4ed1-9fac-8815ae045351>
@@ -228,6 +507,34 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/82b87fbf-98d5-4370-8445-fcbd32adbf10>
+  Name: PromptController
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> b65b12bf-3071-4173-a47b-2a1aef85d2db
+  PrefabRemaps:
+    []
+- !<SceneObject/8f931cd9-621e-4fe0-a7a4-3d86d5744513>
+  Name: GPT
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 55ab7c76-cd8e-4258-aad7-2408211b1de3
+  Components:
+    []
+  PrefabRemaps:
+    []
 - !<SceneObject/93256622-7a6e-49f4-8615-2c788594454b>
   Name: PotWorld
   Enabled: true
@@ -271,18 +578,63 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<ScriptComponent/a8d17d70-dc7e-4934-8aba-2c92bf5b189c>
+  ScriptAsset: !<reference> 68dcb917-c068-4f37-8eca-039cc5b932bf
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ChatGPT Helper
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/aaea2272-8018-453e-891e-cb7039e36c19>
   Name: Fire_VFX
   Enabled: true
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     []
   Components:
     - !<own> d439f7f4-d395-4d8c-94ba-daedbf675fdc
+  PrefabRemaps:
+    []
+- !<ScriptComponent/b65b12bf-3071-4173-a47b-2a1aef85d2db>
+  ScriptAsset: !<reference> e12760b7-9f8a-4057-bae9-e31d281644ca
+  ScriptInputs:
+    "":
+      text_title: !<reference.Text> cf39124a-4da5-4410-9971-a3a5ac28f82d
+      text_description: !<reference.Text> 45b8ec09-ea55-4cd2-b10b-b6a7ee8084e8
+      text_color: !<Vec4> {x: 0.94509804248809814, y: 0.91372549533843994, z: 0.42352941632270813, w: 1}
+      outline_color: !<Vec4> {x: 0.89019608497619629, y: 0.58431375026702881, z: 0.23137255012989044, w: 1}
+      shadow_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0.35396352410316467}
+      convert_to_uppercase: true
+      maxIngredients: 3
+      prompt_temp: 0.5
+  ScriptTypes:
+    "":
+      {}
+  Name: PromptController
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/b8ceefe7-b087-42c1-a2bb-8b42c35d801d>
+  Name: ChatGPT Helper
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -5.8552689552307129, z: 44.548206329345703}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.10000000149011612, y: 0.10000000149011612, z: 0.10000000149011612}
+  Children:
+    []
+  Components:
+    - !<own> a8d17d70-dc7e-4934-8aba-2c92bf5b189c
   PrefabRemaps:
     []
 - !<VFXComponent/b8d96e05-e49b-4565-a7c4-18564bb8eb58>
@@ -295,6 +647,16 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<LookAtComponent/bcdeccfa-c65d-495b-9965-6a90568e185f>
+  LookAtMode: LookAtDirection
+  AimVectors: ZAimYUp
+  WorldUpVector: SceneUp
+  Target: !<reference> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
+  OffsetRotation: {x: 0, y: 0, z: 0}
+  Name: LookAtComponent
   Enabled: true
   PrefabRemaps:
     []
@@ -351,22 +713,80 @@
   ScriptAsset: !<reference> 7a7fc250-b14a-486e-babd-2073ab573d35
   ScriptInputs:
     "":
-      fire_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      confirm_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      confirm_burst_duration: !<float> 0
-      smoke_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      smoke_burst_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
-      smoke_burst_duration: !<float> 0
+      fire_VFX: !<reference.VFXComponent> d439f7f4-d395-4d8c-94ba-daedbf675fdc
+      confirm_VFX: !<reference.VFXComponent> 9f2026f4-4606-4cf2-aea4-bfd2f3801734
+      confirm_burst_duration: 0.25
+      smoke_VFX: !<reference.VFXComponent> 173841fa-c9d1-47f2-a9c0-8ef2fdf49730
+      smoke_burst_VFX: !<reference.VFXComponent> b8d96e05-e49b-4565-a7c4-18564bb8eb58
+      smoke_burst_duration: 0.33000001311302185
       smake_rim_active: true
-      color_0: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
-      color_1: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
-      color_2: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
-      color_3: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
-      color_4: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_0: !<Vec4> {x: 1, y: 0.90768289566040039, z: 0, w: 1}
+      color_1: !<Vec4> {x: 1, y: 0.084840163588523865, z: 0.70331883430480957, w: 1}
+      color_2: !<Vec4> {x: 0, y: 0.7770504355430603, z: 1, w: 1}
+      color_3: !<Vec4> {x: 0, y: 0.81922638416290283, z: 0.39845883846282959, w: 1}
+      color_4: !<Vec4> {x: 0.65490198135375977, y: 0, z: 1, w: 1}
   ScriptTypes:
     "":
       {}
   Name: VFX_Controller
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Text/cf39124a-4da5-4410-9971-a3a5ac28f82d>
+  Text: ""
+  SizeToFit: false
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  DepthTest: true
+  FontSize: 48
+  Fill:
+    mode: Solid
+    color: {x: 0.99215686321258545, y: 0.94901961088180542, z: 0.27058824896812439, w: 1}
+    texture: 0
+  Dropshadow:
+    enabled: true
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    offsetX: 0.25
+    offsetY: 0.25
+  Outline:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    size: 0.5
+  Background:
+    enabled: false
+    fill:
+      mode: Solid
+      color: {x: 0, y: 0, z: 0, w: 1}
+      texture: 0
+    margins:
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+  AdvancedLayout:
+    letterSpacing: 0
+    lineSpacing: 1
+  LayoutRect:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Font: !<reference> 2d01c961-f16a-4ffe-8584-a549af6d009e
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Text
   Enabled: true
   PrefabRemaps:
     []
@@ -380,6 +800,17 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<Canvas/dbe88fb2-c8ff-4ddb-a1e0-ca69741fee86>
+  UnitType: World
+  WorldSpaceRect:
+    left: -10
+    bottom: -10
+    right: 10
+    top: 10
+  Name: Canvas
   Enabled: true
   PrefabRemaps:
     []
@@ -413,6 +844,7 @@
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 0.25, y: 0.25, z: 0.25}
   Children:
+    - !<own> 8f931cd9-621e-4fe0-a7a4-3d86d5744513
     - !<own> e2584ab5-38ea-4350-81b6-6dd77f1467b1
     - !<own> e7228bf9-c196-4755-8568-2885a80a30d8
     - !<own> 437defac-c59c-4b9e-9fa0-2638885080e5
@@ -468,6 +900,18 @@
     - !<own> 5998f319-8bb5-4e49-afb7-14471a982829
   PrefabRemaps:
     []
+- !<ScriptComponent/ec4a7fdc-d2f5-45a2-8d7c-6aadb6c8e34d>
+  ScriptAsset: !<reference> 1ee472c2-5d76-4dbe-9684-a3a1fde97a08
+  ScriptInputs:
+    "":
+      promptController: !<reference.ScriptComponent> b65b12bf-3071-4173-a47b-2a1aef85d2db
+  ScriptTypes:
+    "":
+      {}
+  Name: Test
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/f18ca63a-90df-4c40-acc7-05040320b88a>
   Name: lid_low001
   Enabled: true
@@ -481,5 +925,23 @@
   Components:
     - !<own> 7fc3b0ac-6c67-40a2-8112-bf3c6177db19
     - !<own> e05913b6-efff-49be-ab4e-a5f68c587353
+  PrefabRemaps:
+    []
+- !<Image/f678370e-3649-4ff4-b070-e71926994511>
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0, y: 0}
+  Size: {x: 1, y: 1}
+  Materials:
+    - !<reference> 769927a4-b203-4e48-be06-833b37ab238a
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Image
+  Enabled: true
   PrefabRemaps:
     []

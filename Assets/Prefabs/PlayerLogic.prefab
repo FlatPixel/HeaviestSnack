@@ -36,7 +36,6 @@
       physicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
       pot: !<reference.SceneObject> 9cdcdbb4-c54a-4145-82dc-d814a766f6d2
       potSelector: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       ingredientPrefab: !<reference.ObjectPrefab> e33fe937-01d6-4804-b5c4-5ab48446e8d3
       ingredientPrefabs: !<reference.ObjectPrefab[]>
         []

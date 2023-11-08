@@ -7,7 +7,6 @@ var camera = script.sceneCamera;
 //@input SceneObject pot
 //@input SceneObject potSelector
 var potPhysicWorld = null;
-//@input SceneObject reticle
 
 //@ui {"widget":"label","label":""}
 //@input Asset.ObjectPrefab ingredientPrefab
