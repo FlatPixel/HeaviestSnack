@@ -1,0 +1,54 @@
+- !<ObjectPrefab/b02b1e7d-8496-45b5-a720-0a0a6cb8187e>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> ba2e1590-6ec4-45b2-ae5e-af1aeebabe0a
+  Name: ""
+- !<RenderMeshVisual/4584585f-cedf-4f9a-9748-a6f4c3ccb4ab>
+  Mesh: !<reference> 4b7619e4-981c-48e4-83b2-b390041289f0
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_12
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/ba2e1590-6ec4-45b2-ae5e-af1aeebabe0a>
+  Name: sardines
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> ff4d7803-3898-43cc-ba40-248e637f4f1d
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/ff4d7803-3898-43cc-ba40-248e637f4f1d>
+  Name: whole_sardines | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -16.493204116821289, z: -0.112518310546875}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 4584585f-cedf-4f9a-9748-a6f4c3ccb4ab
+  PrefabRemaps:
+    []

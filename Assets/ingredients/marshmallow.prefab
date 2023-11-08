@@ -1,0 +1,75 @@
+- !<ObjectPrefab/3b770e08-31ca-492c-98b9-43759bdc95de>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 18c4686c-39ab-4c91-81fd-5d8fe5895e54
+  Name: ""
+- !<RenderMeshVisual/05d56502-6e9d-40c5-b22e-9068ce07cbf7>
+  Mesh: !<reference> af78c2a6-e884-48cc-bf6d-880c827e28a6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_1
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/18c4686c-39ab-4c91-81fd-5d8fe5895e54>
+  Name: marshmallow
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -168.17497253417969, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> b0dc148f-a93a-41da-826a-3ca3f7c910a8
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/b0dc148f-a93a-41da-826a-3ca3f7c910a8>
+  Name: whole_marshmallow | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -3.04443359375, z: 0}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 05d56502-6e9d-40c5-b22e-9068ce07cbf7
+    - !<own> b7e1c7fc-a60e-40e0-bc18-15d62db06bbf
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/b7e1c7fc-a60e-40e0-bc18-15d62db06bbf>
+  Mesh: !<reference> 023fd16b-ac23-4bd1-9e60-1270e8200b09
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 0902b4f0-8436-4ee5-8418-2382a475393b
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []

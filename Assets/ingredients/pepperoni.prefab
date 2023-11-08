@@ -1,0 +1,54 @@
+- !<ObjectPrefab/16b8eda1-0dde-4e49-b5a8-8f0beeb96381>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 5616dc11-3018-4d6e-bd0c-f9e0818ed172
+  Name: ""
+- !<SceneObject/35329936-0d04-4473-ab92-748d99834170>
+  Name: whole_pepperoni | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 1.9073486328125e-06, z: -7.5994663238525391}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> ec7b9d4e-34bc-444c-a359-e017c1af901d
+  PrefabRemaps:
+    []
+- !<SceneObject/5616dc11-3018-4d6e-bd0c-f9e0818ed172>
+  Name: pepperoni
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 35329936-0d04-4473-ab92-748d99834170
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/ec7b9d4e-34bc-444c-a359-e017c1af901d>
+  Mesh: !<reference> 3426a5bc-3fde-4473-8873-f1a51b457443
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_11
+  Enabled: true
+  PrefabRemaps:
+    []

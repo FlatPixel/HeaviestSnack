@@ -1,0 +1,54 @@
+- !<ObjectPrefab/732ddfdc-706e-4859-bf38-877fe3267a3f>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> addaef9d-6916-4ab4-8861-db5018fb9169
+  Name: ""
+- !<SceneObject/09cab430-efc7-41a2-9db0-2f89017ba413>
+  Name: whole_pineapple | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -1.239776611328125e-05, y: 21.508712768554688, z: 1.9073486328125e-06}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 41676a39-165e-49b2-b9eb-0f4ac83ebe8e
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/41676a39-165e-49b2-b9eb-0f4ac83ebe8e>
+  Mesh: !<reference> 722be6be-d622-412d-99a7-24422a17c317
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_8
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/addaef9d-6916-4ab4-8861-db5018fb9169>
+  Name: pineapple
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 09cab430-efc7-41a2-9db0-2f89017ba413
+  Components:
+    []
+  PrefabRemaps:
+    []

@@ -1,0 +1,54 @@
+- !<ObjectPrefab/4bde5804-9677-4c33-9021-7a81baf6bcef>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> c8035f7a-8210-49d8-9a2b-e1f90f9497e3
+  Name: ""
+- !<RenderMeshVisual/3113e575-380d-40ba-aff1-eddfbf98b0e9>
+  Mesh: !<reference> 280d85a7-fd21-4ed0-b5dc-6686dbaf6545
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_19
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/450aef2b-373d-4e74-a36b-63da2afd4fd4>
+  Name: whole_greenPepper | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 4.00543212890625e-05, y: -28.577404022216797, z: -2.47955322265625e-05}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 3113e575-380d-40ba-aff1-eddfbf98b0e9
+  PrefabRemaps:
+    []
+- !<SceneObject/c8035f7a-8210-49d8-9a2b-e1f90f9497e3>
+  Name: greenPepper
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 450aef2b-373d-4e74-a36b-63da2afd4fd4
+  Components:
+    []
+  PrefabRemaps:
+    []

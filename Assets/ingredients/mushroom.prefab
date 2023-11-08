@@ -1,0 +1,54 @@
+- !<ObjectPrefab/f0fde41d-4bdf-443a-8bc0-bc6876b1ff66>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 08dbada3-4863-4c64-8dc6-363fc0cf472a
+  Name: ""
+- !<SceneObject/08dbada3-4863-4c64-8dc6-363fc0cf472a>
+  Name: mushroom
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 124.32376098632812, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 948bff9b-d04a-4b96-a366-77e5f57f02da
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/3ca20d03-23e1-45a6-b2b9-9ead21a83b75>
+  Mesh: !<reference> 1edc30c7-3e82-4b22-8d8a-03f074de7194
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/948bff9b-d04a-4b96-a366-77e5f57f02da>
+  Name: whole_mushroom | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 1.9073486328125e-06, y: -2.8394832611083984, z: 0.78358650207519531}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 3ca20d03-23e1-45a6-b2b9-9ead21a83b75
+  PrefabRemaps:
+    []
