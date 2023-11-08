@@ -1,8 +1,8 @@
-- !<Material/bcc54517-af6b-4d06-99c6-26771f3b2da7>
+- !<Material/7b89406f-399b-4950-854e-5f94e01f4748>
   PassesInfo:
-    - !<own> 058d103c-15cd-4677-8b8c-5f2e175769a7
+    - !<own> 28a51036-bec8-4d0c-b2a9-c55a3b723f19
   Name: ""
-- !<PassInfo/058d103c-15cd-4677-8b8c-5f2e175769a7>
+- !<PassInfo/28a51036-bec8-4d0c-b2a9-c55a3b723f19>
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -33,7 +33,11 @@
     baseTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
         id: fbccc63a-2547-4b0c-880e-f5783bb49f0b
+=======
+        id: 806a4617-f529-49ad-8418-a36386835c82
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -59,7 +63,11 @@
     materialParamsTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
         id: 5021216e-5bed-4af5-96dc-284e170c6ec1
+=======
+        id: 17156fa6-c63b-4cd6-bd54-ba7717da8ea3
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -85,7 +93,11 @@
     normalTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
         id: ba638742-0435-45cd-aae0-080f20ccbe8b
+=======
+        id: bceee67f-3575-4830-9265-2c67eaa0a576
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -123,4 +135,8 @@
     uvScale:
       typeIdx: 1
       value: 1
+<<<<<<< LOCAL
   Pass: !<reference> d1867491-22e2-4b43-adef-7858ff51da11
+=======
+  Pass: !<reference> bc928a35-4541-43c4-903d-a02c71e8e4bd
+>>>>>>> REMOTE

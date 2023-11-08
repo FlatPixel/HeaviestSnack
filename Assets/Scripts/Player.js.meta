@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/a6ffd449-077f-4c31-bd26-803cd0805a56>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/ef32211b-e52b-4f92-89f7-f6db128e53ae>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      cooldownApparition: false
+      helpTrajectoryObject: false
+      ingredientPrefab: false
+      maxDistanceAimAssist: false
+      offset: false
+      offsetAnim: false
+      pot: false
+      potPhysicWorld: false
+      reticle: false
+      sceneCamera: false
+      trajectoryHeight: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - sceneCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+        botPhysicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
+        bot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        bombPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+        offset: !<Vec3> {x: 0, y: 0, z: 0}
+        cooldownApparition: !<float> 1
+        offsetAnim: !<float> 30
+        trajectoryHeight: 30
+        maxDistanceAimAssist: 500
+        helpTrajectoryObject: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+        potPhysicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
+        pot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        ingredientPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ImportedAssetIds:
+    JavaScriptAsset: 715c3313-d8e6-4d6e-9f07-40fb21d5e2ee
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 715c3313-d8e6-4d6e-9f07-40fb21d5e2ee
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

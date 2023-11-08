@@ -1,9 +1,9 @@
-- !<AssetImportMetadata/a1333fb7-0ffc-481d-8bf0-134ba002ebb0>
-  ImporterSettings: !<AssetImporterSettings/dd5b850e-9785-4e77-b2d7-58c149da307f>
+- !<AssetImportMetadata/411f0d0d-3286-416d-9df1-a7d67c148a36>
+  ImporterSettings: !<AssetImporterSettings/a93465e4-4421-474b-890c-9d197b2f6498>
     {}
   ImportedAssetIds:
-    Texture: cfb6f1f3-e5b9-401d-9ba4-05cfa0a12126
+    Texture: 05392cad-48ba-43b5-b9dd-9167524ca51e
   ImporterName: FileTextureImporter
-  PrimaryAsset: !<reference> cfb6f1f3-e5b9-401d-9ba4-05cfa0a12126
+  PrimaryAsset: !<reference> 05392cad-48ba-43b5-b9dd-9167524ca51e
   PackageType: CannotBeUnpacked
   AssetData: !<own> 00000000-0000-0000-0000-000000000000

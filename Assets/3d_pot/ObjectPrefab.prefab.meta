@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/0965dba5-9246-4721-b2d5-f303cc38dd61>
+  ImporterSettings: !<AssetImporterSettings/9cbbd70d-fa09-4ae4-b308-cf396172d8f9>
+    {}
+  ImportedAssetIds:
+    ObjectPrefab: e23a0d54-481e-404d-b08e-2d0704571afe
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e23a0d54-481e-404d-b08e-2d0704571afe
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
