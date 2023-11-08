@@ -36,12 +36,24 @@
   EnableSmoothing: false
   Radius: 6
   Length: 18
-  Size: {x: 1, y: 0.5, z: 2}
+  Size: {x: 1.3999999761581421, y: 2, z: 1}
   PositionTension: 30
   RotationTension: 30
   Asset: !<reference> 00000000-0000-0000-0000-000000000000
   Mesh: !<reference> 00000000-0000-0000-0000-000000000000
   Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/24c40f92-5db7-48f8-8bca-06ab06b48264>
+  ScriptAsset: !<reference> 3badd474-758a-4dee-8883-f5975e4a80f2
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ScriptPhysicsMonitor
   Enabled: true
   PrefabRemaps:
     []
@@ -79,6 +91,7 @@
     - !<own> fa8305ab-635c-40d3-b57f-573894ea22fe
     - !<own> 17da8da0-da2c-43af-bc11-e056609b1b44
     - !<own> eafeacec-8b87-49fd-abba-af91a76b3574
+    - !<own> 24c40f92-5db7-48f8-8bca-06ab06b48264
   PrefabRemaps:
     []
 - !<SceneObject/c399b5aa-3916-478b-9761-dce22e0a59f3>

@@ -52,6 +52,7 @@
     - !<own> 0448f2f8-117f-47cb-8e0d-21ab43436a50
     - !<own> 9fede731-545f-43c8-b701-d93e8c3cc44a
     - !<own> cc928fd4-be7c-4783-aed2-6bdbde1b2bbf
+    - !<own> f2aa91a0-289b-4df1-b21c-ac99afe8a4ca
   PrefabRemaps:
     []
 - !<RenderMeshVisual/9d933837-f344-4f27-a34f-ccce643ef61a>
@@ -92,7 +93,7 @@
   EnableSmoothing: false
   Radius: 6
   Length: 18
-  Size: {x: 1, y: 0.5, z: 2}
+  Size: {x: 0.80000001192092896, y: 0.5, z: 2}
   PositionTension: 30
   RotationTension: 30
   Asset: !<reference> 00000000-0000-0000-0000-000000000000
@@ -116,6 +117,18 @@
     "":
       {}
   Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<ScriptComponent/f2aa91a0-289b-4df1-b21c-ac99afe8a4ca>
+  ScriptAsset: !<reference> 3badd474-758a-4dee-8883-f5975e4a80f2
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ScriptPhysicsMonitor
   Enabled: true
   PrefabRemaps:
     []

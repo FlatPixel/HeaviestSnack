@@ -58,6 +58,7 @@
     - !<own> 198bea84-282d-4aeb-9131-3fa09ba447e9
     - !<own> c7cdbfec-d1ae-42c6-b510-a50b7fc43ef9
     - !<own> b876ebe1-37d4-4c6e-8607-6aa8ba0e2ad4
+    - !<own> bda33562-9db0-40b2-a2cb-b575c8cd3dd1
   PrefabRemaps:
     []
 - !<SceneObject/65998dc4-e7a4-42e2-b57e-c560023dde53>
@@ -92,6 +93,18 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<ScriptComponent/bda33562-9db0-40b2-a2cb-b575c8cd3dd1>
+  ScriptAsset: !<reference> 3badd474-758a-4dee-8883-f5975e4a80f2
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ScriptPhysicsMonitor
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<BodyComponent/c7cdbfec-d1ae-42c6-b510-a50b7fc43ef9>
   Dynamic: true
   BodySetting: Density
@@ -110,7 +123,7 @@
   EnableSmoothing: false
   Radius: 6
   Length: 18
-  Size: {x: 1, y: 0.5, z: 2}
+  Size: {x: 1, y: 1, z: 1}
   PositionTension: 30
   RotationTension: 30
   Asset: !<reference> 00000000-0000-0000-0000-000000000000

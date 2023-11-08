@@ -113,6 +113,7 @@
     - !<own> b4ebe477-234f-49c4-9f48-13e2d4b7aa00
     - !<own> 908b1f8e-6901-4f4b-839e-6b7b66738ca3
     - !<own> 4a0b343f-8c58-4a43-8100-9a1a9071e1ce
+    - !<own> c8579d35-5b1a-4de4-9633-4577d7717ae1
   PrefabRemaps:
     []
 - !<RenderMeshVisual/7a66287c-14af-48ed-8eb4-56164635d44f>
@@ -153,7 +154,7 @@
   EnableSmoothing: false
   Radius: 6
   Length: 18
-  Size: {x: 1, y: 0.5, z: 2}
+  Size: {x: 1, y: 2, z: 1}
   PositionTension: 30
   RotationTension: 30
   Asset: !<reference> 00000000-0000-0000-0000-000000000000
@@ -194,5 +195,17 @@
     - !<own> 2037adb6-51c9-45cf-94d6-9559d4833c26
   Components:
     []
+  PrefabRemaps:
+    []
+- !<ScriptComponent/c8579d35-5b1a-4de4-9633-4577d7717ae1>
+  ScriptAsset: !<reference> 3badd474-758a-4dee-8883-f5975e4a80f2
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ScriptPhysicsMonitor
+  Enabled: true
   PrefabRemaps:
     []
