@@ -1,0 +1,64 @@
+- !<ObjectPrefab/ac5619cb-cfb7-469b-9fde-0e2d432931a8>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 4a9909a1-2fe3-4580-a4e6-1b50a20547e9
+  Name: ""
+- !<ScriptComponent/08cb806d-eb48-4771-8d96-48bf7239d855>
+  ScriptAsset: !<reference> a3752b85-78c7-4f97-87e2-d29aadd45e2d
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
+  ScriptTypes:
+    "":
+      {}
+  Name: Script intro
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/2fff57bb-6255-4326-95e5-f517f2109367>
+  Name: Image
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 32, y: 32, z: 32}
+  Children:
+    []
+  Components:
+    - !<own> 7a66eaa6-4b8f-4a20-9fbf-8277e51ad9ca
+  PrefabRemaps:
+    []
+- !<SceneObject/4a9909a1-2fe3-4580-a4e6-1b50a20547e9>
+  Name: intro prefab
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -4.8037338256835938}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 2fff57bb-6255-4326-95e5-f517f2109367
+  Components:
+    - !<own> 08cb806d-eb48-4771-8d96-48bf7239d855
+  PrefabRemaps:
+    []
+- !<Image/7a66eaa6-4b8f-4a20-9fbf-8277e51ad9ca>
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0, y: 0}
+  Size: {x: 1, y: 1}
+  Materials:
+    - !<reference> a566998f-b8ad-47a5-bd8e-8e51280cbe42
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Image
+  Enabled: true
+  PrefabRemaps:
+    []
