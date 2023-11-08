@@ -32,6 +32,18 @@
     - !<own> 728ee62f-bef6-47d5-b09e-1b09981cb955
   PrefabRemaps:
     []
+- !<ScriptComponent/1d7f4fa0-b354-4b70-9203-1acb882865e7>
+  ScriptAsset: !<reference> 3badd474-758a-4dee-8883-f5975e4a80f2
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+  Name: ScriptPhysicsMonitor
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<RenderMeshVisual/2dbe415f-4c18-4f78-9956-7b938e8daad0>
   Mesh: !<reference> 9b3ed8b4-a8ac-40d8-b77d-9d0ba948442f
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -84,6 +96,7 @@
     - !<own> 2dbe415f-4c18-4f78-9956-7b938e8daad0
     - !<own> 883f7bde-ffb8-4d49-8fc5-7af62112a4f9
     - !<own> 32f02def-c6ef-4966-9d5d-f319708ae0a8
+    - !<own> 1d7f4fa0-b354-4b70-9203-1acb882865e7
   PrefabRemaps:
     []
 - !<RenderMeshVisual/728ee62f-bef6-47d5-b09e-1b09981cb955>
