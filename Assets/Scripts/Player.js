@@ -154,7 +154,7 @@ syncEntity.onEventReceived.add(ingredient_op, function (networkMessage) {
     // print("all users " + encodeApi(global.sessionController.getUsers()));
     // print("all users " + global.sessionController.getUsers());
     // print("An ingredient has been launched by " + global.sessionController.getUsers()[networkMessage.senderUserId].displayName);
-    // print("An ingredient has been launched");
+    print("An ingredient has been launched");
     var startPos = global.getLocalPosFromPlan(message.params);
     var velocity = global.getLocalScaleFromPlan(message.params);
     var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());

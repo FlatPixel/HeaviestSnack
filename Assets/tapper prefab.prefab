@@ -4,6 +4,24 @@
   objects:
     - !<own> e3a4f8ea-dc83-484a-94fd-e487adad8305
   Name: ""
+- !<ScriptComponent/0291f8e4-d52e-49fd-98f4-41cef76cd1e2>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<RenderMeshVisual/0535637b-738e-48f7-a290-e0518b10e116>
   Mesh: !<reference> 280d85a7-fd21-4ed0-b5dc-6686dbaf6545
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -65,6 +83,7 @@
   Components:
     - !<own> 1e7c516d-aed4-432c-b4b3-f3787c7958f2
     - !<own> d98e7faa-4c5d-4413-82e8-2880fa992bcd
+    - !<own> 0291f8e4-d52e-49fd-98f4-41cef76cd1e2
   PrefabRemaps:
     []
 - !<SceneObject/10b832c0-6907-4673-9c48-012a9e5419a2>
@@ -188,6 +207,7 @@
   Components:
     - !<own> 28e40764-1106-49ae-bc4c-c55673fa9697
     - !<own> 140917d7-9f28-4a3e-82e9-25b18e3395fd
+    - !<own> e6aaaff9-79b7-42c8-b6ee-0ac5e33932f6
   PrefabRemaps:
     []
 - !<RenderMeshVisual/28e40764-1106-49ae-bc4c-c55673fa9697>
@@ -242,6 +262,24 @@
     []
   Components:
     - !<own> 11ead316-0a90-4958-8a2f-9337147d0674
+  PrefabRemaps:
+    []
+- !<ScriptComponent/3b53ec6f-4efd-4e72-a3b2-4f9f652ad8fb>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
   PrefabRemaps:
     []
 - !<SceneObject/3fac99c6-e6ff-4529-9025-b5763d6b55b5>
@@ -331,6 +369,7 @@
   Components:
     - !<own> c7f3d9be-4e13-4a15-9cf5-ca94acd99667
     - !<own> ac2cdede-42db-46a6-b51a-d31fdafe1bfa
+    - !<own> c176addd-8936-47fc-ab29-10d073146192
   PrefabRemaps:
     []
 - !<SceneObject/5364e320-a711-4b85-95d0-74fe2d24b85a>
@@ -380,6 +419,7 @@
   Components:
     - !<own> e218af42-ca78-4325-a02e-325bd47f8e7c
     - !<own> f0a268d2-796e-4b2d-a154-4dd2981b5963
+    - !<own> ce7d0dc6-8e27-4735-98d2-d16d5b19a08c
   PrefabRemaps:
     []
 - !<SceneObject/554f7824-2c17-4c14-86b5-7f25e66f4141>
@@ -394,6 +434,24 @@
     []
   Components:
     - !<own> 0535637b-738e-48f7-a290-e0518b10e116
+  PrefabRemaps:
+    []
+- !<ScriptComponent/5c4d69a6-7e0b-47b2-9654-8624e64d3ba9>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
   PrefabRemaps:
     []
 - !<SceneObject/5ca14c6e-ebad-4d6a-b770-f9eb59ce96ec>
@@ -465,6 +523,7 @@
   Components:
     - !<own> 6c44e0e7-a2df-451c-89cc-dec93f534d08
     - !<own> 616c983b-dba4-474f-b177-0992e531e6ca
+    - !<own> bd31216d-c9d4-4317-a97f-3c33f82fd48c
   PrefabRemaps:
     []
 - !<RenderMeshVisual/6c44e0e7-a2df-451c-89cc-dec93f534d08>
@@ -528,6 +587,7 @@
   Components:
     - !<own> d12b1336-a38b-4878-a93e-a1c78674205c
     - !<own> aae0f978-bdcb-4189-96fc-cce33d9c239b
+    - !<own> 3b53ec6f-4efd-4e72-a3b2-4f9f652ad8fb
   PrefabRemaps:
     []
 - !<BodyComponent/796ba5b6-674f-46f1-8dc9-6be25b16d1e8>
@@ -631,6 +691,24 @@
     []
   PrefabRemaps:
     []
+- !<ScriptComponent/a50c544b-ebdb-4f71-b616-023738f8f396>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<BodyComponent/aae0f978-bdcb-4189-96fc-cce33d9c239b>
   Dynamic: true
   BodySetting: Density
@@ -721,6 +799,24 @@
     []
   PrefabRemaps:
     []
+- !<ScriptComponent/bd31216d-c9d4-4317-a97f-3c33f82fd48c>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/c08f0ead-fb40-4a07-9ef6-af9fc23215fb>
   Name: whole_redpepper | Geometric
   Enabled: true
@@ -748,6 +844,24 @@
     []
   Components:
     - !<own> 5386d435-4af8-4925-af96-40bf829139b4
+  PrefabRemaps:
+    []
+- !<ScriptComponent/c176addd-8936-47fc-ab29-10d073146192>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
   PrefabRemaps:
     []
 - !<RenderMeshVisual/c7f3d9be-4e13-4a15-9cf5-ca94acd99667>
@@ -782,6 +896,24 @@
     - !<own> 3066293c-8128-4ecd-b0d7-6f62d0fe4191
   Components:
     []
+  PrefabRemaps:
+    []
+- !<ScriptComponent/ce7d0dc6-8e27-4735-98d2-d16d5b19a08c>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
   PrefabRemaps:
     []
 - !<ScriptComponent/cf13b16d-3012-4da2-9787-9d63922f15bf>
@@ -946,6 +1078,24 @@
     - !<own> cf13b16d-3012-4da2-9787-9d63922f15bf
   PrefabRemaps:
     []
+- !<ScriptComponent/e6aaaff9-79b7-42c8-b6ee-0ac5e33932f6>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/ed4d17fe-ae4e-409e-b48e-7ac53a1af87d>
   Name: pepperoni
   Enabled: true
@@ -1014,6 +1164,7 @@
   Components:
     - !<own> 29781f14-8214-45f2-869c-569b702d3cac
     - !<own> 796ba5b6-674f-46f1-8dc9-6be25b16d1e8
+    - !<own> 5c4d69a6-7e0b-47b2-9654-8624e64d3ba9
   PrefabRemaps:
     []
 - !<SceneObject/fe1c509e-cecd-4cdc-aecc-0094547341aa>
@@ -1029,5 +1180,6 @@
   Components:
     - !<own> d1795536-a15b-4442-8885-faa08ce8de35
     - !<own> 1ce25dcc-0df3-4d2c-b7cb-a3939108f78a
+    - !<own> a50c544b-ebdb-4f71-b616-023738f8f396
   PrefabRemaps:
     []

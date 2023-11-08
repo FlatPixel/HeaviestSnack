@@ -43,7 +43,7 @@
   Asset: !<reference> 00000000-0000-0000-0000-000000000000
   Mesh: !<reference> 00000000-0000-0000-0000-000000000000
   Name: Physics Body
-  Enabled: false
+  Enabled: true
   PrefabRemaps:
     []
 - !<RenderMeshVisual/c39cec29-ac95-49a3-bccd-c32245797f7f>
