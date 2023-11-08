@@ -40,9 +40,9 @@
 
 let seperator = '++'
 
-text_title.textFill.color = text_color;
+/* text_title.textFill.color = text_color;
 text_title.dropshadowSettings.fill.color = shadow_color;
-text_title.outlineSettings.fill.color = outline_color;
+text_title.outlineSettings.fill.color = outline_color; */
 
 script.api.build = build
 
@@ -83,7 +83,7 @@ function buildPrompt(ingredients){
     let specifiers = ["with a hint of","etc"].toString();
     let max_words = 18;
 
-    let p = `Using the ingredients provided, create one humorous and catchy name for a fusion dish that exemplifies a culinary melting pot aka the ultimate combination dish. The recipe name must include three of the following ingredients: ${ingredients_stringified}. Craft the recipe name using one of the following format: '<${formatPart_0}> <${formatPart_1}> with <${formatPart_2}> and <${formatPart_3}>'. Provide the recipe name only, with no additional explanation or text. also Invent a humorous, yet grounded, one-sentence backstory for the unique recipe name. Use no more than ${max_words} words for the backstory. Do not exceed this limit. The content should be imaginative but plausible, avoiding any supernatural elements. Add a geographical reference and describe the flavours. Put the following seperator inbetween the dish name and backstory: ${seperator}. Your output format will be '<dish name> <seperator> <backstory>'` 
+    let p = `Using the ingredients provided, create one humorous and catchy name for a fusion dish that exemplifies a culinary melting pot aka the ultimate combination dish. The recipe name must include three of the following ingredients: ${ingredients_stringified}. Craft the recipe name using one of the following format: '<${formatPart_0}> <${formatPart_1}> with <${formatPart_2}> and <${formatPart_3}>'. Provide the recipe name only, with no additional explanation or text. also Invent a humorous, yet grounded, single sentence backstory for the unique recipe name. Use no more than ${max_words} words for the backstory. Do not exceed this limit. The content should be imaginative but plausible, avoiding any supernatural elements. Add a geographical reference and describe the flavours. Put the following seperator inbetween the dish name and backstory: ${seperator}. Your output format will be '<dish name> <seperator> <backstory>'` 
 
     return p
 }
