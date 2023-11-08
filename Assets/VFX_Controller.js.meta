@@ -11,9 +11,15 @@
     CurrentVisibility: Editable
     MaxVisibility: Editable
     ScriptInputsHidden:
+      color_0: false
+      color_1: false
+      color_2: false
+      color_3: false
+      color_4: false
       confirm_VFX: false
       confirm_burst_duration: false
       fire_VFX: false
+      smake_rim_active: false
       smoke_VFX: false
       smoke_burst_VFX: false
       smoke_burst_duration: false
@@ -26,6 +32,14 @@
         smoke_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
         smoke_burst_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
         smoke_burst_duration: !<float> 0
+        smake_rim_active: false
+        smoke_rim_duration: !<float> 1000
+        colors: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        color_0: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        color_1: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        color_2: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        color_3: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        color_4: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
   ImportedAssetIds:
     JavaScriptAsset: 7a7fc250-b14a-486e-babd-2073ab573d35
   ImporterName: JavaScriptAssetImporter
