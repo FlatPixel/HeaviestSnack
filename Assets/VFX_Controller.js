@@ -85,7 +85,7 @@ function onLidOpened(){
  * Triggers VFX ring every time an ingredient is succesfully added to cauldron
  */
 function onIngredientAdded(){
-    // print("onIngredientAdded")
+    print("onIngredientAdded")
     var burstDur = smoke_burst_duration + getTime();
 
     var color = colors[colorCounter%colors.length];
@@ -102,8 +102,7 @@ function onIngredientAdded(){
 script.api.simulateAddIngredient = simulateAddIngredient;
 function simulateAddIngredient(){
     var data = {
-        name : "strawberry",
-        color: new vec4(Math.random(),Math.random(),Math.random(),1)
+        name : "strawberry"
     }
 
     onIngredientAdded(data)

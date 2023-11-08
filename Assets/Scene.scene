@@ -260,6 +260,29 @@
     - !<own> 6cd1a195-29f9-411d-bc26-f5c2134634a0
   PrefabRemaps:
     []
+- !<ScriptComponent/15c6c70d-847b-4b82-96de-278fb9cd879a>
+  ScriptAsset: !<reference> 7a7fc250-b14a-486e-babd-2073ab573d35
+  ScriptInputs:
+    "":
+      fire_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      confirm_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      confirm_burst_duration: !<float> 0
+      smoke_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      smoke_burst_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      smoke_burst_duration: !<float> 0
+      smake_rim_active: true
+      color_0: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_1: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_2: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_3: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_4: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+  ScriptTypes:
+    "":
+      {}
+  Name: VFX_Controller
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/16c624c5-efb8-4ee9-ba96-8672032c65e1>
   Name: 3d_pot_new
   Enabled: false
@@ -269,6 +292,7 @@
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 0.75, y: 0.75, z: 0.75}
   Children:
+    - !<own> 92462f8a-c895-487d-85a9-5605e7956ad8
     - !<own> 3ee96db9-0e50-47e5-9479-cc7c97877a83
     - !<own> 434b7f8b-53e7-4988-8eb2-dc76f5d58e13
     - !<own> 880806cd-4640-413d-bafb-fb550c1a7ed7
@@ -277,7 +301,9 @@
     - !<own> 349aeda1-238a-45d7-8442-819f0294b406
   PrefabRemaps:
     - 01b7d9d9-953f-41d2-b00c-0a05de1e2cba: 642d5414-68b1-40b8-a638-01dec6f55d0d
+    - 15c6c70d-847b-4b82-96de-278fb9cd879a: cd933484-41ec-44ca-9208-a35ab69df9bd
     - 16c624c5-efb8-4ee9-ba96-8672032c65e1: e1cf7ec2-73af-4d8b-b8c7-806a7f5cdba7
+    - 2848bd79-6e50-48c5-95b0-a281b82e0f67: c3216690-0db1-487b-8d90-ea9e785ca6f5
     - 29352da7-e1ef-4ddd-929f-ba613d0885ab: c3029111-9076-4230-8e8b-060eb32e24bd
     - 29f90e74-b7b9-4032-9341-a5e28f559634: 3a99a57c-f65c-472d-a4c6-78c94a548226
     - 349aeda1-238a-45d7-8442-819f0294b406: 94dddd88-e779-4e74-aa8d-39b8cf4662de
@@ -286,11 +312,21 @@
     - 434b7f8b-53e7-4988-8eb2-dc76f5d58e13: 437defac-c59c-4b9e-9fa0-2638885080e5
     - 54988d5d-9dba-4b03-bf0e-d220283d58d9: 28715aae-f5a3-4fef-8452-958b57a556eb
     - 5ed7a691-ff21-4d86-9d8a-54b44fb10696: c85b8d5f-13ef-4a89-b90c-3d5cdb410a84
+    - 71c13674-3dee-4b28-bf50-3b62dc27fe44: b8d96e05-e49b-4565-a7c4-18564bb8eb58
     - 880806cd-4640-413d-bafb-fb550c1a7ed7: 93256622-7a6e-49f4-8615-2c788594454b
     - 896133cc-1292-4f56-ad68-42e79b4819e4: e9530633-a738-48d2-ad89-aa382d49f862
+    - 92462f8a-c895-487d-85a9-5605e7956ad8: e2584ab5-38ea-4350-81b6-6dd77f1467b1
+    - a144a5c6-e9d8-4a89-8382-b82ecdc2adb9: 02841ecb-bdaf-404e-a63b-d9edad776729
+    - a2e3c808-2a10-4df5-92f3-b3fae80496d7: 69d3816c-db4d-4d48-8b6b-ab786644530e
+    - ab2f87da-bdba-4321-940e-8acc6a383621: 7db4b11d-b7d4-4824-99b3-7b1bced2c285
     - af325247-bb72-49ef-8abf-449c8b4467a0: f18ca63a-90df-4c40-acc7-05040320b88a
+    - b13a547c-e0d2-487c-b276-b8f9126ea2bf: 173841fa-c9d1-47f2-a9c0-8ef2fdf49730
+    - b737ae26-1a4c-4f6b-8a31-5b3f520fb90d: dd59bb2c-c222-4690-b019-25046c1e76b6
+    - cdfc5165-19f4-4e53-8419-e1e4ae9e3c8e: 9f2026f4-4606-4cf2-aea4-bfd2f3801734
+    - cf8e534e-8b7e-4501-89cf-11f856b5dd80: d439f7f4-d395-4d8c-94ba-daedbf675fdc
     - d31e47f1-2db6-4f0f-8551-54962c4a3575: 37823067-4fce-48c4-9656-1546b8d28ac9
     - dd9c7e0a-798e-4c3b-8acc-7b4316c38b00: 7fc3b0ac-6c67-40a2-8112-bf3c6177db19
+    - e2b45a39-279c-46e8-9186-40af5940e9ea: aaea2272-8018-453e-891e-cb7039e36c19
     - f27f0c49-73ce-4386-8024-b6166f9ae48f: 78556c62-440d-4ed1-9fac-8815ae045351
     - f8423c38-6f8d-4937-9e99-d6f58408e707: a12904a9-f5b1-459f-bdd6-7684fcecf8f4
     - fab3eeac-10f8-4036-b919-4c4acc588d76: 5998f319-8bb5-4e49-afb7-14471a982829
@@ -745,6 +781,20 @@
     - !<own> a964536e-f567-421c-942e-4c443641b504
   Components:
     - !<own> ed8c6f6d-2d70-4eb9-9602-dcb2bb766331
+  PrefabRemaps:
+    []
+- !<SceneObject/2848bd79-6e50-48c5-95b0-a281b82e0f67>
+  Name: Confirm_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 115.91560363769531, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> cdfc5165-19f4-4e53-8419-e1e4ae9e3c8e
   PrefabRemaps:
     []
 - !<RenderMeshVisual/28f24f74-3785-4c2f-a289-b57f306058ec>
@@ -2366,6 +2416,19 @@
     - !<own> c04e8ddd-0f96-4cb4-82f4-dd5fa14708a8
   PrefabRemaps:
     []
+- !<VFXComponent/71c13674-3dee-4b28-bf50-3b62dc27fe44>
+  VFXAsset: !<reference> f2161da8-09f8-4085-81b2-e14e0e440d22
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/72ceea8c-5435-4694-a107-78eb9953bc3e>
   Name: whole_greenPepper | Geometric
   Enabled: true
@@ -2910,6 +2973,24 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/92462f8a-c895-487d-85a9-5605e7956ad8>
+  Name: VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> a2e3c808-2a10-4df5-92f3-b3fae80496d7
+    - !<own> ab2f87da-bdba-4321-940e-8acc6a383621
+    - !<own> a144a5c6-e9d8-4a89-8382-b82ecdc2adb9
+    - !<own> b737ae26-1a4c-4f6b-8a31-5b3f520fb90d
+    - !<own> 2848bd79-6e50-48c5-95b0-a281b82e0f67
+  Components:
+    []
+  PrefabRemaps:
+    []
 - !<RenderMeshVisual/928b621c-df89-4be0-98cf-82a0e391a98e>
   Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3358,6 +3439,20 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/a144a5c6-e9d8-4a89-8382-b82ecdc2adb9>
+  Name: Smoke_Burst_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 115, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 71c13674-3dee-4b28-bf50-3b62dc27fe44
+  PrefabRemaps:
+    []
 - !<SceneObject/a206916f-f06f-4e23-8c43-8d8a61fcf93c>
   Name: whole_ham | Geometric
   Enabled: true
@@ -3370,6 +3465,20 @@
     []
   Components:
     - !<own> 652f5ddb-456e-4a23-9750-d86cd0cb686a
+  PrefabRemaps:
+    []
+- !<SceneObject/a2e3c808-2a10-4df5-92f3-b3fae80496d7>
+  Name: VFX_Controller
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1.6947920322418213, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 15c6c70d-847b-4b82-96de-278fb9cd879a
   PrefabRemaps:
     []
 - !<RenderMeshVisual/a361128c-8e25-474c-a7ed-8b5841f8f236>
@@ -3477,6 +3586,20 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/ab2f87da-bdba-4321-940e-8acc6a383621>
+  Name: Smoke_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 120, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> b13a547c-e0d2-487c-b276-b8f9126ea2bf
+  PrefabRemaps:
+    []
 - !<SceneObject/ae42bb63-f67a-42b0-a92d-b2d04952ccd3>
   Name: chocolate
   Enabled: true
@@ -3518,6 +3641,19 @@
   Components:
     - !<own> dd9c7e0a-798e-4c3b-8acc-7b4316c38b00
     - !<own> fd418a37-96af-4a6a-81dc-a53b888637c2
+  PrefabRemaps:
+    []
+- !<VFXComponent/b13a547c-e0d2-487c-b276-b8f9126ea2bf>
+  VFXAsset: !<reference> 719097f8-4949-4bec-8843-d4e44fd4963e
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
   PrefabRemaps:
     []
 - !<BodyComponent/b1e42280-879e-4458-bec6-44e03798b2d4>
@@ -3715,6 +3851,20 @@
   RenderOrder: 1
   Name: component_3
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/b737ae26-1a4c-4f6b-8a31-5b3f520fb90d>
+  Name: Fire
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> e2b45a39-279c-46e8-9186-40af5940e9ea
+  Components:
+    []
   PrefabRemaps:
     []
 - !<SceneObject/b77bfa29-df3b-421c-87f1-2c9a7aefbdfe>
@@ -4116,6 +4266,19 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<VFXComponent/cdfc5165-19f4-4e53-8419-e1e4ae9e3c8e>
+  VFXAsset: !<reference> 6b62a498-38fb-4015-894d-e29480d63f03
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/cecc5744-bbd4-4020-bd58-867ab09853c4>
   Name: whole_pepperoni | Geometric
   Enabled: true
@@ -4151,6 +4314,19 @@
     "":
       {}
   Name: EventUtils
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<VFXComponent/cf8e534e-8b7e-4501-89cf-11f856b5dd80>
+  VFXAsset: !<reference> 06022dc6-58f7-4e9f-bb54-7d4770bb3a50
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
   Enabled: true
   PrefabRemaps:
     []
@@ -4575,6 +4751,20 @@
       {}
   Name: SyncSnapshot
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/e2b45a39-279c-46e8-9186-40af5940e9ea>
+  Name: Fire_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> cf8e534e-8b7e-4501-89cf-11f856b5dd80
   PrefabRemaps:
     []
 - !<RenderMeshVisual/e387fa33-497f-4cb2-9cef-2e393025c375>
