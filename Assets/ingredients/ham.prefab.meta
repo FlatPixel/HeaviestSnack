@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/8bacf044-a70b-49f2-a771-2d3c23968e7f>
+  ImporterSettings: !<AssetImporterSettings/d90b3eca-6e41-4d22-8de9-dbaffe674e1c>
+    {}
+  ImportedAssetIds:
+    ObjectPrefab: bed21421-ab52-49b8-895a-4e8890546144
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> bed21421-ab52-49b8-895a-4e8890546144
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

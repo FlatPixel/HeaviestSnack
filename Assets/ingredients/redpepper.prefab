@@ -1,0 +1,75 @@
+- !<ObjectPrefab/62a511ef-e49c-47ed-9d89-3e1e8b736143>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 9f2e89da-b3f3-4936-9952-d429a5938161
+  Name: ""
+- !<RenderMeshVisual/90f1554b-adbf-49f6-b72f-0c55670edcf7>
+  Mesh: !<reference> a116073d-94c3-4b87-ba7b-af78d7067726
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_10
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/9f2e89da-b3f3-4936-9952-d429a5938161>
+  Name: redpepper
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> dafcb7c6-0fde-4942-a2da-3e3b45252de6
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/dafcb7c6-0fde-4942-a2da-3e3b45252de6>
+  Name: whole_redpepper | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -0.081991195678710938, y: -21.363380432128906, z: 0.082311630249023438}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> e91d3f03-bd3d-45ed-b47f-e28dc998fe84
+    - !<own> 90f1554b-adbf-49f6-b72f-0c55670edcf7
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/e91d3f03-bd3d-45ed-b47f-e28dc998fe84>
+  Mesh: !<reference> a63d2b67-cb79-4f04-80ae-421288445e6f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_9
+  Enabled: true
+  PrefabRemaps:
+    []

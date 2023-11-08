@@ -1,0 +1,54 @@
+- !<ObjectPrefab/a0205479-c2ab-4984-82d9-f3af227993b1>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> c2dac96e-6127-48d4-b0c1-4917c43583f8
+  Name: ""
+- !<RenderMeshVisual/36eec1c1-697f-47d7-a74f-914cec8b1669>
+  Mesh: !<reference> 266dcb2b-f8b3-4429-9e51-854d7c113c55
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/b0f3b37e-ba72-4df6-8cd0-3618cd08fd9d>
+  Name: whole_fry | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 3.814697265625e-06, y: -41.429145812988281, z: -0.99250030517578125}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 36eec1c1-697f-47d7-a74f-914cec8b1669
+  PrefabRemaps:
+    []
+- !<SceneObject/c2dac96e-6127-48d4-b0c1-4917c43583f8>
+  Name: fry
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -83.350570678710938, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> b0f3b37e-ba72-4df6-8cd0-3618cd08fd9d
+  Components:
+    []
+  PrefabRemaps:
+    []

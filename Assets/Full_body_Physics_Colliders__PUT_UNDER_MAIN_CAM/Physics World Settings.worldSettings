@@ -1,0 +1,10 @@
+- !<WorldSettings/f46cbb72-4b27-42e5-bf67-fd350d9e2bfc>
+  Gravity: {x: 0, y: -100, z: 0}
+  SimulationRate: 3
+  DefaultMatter: !<reference> e9a44041-d926-47c6-be86-4550a0a7ec75
+  DefaultFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  SlowStep: 1
+  SlowTime: 1
+  AbsoluteSpeedLimit: 50
+  RelativeSpeedLimit: 0.5
+  Name: Physics World Settings

@@ -1,0 +1,13 @@
+- !<AssetImportMetadata/3f1b311d-2a3f-4050-ada7-ea753b02307e>
+  ImporterSettings: !<AssetImporterSettings/e68dfe58-cdab-425e-90bd-4dc9b5b90a36>
+    {}
+  ImportedAssetIds:
+    00060711-8ce5-f94d-0000-0000001e4c00: 04854081-3739-415f-a73b-44976e03ddfd
+    00060711-8ce5-fa04-0000-0000001e4c01: b37a3b4d-e4e7-42f1-8ade-2b7d95ba92c8
+    Body Tracking Asset: 44781f5f-9578-466c-9216-45a53f84879d
+    Scene: a057bbb0-97d8-4b03-9a93-4cf12e0775de
+    ffffffff-ffff-ffd6-0000-000000000001: 024461d7-a0c2-47e9-b24e-10045ca03b38
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> a057bbb0-97d8-4b03-9a93-4cf12e0775de
+  PackageType: ShouldBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

@@ -1,0 +1,5 @@
+- !<BodyTracking3DAsset/351fa23d-4ce6-4464-994f-98a007c32179>
+  TrackHand: false
+  AttachmentPoints:
+    []
+  Name: Body Assets/Body Tracking Asset

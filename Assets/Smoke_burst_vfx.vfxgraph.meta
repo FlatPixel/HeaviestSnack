@@ -1,0 +1,33 @@
+- !<AssetImportMetadata/d914bd1c-53a5-4aed-b2c9-079845e73158>
+  ImporterSettings: !<VFXGraphImporterSettings/0077888e-336c-440b-90f6-73b95e220b30>
+    NGSCommit: 1.1
+    CrossCompilerCommit: 1.1
+    SystemPassProperties:
+      39: !<VFXSystemPassProperties/df41794f-f191-4b2b-9320-16b0588eeedb>
+        FeedbackProperties:
+          {}
+        SimulateProperties:
+          burstDuration:
+            typeIdx: 1
+            value: 0
+        RenderProperties:
+          Tweak_N36:
+            typeIdx: 9
+            value:
+              id: 3f982ea7-0b72-4190-90b4-8124e2364247
+              sampler:
+                filteringMode: Trilinear
+                wrapModeU: Repeat
+                wrapModeV: Repeat
+                wrapModeW: Repeat
+                borderColor: {x: 0, y: 0, z: 0, w: 0}
+                mipmaps: false
+          Tweak_N33:
+            typeIdx: 3
+            value: {x: 2, y: 2}
+  ImportedAssetIds:
+    VFXGraph: f2161da8-09f8-4085-81b2-e14e0e440d22
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> f2161da8-09f8-4085-81b2-e14e0e440d22
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

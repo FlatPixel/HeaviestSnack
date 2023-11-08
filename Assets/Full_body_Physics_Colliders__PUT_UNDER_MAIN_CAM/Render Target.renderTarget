@@ -1,0 +1,12 @@
+- !<RenderTarget/2be0cd11-75b9-4d66-9681-16db129c8747>
+  UseScreenResolution: true
+  AntialiasingMode: Disabled
+  DepthBuffer: Auto
+  MSAAStrategy: OnlyWhenRequired
+  ClearColorOption: BackgroundTexture
+  Resolution:
+    x: 900
+    y: 1600
+  ClearColor: {x: 0, y: 0, z: 0, w: 0}
+  InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Render Target

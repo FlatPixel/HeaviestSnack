@@ -1,0 +1,54 @@
+- !<ObjectPrefab/53923e8c-78de-47f7-81bc-f7516d6acf4b>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> fbd8397b-d09f-492e-999a-14508c288983
+  Name: ""
+- !<SceneObject/4a7ad847-c012-4ff6-b8f0-592c69ad0be4>
+  Name: whole_anchovy | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -16.981870651245117, z: -3.0517578125e-05}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 95e36d44-081e-453c-aebc-e1b346d7bfbb
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/95e36d44-081e-453c-aebc-e1b346d7bfbb>
+  Mesh: !<reference> 9b693b11-08dc-40a1-94d9-49d32ddc8a7f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_18
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/fbd8397b-d09f-492e-999a-14508c288983>
+  Name: anchovy
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 4a7ad847-c012-4ff6-b8f0-592c69ad0be4
+  Components:
+    []
+  PrefabRemaps:
+    []

@@ -1,0 +1,36 @@
+- !<Material/da01cc0f-0136-4612-9ccd-35bb953766a9>
+  PassesInfo:
+    - !<own> 60ff7c36-988c-4919-8d9d-d016daebb450
+  Name: Materials/Matte Shadow
+- !<PassInfo/60ff7c36-988c-4919-8d9d-d016daebb450>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+  BlendMode: Multiply
+  Properties:
+    Port_Value2_N001:
+      typeIdx: 1
+      value: 1
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 4b2e9885-cc88-4d9e-9d8f-d78059d20b5e

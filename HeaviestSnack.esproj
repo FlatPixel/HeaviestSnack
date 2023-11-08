@@ -11,7 +11,7 @@ viewConfig:
     fullFrameAspect: .nan
     viewport: Normal
     output: Live
-  cameraType: Back
+  cameraType: Front
 metaInfo:
   hints:
     []

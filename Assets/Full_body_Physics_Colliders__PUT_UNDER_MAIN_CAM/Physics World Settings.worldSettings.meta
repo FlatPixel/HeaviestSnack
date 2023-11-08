@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/69b4b003-3253-4ada-b30e-8c73a58f5c71>
+  ImporterSettings: !<AssetImporterSettings/77514c48-019a-4872-8a96-0ff6d20ec560>
+    {}
+  ImportedAssetIds:
+    WorldSettings: f46cbb72-4b27-42e5-bf67-fd350d9e2bfc
+  ImporterName: WorldSettingsImporter
+  PrimaryAsset: !<reference> f46cbb72-4b27-42e5-bf67-fd350d9e2bfc
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

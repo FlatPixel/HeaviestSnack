@@ -1,0 +1,18 @@
+- !<BodyMesh/1505ec0b-7d14-4e1c-b386-81cce7368221>
+  BodyIndex: 0
+  Options:
+    body: true
+    leftHand: true
+    rightHand: true
+    head: true
+  ExternalMeshPose: TPose
+  ExternalMesh: !<reference> 00000000-0000-0000-0000-000000000000
+  ExternalMeshMatchingMode: Proximity
+  ExternalMeshMaxDistance: 0.5
+  ExternalMeshMaxCount: 3
+  ExternalMeshTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  ExternalMeshMapUV: Texcoord0
+  Name: Body Assets/Full Body Mesh

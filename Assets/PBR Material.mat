@@ -33,7 +33,11 @@
     baseTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
+        id: cfb6f1f3-e5b9-401d-9ba4-05cfa0a12126
+=======
         id: 05392cad-48ba-43b5-b9dd-9167524ca51e
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -59,7 +63,11 @@
     materialParamsTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
+        id: 4bada7a0-9af9-4077-aae7-1b94d1ea265a
+=======
         id: 7680caf7-93cf-433f-b9cc-82ca38cdb3a9
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -85,7 +93,11 @@
     normalTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
+        id: 8325348c-1281-4e15-9550-04ece2712e03
+=======
         id: 95891a9c-da37-4f6e-8b9f-469019f7caf2
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
@@ -123,4 +135,8 @@
     uvScale:
       typeIdx: 1
       value: 1
+<<<<<<< LOCAL
+  Pass: !<reference> 7f6b5517-b792-48d6-9ae4-3c3ea0ad2399
+=======
   Pass: !<reference> e635acc1-d26b-4097-9d4e-9360a3a9d323
+>>>>>>> REMOTE

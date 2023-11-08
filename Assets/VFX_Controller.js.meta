@@ -1,0 +1,34 @@
+- !<AssetImportMetadata/dfddcd37-72b4-45fe-8995-e5f51b06ee12>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/0147a18f-f319-4aee-a249-55570293ea57>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      confirm_VFX: false
+      confirm_burst_duration: false
+      fire_VFX: false
+      smoke_VFX: false
+      smoke_burst_VFX: false
+      smoke_burst_duration: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - fire_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+        confirm_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+        confirm_burst_duration: !<float> 0
+        smoke_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+        smoke_burst_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+        smoke_burst_duration: !<float> 0
+  ImportedAssetIds:
+    JavaScriptAsset: 7a7fc250-b14a-486e-babd-2073ab573d35
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 7a7fc250-b14a-486e-babd-2073ab573d35
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

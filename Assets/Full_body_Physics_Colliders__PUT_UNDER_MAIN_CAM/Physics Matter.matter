@@ -1,0 +1,7 @@
+- !<Matter/e9a44041-d926-47c6-be86-4550a0a7ec75>
+  Friction: 0.31999999284744263
+  RollingFriction: 0.10000000149011612
+  SpinningFriction: 0.10000000149011612
+  StaticBounciness: 0.62000000476837158
+  DynamicBounciness: 0.67000001668930054
+  Name: Physics Matter

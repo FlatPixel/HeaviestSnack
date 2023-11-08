@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/c839c70c-8f86-4285-b0e9-9763f06e0360>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/cba8e1e4-741e-47d9-b99e-16594054f1e4>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      angleInterval: false
+      loopInterval: false
+      parentObject: false
+      piviotObject: false
+      spawnObject: false
+      spawnRadius: false
+      spawnTime: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - spawnObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        piviotObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        parentObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+        loopInterval: 0.5
+        spawnTime: 0.5
+        angleInterval: !<float> 20
+        spawnRadius: !<float> 8
+  ImportedAssetIds:
+    JavaScriptAsset: cb6ae059-0b3f-4e65-a680-c3ea7de09ba4
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> cb6ae059-0b3f-4e65-a680-c3ea7de09ba4
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

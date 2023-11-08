@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/d1436e5a-43a8-4595-86ce-10576f2a4682>
+  ImporterSettings: !<AssetImporterSettings/2fd9ef9e-9d23-43d8-b9b9-fe52a59068f9>
+    {}
+  ImportedAssetIds:
+    Texture: 877cc66b-c50d-4657-b969-cb82c0b2bce1
+  ImporterName: FileTextureImporter
+  PrimaryAsset: !<reference> 877cc66b-c50d-4657-b969-cb82c0b2bce1
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

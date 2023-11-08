@@ -1,0 +1,54 @@
+- !<ObjectPrefab/7464b0b1-e2a7-44e3-9de0-1f7126eb3c61>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 5b834393-b621-454a-9068-a6c61912c327
+  Name: ""
+- !<SceneObject/5b834393-b621-454a-9068-a6c61912c327>
+  Name: onion
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 7cbe1414-85c5-43ee-8024-401fa3b87c3c
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/7cbe1414-85c5-43ee-8024-401fa3b87c3c>
+  Name: whole_onion | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 2.9814796447753906, y: -19.469474792480469, z: -2.86102294921875e-06}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> d1dd0bdc-5ac3-482b-9cba-51f6bdf9809e
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/d1dd0bdc-5ac3-482b-9cba-51f6bdf9809e>
+  Mesh: !<reference> b182a5c9-0b20-484c-bb95-c72ce7e7e4d8
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_24
+  Enabled: true
+  PrefabRemaps:
+    []
