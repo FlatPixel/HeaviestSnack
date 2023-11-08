@@ -29,6 +29,10 @@ var timerCooldown = 1;
 var offsetAnim = script.offsetAnim;
 var helpTrajectoryObjects = [];
 
+var isInitialized = false;
+// Create a probe to raycast on the worldmesh
+var globalProbe = Physics.createGlobalProbe();
+
 // Create a probe to raycast through only the implicit root world.
 var probe = script.potPhysicWorld.createProbe();
 // Set filter settings on it.
@@ -67,19 +71,32 @@ script.createEvent("UpdateEvent").bind(function (eventData) {
 
 
 script.createEvent("TouchEndEvent").bind(function (eventData) {
-    for (var i = 0; i < helpTrajectoryObjects.length; ++i) {
-        helpTrajectoryObjects[i].enabled = false;
-    }
-
-    if (instantiatedIngredient !== null) {
-        timerCooldown = script.cooldownApparition;
-
-        var physicsBody = instantiatedIngredient.getComponent('Physics.BodyComponent');
-        physicsBody.clearMotion();
-
-        var camForward = camera.getTransform().back;
+    if (isInitialized == false) {
         var camPos = camera.getTransform().getWorldPosition();
-        probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
+        var camForward = camera.getTransform().back;
+        globalProbe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), function (hit) {
+            print(hit);
+
+            script.pot.enabled = true;
+            script.pot.getTransform().setWorldPosition(hit.position);
+            isInitialized = true;
+        });
+    }
+    else {
+        for (var i = 0; i < helpTrajectoryObjects.length; ++i) {
+            helpTrajectoryObjects[i].enabled = false;
+        }
+
+        if (instantiatedIngredient !== null) {
+            timerCooldown = script.cooldownApparition;
+
+            var physicsBody = instantiatedIngredient.getComponent('Physics.BodyComponent');
+            physicsBody.clearMotion();
+
+            var camForward = camera.getTransform().back;
+            var camPos = camera.getTransform().getWorldPosition();
+            probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
+        }
     }
 });
 
