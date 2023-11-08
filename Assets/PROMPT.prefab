@@ -196,7 +196,7 @@
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
   DepthTest: false
-  FontSize: 24
+  FontSize: 48
   Fill:
     mode: Solid
     color: {x: 1, y: 1, z: 1, w: 1}
