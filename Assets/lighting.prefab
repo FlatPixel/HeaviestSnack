@@ -1,0 +1,96 @@
+- !<ObjectPrefab/ee012691-052d-4f3f-a57f-76693af40755>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 8f152c12-7851-4f65-ab5f-ddcf24c1b352
+  Name: ""
+- !<LightSource/4a25daba-6fe2-4e52-9c27-8b1b909bc519>
+  LightType: EnvMap
+  DecayType: Quadratic
+  Intensity: 1
+  CastShadows: false
+  ShadowDensity: 1
+  ShadowBlurRadius: 0
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2
+  ShadowFrustumSize: 30
+  ShadowFrustumNearClipPlane: 1
+  ShadowFrustumFarClipPlane: 1000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1
+  UseEnvMap: true
+  EnvMapExposure: 1.1100000000000001
+  EnvMapRotation: 0
+  DiffuseEnvTexture: !<reference> 05392cad-48ba-43b5-b9dd-9167524ca51e
+  SpecularEnvTexture: !<reference> cc7494e2-a989-43c8-86e6-49cd1d3cb6be
+  Color: {x: 1, y: 1, z: 1, w: 1}
+  ShadowColor: {x: 0, y: 0, z: 0, w: 1}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  renderLayer: 1
+  Name: Light Source
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<LightSource/61dcd51f-025f-4071-8377-00db756114af>
+  LightType: Directional
+  DecayType: Quadratic
+  Intensity: 1
+  CastShadows: false
+  ShadowDensity: 1
+  ShadowBlurRadius: 0
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2
+  ShadowFrustumSize: 30
+  ShadowFrustumNearClipPlane: 1
+  ShadowFrustumFarClipPlane: 1000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  UseEstimation: false
+  EstimationIntensity: 1
+  UseEnvMap: true
+  EnvMapExposure: 1
+  EnvMapRotation: 0
+  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1, y: 1, z: 1, w: 1}
+  ShadowColor: {x: 0, y: 0, z: 0, w: 1}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  renderLayer: 1
+  Name: Light Source
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/8f152c12-7851-4f65-ab5f-ddcf24c1b352>
+  Name: lighting
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> ee026971-daad-4f42-b968-ff87bcb84ad1
+  Components:
+    - !<own> 4a25daba-6fe2-4e52-9c27-8b1b909bc519
+  PrefabRemaps:
+    []
+- !<SceneObject/ee026971-daad-4f42-b968-ff87bcb84ad1>
+  Name: Light Source
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 61dcd51f-025f-4071-8377-00db756114af
+  PrefabRemaps:
+    []
