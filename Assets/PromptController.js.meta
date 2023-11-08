@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/b335f683-c1ce-4dae-9d09-aab5ee2c3428>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/67d595a3-1902-417f-8f8f-05435595e33e>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 8a2a0497-f3f9-47a0-b514-5e095220ce4f
+    ExportUid: 8a2a0497-f3f9-47a0-b514-5e095220ce4f
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      convert_to_uppercase: false
+      maxIngredients: false
+      outline_color: false
+      prompt_temp: false
+      shadow_color: false
+      text_color: false
+      text_description: false
+      text_title: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - question: What are some ideas for Lenses?
+        textDisplay: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+        textDisplay3D: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+        amount_of_ingredients_in_name: 2
+        convert_to_uppercase: true
+        textsize: !<float> 0
+        textcolor: !<Vec3> {x: 0, y: 0, z: 0}
+        bordercolor: !<Vec3> {x: 0, y: 0, z: 0}
+        shadowcolor: !<Vec3> {x: 0, y: 0, z: 0}
+        text_size: !<float> 0
+        text_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        outline_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        shadow_color: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        text_title: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        text_description: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        maxIngredients: false
+        prompt_temp: !<float> 1
+  ImportedAssetIds:
+    JavaScriptAsset: e12760b7-9f8a-4057-bae9-e31d281644ca
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> e12760b7-9f8a-4057-bae9-e31d281644ca
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

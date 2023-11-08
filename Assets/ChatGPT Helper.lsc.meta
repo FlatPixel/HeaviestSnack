@@ -1,0 +1,10 @@
+- !<AssetImportMetadata/9d65a5d8-7ea4-480b-8f73-fe2f289c21c3>
+  ImporterSettings: !<AssetImporterSettings/3b8ad88a-96a3-4fd3-bc41-ad0611c248d9>
+    {}
+  ImportedAssetIds:
+    ChatGPT Helper: 68dcb917-c068-4f37-8eca-039cc5b932bf
+    ChatGPT Helper/ChatGPT: bca007e4-cae2-4a6e-8f65-463e07e59113
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 68dcb917-c068-4f37-8eca-039cc5b932bf
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
