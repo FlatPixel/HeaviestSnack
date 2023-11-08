@@ -14,6 +14,8 @@ var camera = script.sceneCamera;
 /** @type {ScriptComponent} */
 var promptController = script.promptController;
 
+//@input SceneObject GPTBoxBoard
+
 var tapped = false;
 
 var holding = null;
@@ -37,16 +39,16 @@ var moments = new Array();
 var sec = 0;
 
 script.collider.onOverlapEnter.add(function (e) {
-    
+
     if (holding) {
         global.counter++
         ingredients.push({ name: holding.name });
         showCounter();
-    
+
         print(JSON.stringify(ingredients));
-        
+
     }
-    
+
 });
 
 script.collider.onOverlapExit.add(function (e) {
@@ -68,6 +70,7 @@ script.createEvent("UpdateEvent").bind(function (a) {
         print("You made a receipe.");
         print(JSON.stringify(ingredients));
         print("TODO call ChatGPT API + show texte");
+        script.GPTBoxBoard.enabled = true;
         promptController.api.build(ingredients);
         print("TODO call animation Pot + Gfx");
         script.potAnimationMixer.start("BaseLayer", 0, 1);
@@ -106,9 +109,11 @@ function doTap(obj) {
             holding.getComponent("Physics.BodyComponent").dynamic = true;
             print(holding.name);
             print(holding.getComponents("Component.ScriptComponent")[1]);
-            
-            holding.getComponents("Component.ScriptComponent")[1].api.dropped();
-            
+
+            var component = holding.getComponents("Component.ScriptComponent")[1];
+            if (component)
+                component.api.dropped();
+
         }
     }
 
