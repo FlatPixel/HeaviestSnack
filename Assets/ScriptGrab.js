@@ -10,6 +10,10 @@ var camera = script.sceneCamera;
 
 //@input Component.AnimationMixer potAnimationMixer
 
+//@input Component.ScriptComponent promptController
+/** @type {ScriptComponent} */
+var promptController = script.promptController;
+
 var tapped = false;
 
 var holding = null;
@@ -59,6 +63,7 @@ script.createEvent("UpdateEvent").bind(function (a) {
         print("You made a receipe.");
         print(JSON.stringify(ingredients));
         print("TODO call ChatGPT API + show texte");
+        promptController.api.build(ingredients);
         print("TODO call animation Pot + Gfx");
         script.potAnimationMixer.start("BaseLayer", 0, 1);
         hasWon = true;
