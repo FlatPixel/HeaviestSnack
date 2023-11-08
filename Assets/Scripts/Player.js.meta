@@ -11,14 +11,12 @@
     CurrentVisibility: Editable
     MaxVisibility: Editable
     ScriptInputsHidden:
-      cooldownApparition: false
       helpTrajectoryObject: false
       ingredientPrefab: false
+      ingredientPrefabs: false
       maxDistanceAimAssist: false
-      offset: false
-      offsetAnim: false
+      physicWorld: false
       pot: false
-      potPhysicWorld: false
       reticle: false
       sceneCamera: false
       trajectoryHeight: false
@@ -39,6 +37,9 @@
         potPhysicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
         pot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
         ingredientPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+        ingredientPrefabs: !<reference.ObjectPrefab[]>
+          []
+        physicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
   ImportedAssetIds:
     JavaScriptAsset: 715c3313-d8e6-4d6e-9f07-40fb21d5e2ee
   ImporterName: JavaScriptAssetImporter

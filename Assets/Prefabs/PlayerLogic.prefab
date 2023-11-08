@@ -33,13 +33,12 @@
   ScriptInputs:
     "":
       sceneCamera: !<reference.Camera> d506e1ee-7994-40ca-94dd-1b77044eafeb
-      potPhysicWorld: !<reference.WorldComponent> b6a15fbe-b3d6-4392-943f-9a4a37262d94
+      physicWorld: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
       pot: !<reference.SceneObject> 9cdcdbb4-c54a-4145-82dc-d814a766f6d2
       reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       ingredientPrefab: !<reference.ObjectPrefab> e33fe937-01d6-4804-b5c4-5ab48446e8d3
-      offset: !<Vec3> {x: 0, y: 0, z: 0}
-      cooldownApparition: !<float> 1
-      offsetAnim: !<float> 30
+      ingredientPrefabs: !<reference.ObjectPrefab[]>
+        []
       trajectoryHeight: 30
       maxDistanceAimAssist: 500
       helpTrajectoryObject: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000

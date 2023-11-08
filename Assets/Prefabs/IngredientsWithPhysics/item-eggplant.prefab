@@ -1,0 +1,135 @@
+- !<ObjectPrefab/75432987-0227-4214-85ec-3126e4887932>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 42be0026-4c7c-4e65-82cd-ed2e6c90335d
+  Name: ""
+- !<SceneObject/0d135e05-c869-4e2d-8ba0-bf94e781c13a>
+  Name: eggplant
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.029999999329447746, y: 0.029999999329447746, z: 0.029999999329447746}
+  Children:
+    - !<own> 14d6fc33-f61a-469a-8309-476337d3df98
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/14d6fc33-f61a-469a-8309-476337d3df98>
+  Name: whole_eggplant | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -6.67572021484375e-06, y: -22.375926971435547, z: -0.59757232666015625}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 728ee62f-bef6-47d5-b09e-1b09981cb955
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/2dbe415f-4c18-4f78-9956-7b938e8daad0>
+  Mesh: !<reference> 9b3ed8b4-a8ac-40d8-b77d-9d0ba948442f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []
+- !<ScriptComponent/32f02def-c6ef-4966-9d5d-f319708ae0a8>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: local
+      rotationSync: local
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/42be0026-4c7c-4e65-82cd-ed2e6c90335d>
+  Name: item-eggplant
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 28.285659790039062, y: 24.313941955566406, z: -47.447319030761719}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> 0d135e05-c869-4e2d-8ba0-bf94e781c13a
+  Components:
+    - !<own> 2dbe415f-4c18-4f78-9956-7b938e8daad0
+    - !<own> 883f7bde-ffb8-4d49-8fc5-7af62112a4f9
+    - !<own> 32f02def-c6ef-4966-9d5d-f319708ae0a8
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/728ee62f-bef6-47d5-b09e-1b09981cb955>
+  Mesh: !<reference> 9b3ed8b4-a8ac-40d8-b77d-9d0ba948442f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_17
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<BodyComponent/883f7bde-ffb8-4d49-8fc5-7af62112a4f9>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Mesh
+  Axis: X
+  FitVisual: true
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 15, y: 15, z: 15}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []

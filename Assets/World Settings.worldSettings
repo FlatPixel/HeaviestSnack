@@ -1,5 +1,5 @@
 - !<WorldSettings/1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9>
-  Gravity: {x: 0, y: -600, z: 0}
+  Gravity: {x: 0, y: -980, z: 0}
   SimulationRate: 2
   DefaultMatter: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultFilter: !<reference> 00000000-0000-0000-0000-000000000000

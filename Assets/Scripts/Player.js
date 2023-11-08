@@ -2,18 +2,19 @@
 var camera = script.sceneCamera;
 
 //@ui {"widget":"label","label":""}
-// @input Physics.WorldComponent potPhysicWorld;
+// @input Physics.WorldComponent physicWorld;
+
 //@input SceneObject pot
+var potPhysicWorld = null;
 //@input SceneObject reticle
 
 //@ui {"widget":"label","label":""}
 //@input Asset.ObjectPrefab ingredientPrefab
+//@input Asset.ObjectPrefab[] ingredientPrefabs
 
-//@ui {"widget":"label","label":""}
-//@ui {"widget":"label","label":"Ingredient FPS Placement"}
-//@input vec3 offset
-//@input float cooldownApparition = 1
-//@input float offsetAnim = 30
+var ingredients = [];
+
+global.currentIngredient = null;
 
 //@ui {"widget":"label","label":""}
 //@ui {"widget":"label","label":"Ingredient Launch Params"}
@@ -25,77 +26,76 @@ var camera = script.sceneCamera;
 //@input Asset.ObjectPrefab helpTrajectoryObject
 
 var instantiatedIngredient = null;
-var timerCooldown = 1;
-var offsetAnim = script.offsetAnim;
 var helpTrajectoryObjects = [];
 
 var isInitialized = false;
 // Create a probe to raycast on the worldmesh
 var globalProbe = Physics.createGlobalProbe();
 
-// Create a probe to raycast through only the implicit root world.
-var probe = script.potPhysicWorld.createProbe();
-// Set filter settings on it.
-probe.filter.includeStatic = true;
-probe.filter.includeDynamic = false;
-probe.filter.includeIntangible = false;
+var potProbe = null;
 
-// script.createEvent("OnStartEvent").bind(function(eventData) {
-//    for (var i = 0; i < helpTrajectoryStep; ++i)  
-//    {
-//        var newTrajectoryObject = script.helpTrajectoryObject.instantiate(null);
-//        helpTrajectoryObjects[i] = newTrajectoryObject;
-//        helpTrajectoryObjects[i].enabled = false;
-//    }
-// });
+script.createEvent("OnStartEvent").bind(function (eventData) {
+    script.ingredientPrefabs.forEach(element => {
+        instantiatedIngredient = element.instantiate(script.physicWorld.getSceneObject());
+        ingredients.push(instantiatedIngredient);
+        instantiatedIngredient.enabled = false;
+    });
 
-script.createEvent("UpdateEvent").bind(function (eventData) {
-    var potDistance = camera.getTransform().getWorldPosition()
-        .distance(script.pot.getTransform().getWorldPosition());
+    potPhysicWorld = script.pot.createComponent("Physics.WorldComponent");
+    potProbe = potPhysicWorld.createProbe();
+    // Set filter settings on it.
+    potProbe.filter.includeStatic = true;
+    potProbe.filter.includeDynamic = false;
+    potProbe.filter.includeIntangible = false;
 
-    timerCooldown -= getDeltaTime();
-    if (instantiatedIngredient === null && timerCooldown < 0) {
-        instantiatedIngredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
-        offsetAnim = script.offsetAnim;
-    }
-    if (instantiatedIngredient !== null) {
-        offsetAnim = offsetAnim + 0.2 * (0 - offsetAnim); // Filter to smooth the apparition
-        var camTransform = camera.getTransform();
-        var ingredientPos = camTransform.getWorldPosition()
-            .add(camTransform.forward.uniformScale(script.offset.z))
-            .add(camTransform.up.uniformScale(script.offset.y - offsetAnim))
-            .add(camTransform.right.uniformScale(script.offset.x));
-        instantiatedIngredient.getTransform().setWorldPosition(ingredientPos);
-    }
+    // ingredients.forEach(element => {
+    //     print(element.name);
+    // });
+
+    // var helpTrajectoryStep = 20;
+    // for (var i = 0; i < helpTrajectoryStep; ++i) {
+    //     var newTrajectoryObject = script.helpTrajectoryObject.instantiate(null);
+    //     helpTrajectoryObjects[i] = newTrajectoryObject;
+    //     helpTrajectoryObjects[i].enabled = false;
+    // }
 });
 
 
-script.createEvent("TouchEndEvent").bind(function (eventData) {
+script.createEvent("TapEvent").bind(function (eventData) {
     if (isInitialized == false) {
         var camPos = camera.getTransform().getWorldPosition();
         var camForward = camera.getTransform().back;
         globalProbe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), function (hit) {
-            print(hit);
-
             script.pot.enabled = true;
             script.pot.getTransform().setWorldPosition(hit.position);
             isInitialized = true;
         });
     }
-    else {
-        for (var i = 0; i < helpTrajectoryObjects.length; ++i) {
-            helpTrajectoryObjects[i].enabled = false;
+    else if (global.currentIngredient !== null) {
+        // print("currentIngredientnot null: " + global.currentIngredient.name);
+
+        for (let index = 0; index < ingredients.length; index++) {
+            const element = ingredients[index];
+            if (element.name == global.currentIngredient.name)
+                instantiatedIngredient = script.ingredientPrefabs[index].instantiate(potPhysicWorld.getSceneObject());
         }
 
-        if (instantiatedIngredient !== null) {
-            timerCooldown = script.cooldownApparition;
+        // for (var i = 0; i < helpTrajectoryObjects.length; ++i) {
+        //     helpTrajectoryObjects[i].enabled = false;
+        // }
 
+        if (instantiatedIngredient !== null) {
+            global.currentIngredient.destroy();
+            global.currentIngredient = null;
+
+            instantiatedIngredient.getTransform().setWorldPosition(camera.getTransform().getWorldPosition());
             var physicsBody = instantiatedIngredient.getComponent('Physics.BodyComponent');
             physicsBody.clearMotion();
 
             var camForward = camera.getTransform().back;
             var camPos = camera.getTransform().getWorldPosition();
-            probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
+            var end = camera.screenSpaceToWorldSpace(eventData.getTapPosition(), script.maxDistanceAimAssist);
+            potProbe.rayCast(camPos, end, LaunchIngredient);
         }
     }
 });
@@ -110,6 +110,9 @@ function LaunchIngredient(hit) {
     var targetPos = ingredientStartPos.add(camForward.uniformScale(200));
 
     if (hit) targetPos = hit.position;
+
+    // var newTrajectoryObject = script.helpTrajectoryObject.instantiate(null);
+    // newTrajectoryObject.getTransform().setWorldPosition(targetPos);
 
     // helpTrajectoryObjects[helpTrajectoryObjects.length - 1].getTransform().setWorldPosition(targetPos);
     // helpTrajectoryObjects[helpTrajectoryObjects.length - 1].enabled = true;
@@ -174,7 +177,7 @@ syncEntity.onEventReceived.add(ingredient_op, function (networkMessage) {
     print("An ingredient has been launched");
     var startPos = global.getLocalPosFromPlan(message.params);
     var velocity = global.getLocalScaleFromPlan(message.params);
-    var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
+    var ingredient = script.ingredientPrefab.instantiate(script.physicWorld.getSceneObject());
     var physicsBody = ingredient.getComponent('Physics.BodyComponent');
 
     // ingredient.getComponent("Script").api.sharedIngredient = true;

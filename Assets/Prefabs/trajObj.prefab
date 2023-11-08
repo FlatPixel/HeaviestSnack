@@ -1,0 +1,40 @@
+- !<ObjectPrefab/bb8b5f3b-7392-4db3-b0eb-c4f079e46eec>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> f357940a-9d28-4232-951b-164cb37d6d5e
+  Name: ""
+- !<RenderMeshVisual/8038b9da-175f-4232-b467-af4026b3a1d9>
+  Mesh: !<reference> ba93b063-30cb-4a82-a850-70befbf68b36
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 7cb9489d-2ccd-4099-8515-6cd5b114c361
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/f357940a-9d28-4232-951b-164cb37d6d5e>
+  Name: trajObj
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    []
+  Components:
+    - !<own> 8038b9da-175f-4232-b467-af4026b3a1d9
+  PrefabRemaps:
+    []
