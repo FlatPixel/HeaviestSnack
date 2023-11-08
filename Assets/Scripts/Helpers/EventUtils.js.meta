@@ -1,5 +1,5 @@
-- !<AssetImportMetadata/53ce4cc5-9a65-4802-811d-d87553e9938a>
-  ImporterSettings: !<JavaScriptAssetImporterSettings/62b9e91a-051d-4e12-9c74-a4dfde4cec99>
+- !<AssetImportMetadata/d4dd9ccd-30a7-4bca-a435-2fc44d0d8922>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/4cdd0215-95aa-4e25-9b29-0157368c2c42>
     Icon: ""
     Description: ""
     InternalVersion: 0
@@ -11,14 +11,14 @@
     CurrentVisibility: Editable
     MaxVisibility: Editable
     ScriptInputsHidden:
-      world: false
+      {}
     ScriptTypesHidden:
       {}
     DefaultScriptInputs:
-      - worldSettings: !<reference.WorldSettingsAsset> 00000000-0000-0000-0000-000000000000
+      - {}
   ImportedAssetIds:
-    JavaScriptAsset: 748bb77c-5879-4d32-b74e-25c562ee7cb4
+    JavaScriptAsset: e5ebcc05-9317-474f-bd1c-7de0239e5362
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 748bb77c-5879-4d32-b74e-25c562ee7cb4
+  PrimaryAsset: !<reference> e5ebcc05-9317-474f-bd1c-7de0239e5362
   PackageType: CannotBeUnpacked
   AssetData: !<own> 00000000-0000-0000-0000-000000000000

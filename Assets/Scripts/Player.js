@@ -79,14 +79,15 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
 
         var camForward = camera.getTransform().back;
         var camPos = camera.getTransform().getWorldPosition();
-        // probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
+        probe.rayCast(camPos, camPos.add(camForward.uniformScale(script.maxDistanceAimAssist)), LaunchIngredient);
+        print("touch ended rayCast");
     }
-
-    print("touch ended");
 });
 
 function LaunchIngredient(hit) {
     if (instantiatedIngredient === null) return;
+
+    print("LaunchIngredient");
     var camForward = camera.getTransform().back;
     var physicsBody = instantiatedIngredient.getComponent('Physics.BodyComponent');
 
@@ -130,60 +131,44 @@ var encodeApi = JSON.stringify;
 var syncEntity = new SyncEntity(script);
 syncEntity.notifyOnReady(function () {
     print("The session has started and this entity is ready!");
-
-    // Send message
-    function launchIngredientMessage(ingredientStartPos, velocity) {
-        var plan = global.writeTransformPartsToPlan({}, ingredientStartPos, null, velocity);
-        var message = {
-            op: ingredient_op,
-            time: global.relay.getServerTime(), // time in ms
-            params: plan
-        };
-
-        print("An ingredient is launched");
-        syncEntity.sendEvent(ingredient_op, encodeApi(message));
-    }
-
-    // On message Received
-    syncEntity.onEventReceived.add(ingredient_op, function (message) {
-        message = decodeApi(message);
-        print(message.params);
-
-        print("An ingredient has been launched by " + global.userList.users[userId].displayName);
-        var startPos = global.getLocalPosFromPlan(message.params);
-        var velocity = global.getLocalScaleFromPlan(message.params);
-        var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
-        var physicsBody = ingredient.getComponent('Physics.BodyComponent');
-
-        ingredient.getComponent("Script").api.sharedIngredient = true;
-
-        ingredient.getTransform().setWorldPosition(startPos);
-        physicsBody.dynamic = true;
-        physicsBody.addForce(velocity, Physics.ForceMode.VelocityChange);
-        physicsBody.addTorque(new vec3(-15, 0, 0), Physics.ForceMode.VelocityChange);
-    });
 });
 
-// connectedController.events.on(EventType.MESSAGE_RECEIVED, function (userId, encodedMessage) {
-//     // The message is coming from ConnectedController or packets
-//     if (encodedMessage.length > 0 && encodedMessage[0] == "/") return;
+// Send message
+function launchIngredientMessage(ingredientStartPos, velocity) {
+    var plan = global.writeTransformPartsToPlan({}, ingredientStartPos, null, velocity);
+    var message = {
+        op: ingredient_op,
+        time: global.sessionController.getServerTimeInSeconds(), // time in s
+        params: plan
+    };
 
-//     var message = decodeApi(encodedMessage);
-//     if (message.op === playerBomb_op.lauch) {
-//         global.screenLog("An ingredient has been launched by " + global.userList.users[userId].displayName);
-//         var startPos = global.getLocalPosFromPlan(message.params);
-//         var velocity = global.getLocalScaleFromPlan(message.params);
-//         var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
-//         var physicsBody = ingredient.getComponent('Physics.BodyComponent');
+    print("An ingredient is launched");
+    syncEntity.sendEvent(ingredient_op, encodeApi(message));
+}
 
-//         ingredient.getComponent("Script").api.sharedIngredient = true;
+// On message Received
+syncEntity.onEventReceived.add(ingredient_op, function (networkMessage) {
+    print(networkMessage.message);
+    print(networkMessage.data);
+    print(networkMessage.senderUserId);
+    var message = decodeApi(networkMessage.data);
 
-//         ingredient.getTransform().setWorldPosition(startPos);
-//         physicsBody.dynamic = true;
-//         physicsBody.addForce(velocity, Physics.ForceMode.VelocityChange);
-//         physicsBody.addTorque(new vec3(-15, 0, 0), Physics.ForceMode.VelocityChange);
-//     }
-// });
+    // print("all users " + encodeApi(global.sessionController.getUsers()));
+    // print("all users " + global.sessionController.getUsers());
+    // print("An ingredient has been launched by " + global.sessionController.getUsers()[networkMessage.senderUserId].displayName);
+    print("An ingredient has been launched");
+    var startPos = global.getLocalPosFromPlan(message.params);
+    var velocity = global.getLocalScaleFromPlan(message.params);
+    var ingredient = script.ingredientPrefab.instantiate(script.potPhysicWorld.getSceneObject());
+    var physicsBody = ingredient.getComponent('Physics.BodyComponent');
+
+    // ingredient.getComponent("Script").api.sharedIngredient = true;
+
+    ingredient.getTransform().setWorldPosition(startPos);
+    physicsBody.dynamic = true;
+    physicsBody.addForce(velocity, Physics.ForceMode.VelocityChange);
+    physicsBody.addTorque(new vec3(-15, 0, 0), Physics.ForceMode.VelocityChange);
+});
 
 // ----------------- Global Scope ------------------ //
 global.ingredient_op = ingredient_op;
