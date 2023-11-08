@@ -4,6 +4,33 @@
   objects:
     - !<own> e1cf7ec2-73af-4d8b-b8c7-806a7f5cdba7
   Name: ""
+- !<SceneObject/02841ecb-bdaf-404e-a63b-d9edad776729>
+  Name: Smoke_Burst_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 115, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> b8d96e05-e49b-4565-a7c4-18564bb8eb58
+  PrefabRemaps:
+    []
+- !<VFXComponent/173841fa-c9d1-47f2-a9c0-8ef2fdf49730>
+  VFXAsset: !<reference> 719097f8-4949-4bec-8843-d4e44fd4963e
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/28715aae-f5a3-4fef-8452-958b57a556eb>
   Name: Physics Collider - Selector
   Enabled: true
@@ -138,6 +165,20 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<SceneObject/69d3816c-db4d-4d48-8b6b-ab786644530e>
+  Name: VFX_Controller
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: -40}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1.6947920322418213, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> cd933484-41ec-44ca-9208-a35ab69df9bd
+  PrefabRemaps:
+    []
 - !<SceneObject/78556c62-440d-4ed1-9fac-8815ae045351>
   Name: bowl_low001
   Enabled: true
@@ -151,6 +192,20 @@
   Components:
     - !<own> c85b8d5f-13ef-4a89-b90c-3d5cdb410a84
     - !<own> a12904a9-f5b1-459f-bdd6-7684fcecf8f4
+  PrefabRemaps:
+    []
+- !<SceneObject/7db4b11d-b7d4-4824-99b3-7b1bced2c285>
+  Name: Smoke_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 120, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 173841fa-c9d1-47f2-a9c0-8ef2fdf49730
   PrefabRemaps:
     []
 - !<RenderMeshVisual/7fc3b0ac-6c67-40a2-8112-bf3c6177db19>
@@ -196,10 +251,50 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<VFXComponent/9f2026f4-4606-4cf2-aea4-bfd2f3801734>
+  VFXAsset: !<reference> 6b62a498-38fb-4015-894d-e29480d63f03
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<Animation/a12904a9-f5b1-459f-bdd6-7684fcecf8f4>
   AnimationLayers:
     BaseLayer: !<reference> 4f76fe3e-20fa-44c3-ba5c-dcd05e78afe4
   Name: component_3
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/aaea2272-8018-453e-891e-cb7039e36c19>
+  Name: Fire_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> d439f7f4-d395-4d8c-94ba-daedbf675fdc
+  PrefabRemaps:
+    []
+- !<VFXComponent/b8d96e05-e49b-4565-a7c4-18564bb8eb58>
+  VFXAsset: !<reference> f2161da8-09f8-4085-81b2-e14e0e440d22
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
   Enabled: true
   PrefabRemaps:
     []
@@ -216,6 +311,20 @@
   Components:
     - !<own> 52a37b47-561d-4bf2-9066-2647dc97a219
     - !<own> 3a99a57c-f65c-472d-a4c6-78c94a548226
+  PrefabRemaps:
+    []
+- !<SceneObject/c3216690-0db1-487b-8d90-ea9e785ca6f5>
+  Name: Confirm_VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 115.91560363769531, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 9f2026f4-4606-4cf2-aea4-bfd2f3801734
   PrefabRemaps:
     []
 - !<RenderMeshVisual/c85b8d5f-13ef-4a89-b90c-3d5cdb410a84>
@@ -238,6 +347,56 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<ScriptComponent/cd933484-41ec-44ca-9208-a35ab69df9bd>
+  ScriptAsset: !<reference> 7a7fc250-b14a-486e-babd-2073ab573d35
+  ScriptInputs:
+    "":
+      fire_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      confirm_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      confirm_burst_duration: !<float> 0
+      smoke_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      smoke_burst_VFX: !<reference.VFXComponent> 00000000-0000-0000-0000-000000000000
+      smoke_burst_duration: !<float> 0
+      smake_rim_active: true
+      color_0: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_1: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_2: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_3: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+      color_4: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+  ScriptTypes:
+    "":
+      {}
+  Name: VFX_Controller
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<VFXComponent/d439f7f4-d395-4d8c-94ba-daedbf675fdc>
+  VFXAsset: !<reference> 06022dc6-58f7-4e9f-bb54-7d4770bb3a50
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: VFX Component
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/dd59bb2c-c222-4690-b019-25046c1e76b6>
+  Name: Fire
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> aaea2272-8018-453e-891e-cb7039e36c19
+  Components:
+    []
+  PrefabRemaps:
+    []
 - !<Animation/e05913b6-efff-49be-ab4e-a5f68c587353>
   AnimationLayers:
     BaseLayer: !<reference> 4d8a8b36-a62d-4004-95be-f8b60c66690c
@@ -254,12 +413,31 @@
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 0.25, y: 0.25, z: 0.25}
   Children:
+    - !<own> e2584ab5-38ea-4350-81b6-6dd77f1467b1
     - !<own> e7228bf9-c196-4755-8568-2885a80a30d8
     - !<own> 437defac-c59c-4b9e-9fa0-2638885080e5
     - !<own> 93256622-7a6e-49f4-8615-2c788594454b
     - !<own> e9530633-a738-48d2-ad89-aa382d49f862
   Components:
     - !<own> 94dddd88-e779-4e74-aa8d-39b8cf4662de
+  PrefabRemaps:
+    []
+- !<SceneObject/e2584ab5-38ea-4350-81b6-6dd77f1467b1>
+  Name: VFX
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 69d3816c-db4d-4d48-8b6b-ab786644530e
+    - !<own> 7db4b11d-b7d4-4824-99b3-7b1bced2c285
+    - !<own> 02841ecb-bdaf-404e-a63b-d9edad776729
+    - !<own> dd59bb2c-c222-4690-b019-25046c1e76b6
+    - !<own> c3216690-0db1-487b-8d90-ea9e785ca6f5
+  Components:
+    []
   PrefabRemaps:
     []
 - !<SceneObject/e7228bf9-c196-4755-8568-2885a80a30d8>

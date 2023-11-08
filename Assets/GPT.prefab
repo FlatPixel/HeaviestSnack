@@ -30,7 +30,7 @@
   PrefabRemaps:
     []
 - !<Text/0f771ea2-09ad-4bfd-b041-4356c4b91ab1>
-  Text: A delightful dish inspired by a quirky candy shop in the heart of New Orleans, combining the smoky flavors of sausage with the unexpected sweetness of caramelized onions and a touch of candy for a truly unique culinary experience.
+  Text: ""
   SizeToFit: false
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
@@ -223,7 +223,7 @@
   PrefabRemaps:
     []
 - !<Text/642cf479-9bf2-4025-9aaf-1403ced85da4>
-  Text: Sweet and Savory Sausage Surprise with Onion and Candy
+  Text: ""
   SizeToFit: false
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
@@ -436,7 +436,7 @@
     []
 - !<SceneObject/d8c0adbc-7462-4e22-81d3-ad3af842b1a6>
   Name: Board
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}

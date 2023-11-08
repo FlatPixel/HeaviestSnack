@@ -10,6 +10,12 @@ var camera = script.sceneCamera;
 
 //@input Component.AnimationMixer potAnimationMixer
 
+//@input Component.ScriptComponent promptController
+/** @type {ScriptComponent} */
+var promptController = script.promptController;
+
+//@input SceneObject GPTBoxBoard
+
 var tapped = false;
 
 var holding = null;
@@ -33,16 +39,16 @@ var moments = new Array();
 var sec = 0;
 
 script.collider.onOverlapEnter.add(function (e) {
-    
+
     if (holding) {
         global.counter++
         ingredients.push({ name: holding.name });
         showCounter();
-    
+
         print(JSON.stringify(ingredients));
-        
+
     }
-    
+
 });
 
 script.collider.onOverlapExit.add(function (e) {
@@ -64,6 +70,8 @@ script.createEvent("UpdateEvent").bind(function (a) {
         print("You made a receipe.");
         print(JSON.stringify(ingredients));
         print("TODO call ChatGPT API + show texte");
+        script.GPTBoxBoard.enabled = true;
+        promptController.api.build(ingredients);
         print("TODO call animation Pot + Gfx");
         script.potAnimationMixer.start("BaseLayer", 0, 1);
         hasWon = true;
@@ -89,7 +97,7 @@ function doTap(obj) {
         tapped = true;
         holding = obj;
         holding.setParentPreserveWorldTransform(camera.getSceneObject());
-        holding.getTransform().setWorldPosition(camera.getTransform().getWorldPosition().add(camera.getTransform().back.uniformScale(80)).add(camera.getTransform().down.uniformScale(30)).add(camera.getTransform().right.uniformScale(30)));
+        holding.getTransform().setWorldPosition(camera.getTransform().getWorldPosition().add(camera.getTransform().back.uniformScale(70)).add(camera.getTransform().down.uniformScale(20)).add(camera.getTransform().right.uniformScale(20)));
 
         holding.getComponent("Physics.BodyComponent").dynamic = false;
     } else {
@@ -101,9 +109,11 @@ function doTap(obj) {
             holding.getComponent("Physics.BodyComponent").dynamic = true;
             print(holding.name);
             print(holding.getComponents("Component.ScriptComponent")[1]);
-            
-            holding.getComponents("Component.ScriptComponent")[1].api.dropped();
-            
+
+            var component = holding.getComponents("Component.ScriptComponent")[1];
+            if (component)
+                component.api.dropped();
+
         }
     }
 
