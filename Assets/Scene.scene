@@ -2259,7 +2259,7 @@
     - ad24195c-8157-406e-84fa-34979788ea91: 07b74a9f-2c90-4b64-a2aa-2bce37594469
 - !<SceneObject/715cafc2-2bca-41bf-8ce9-7619663588fc>
   Name: 3d_pot
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
