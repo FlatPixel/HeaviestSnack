@@ -1,0 +1,40 @@
+- !<ObjectPrefab/a051b546-9abf-4372-9887-92f3a71a00e9>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 6fa1b762-0483-4091-a738-7aab14302507
+  Name: ""
+- !<SceneObject/6fa1b762-0483-4091-a738-7aab14302507>
+  Name: tomato
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> e0c6b8d0-b5bb-4c43-a2b4-aa72966d1cb7
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/e0c6b8d0-b5bb-4c43-a2b4-aa72966d1cb7>
+  Mesh: !<reference> a31c4bbd-2df9-43c4-90d9-6d9fa3835f58
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_1
+  Enabled: true
+  PrefabRemaps:
+    []
