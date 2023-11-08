@@ -1,0 +1,43 @@
+- !<Material/33547a15-d1e8-44b5-86c4-fa37e11cff95>
+  PassesInfo:
+    - !<own> 7b00ec1c-1880-4e4c-99d5-6c95976fd9a9
+  Name: ""
+- !<PassInfo/7b00ec1c-1880-4e4c-99d5-6c95976fd9a9>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+  BlendMode: Disabled
+  Properties:
+    Port_Default_N204:
+      typeIdx: 1
+      value: 1
+    Port_Default_N369:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 6158e4e1-dc90-44a9-bad0-6226a46a9a4e
