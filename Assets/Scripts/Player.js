@@ -41,7 +41,9 @@ script.createEvent("OnStartEvent").bind(function (eventData) {
         instantiatedIngredient.enabled = false;
     });
 
-    potPhysicWorld = script.pot.createComponent("Physics.WorldComponent");
+    var potWorld = scene.createSceneObject("MyWorld");
+    potWorld.setParent(script.pot);
+    potPhysicWorld = potWorld.createComponent("Physics.WorldComponent");
     potProbe = potPhysicWorld.createProbe();
     // Set filter settings on it.
     potProbe.filter.includeStatic = true;
@@ -77,7 +79,7 @@ script.createEvent("TapEvent").bind(function (eventData) {
         for (let index = 0; index < ingredients.length; index++) {
             const element = ingredients[index];
             if (element.name == global.currentIngredient.name)
-                instantiatedIngredient = script.ingredientPrefabs[index].instantiate(potPhysicWorld.getSceneObject());
+                instantiatedIngredient = script.ingredientPrefabs[index].instantiate(script.physicWorld.getSceneObject());
         }
 
         // for (var i = 0; i < helpTrajectoryObjects.length; ++i) {
