@@ -1,0 +1,54 @@
+- !<ObjectPrefab/bed21421-ab52-49b8-895a-4e8890546144>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> ea8943f8-f116-432b-a3f8-36a854018dab
+  Name: ""
+- !<RenderMeshVisual/4a6f1368-00d0-4c26-aae0-6aa4335624c8>
+  Mesh: !<reference> fda680e4-99f3-4891-be90-5c0d3c916a5f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_20
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/942a8b44-33c0-4c8a-a73a-cc17f64fe934>
+  Name: whole_ham | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -1.52587890625e-05, y: -33.142051696777344, z: 3.0517578125e-05}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 4a6f1368-00d0-4c26-aae0-6aa4335624c8
+  PrefabRemaps:
+    []
+- !<SceneObject/ea8943f8-f116-432b-a3f8-36a854018dab>
+  Name: ham
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 942a8b44-33c0-4c8a-a73a-cc17f64fe934
+  Components:
+    []
+  PrefabRemaps:
+    []

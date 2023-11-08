@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/dafc7961-57a2-40e0-be3e-efbb8f878841>
+  ImporterSettings: !<AssetImporterSettings/d3ed1338-cd8e-4547-9342-88533bd1e1a9>
+    {}
+  ImportedAssetIds:
+    Material: 0902b4f0-8436-4ee5-8418-2382a475393b
+  ImporterName: MaterialImporter
+  PrimaryAsset: !<reference> 0902b4f0-8436-4ee5-8418-2382a475393b
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

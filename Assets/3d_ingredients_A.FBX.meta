@@ -1,0 +1,113 @@
+- !<AssetImportMetadata/b060882b-8b67-4727-ba68-5311fbb179b7>
+  ImporterSettings: !<FbxImporterSettings/2b6ae29f-e906-46fe-99cd-d24cc46e4fc1>
+    RegenerateNormalsForSkinnedMeshes: true
+    GeneratePivots: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+    ImportVertexColor: true
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30
+  ImportedAssetIds:
+    .hidden/uber: 5e5be333-9704-458c-9b64-b2e0c1619e8c
+    02 - Default: 0d5f65a5-8b4b-44a4-87f4-43a4820092ea
+    03 - Default: 996656c3-c431-4197-96b4-23b7a8c34944
+    08 - Default: 84c57633-7d7e-4e49-8093-4b47b29b980f
+    09 - Default: 81f71713-5ba7-445d-b3a9-779982ad04c1
+    2f0518f7-4e63-4367-9e15-ae50f0a736c3: 28b3e00c-26f1-4515-831c-db5c7f7cef3b
+    4b5438fd-3b91-4e98-87a5-7654e5de8edb: db6b4e53-ddb0-450c-ba5d-f199df7a4697
+    59df360f-663d-4444-80d4-fff4c99164e8: 326dd0ba-6762-45b6-badb-dc80e173addb
+    Mesh1: 9b693b11-08dc-40a1-94d9-49d32ddc8a7f
+    Mesh10: 266dcb2b-f8b3-4429-9e51-854d7c113c55
+    Mesh11: 280d85a7-fd21-4ed0-b5dc-6686dbaf6545
+    Mesh12: fda680e4-99f3-4891-be90-5c0d3c916a5f
+    Mesh13: 023fd16b-ac23-4bd1-9e60-1270e8200b09
+    Mesh14: af78c2a6-e884-48cc-bf6d-880c827e28a6
+    Mesh15: 1edc30c7-3e82-4b22-8d8a-03f074de7194
+    Mesh16: 0a8727c2-e140-4f5e-9a22-3dfee3c7d409
+    Mesh17: 6c90f383-6dbb-43be-bd4b-d8c5b7e134f6
+    Mesh18: db673811-a038-4ad3-b8de-6a604d3e5efd
+    Mesh19: 2f92e227-5647-4535-9d6e-9de47ab9db6a
+    Mesh2: b14c2e62-8370-41cc-a837-6d578988c807
+    Mesh20: b182a5c9-0b20-484c-bb95-c72ce7e7e4d8
+    Mesh21: 3426a5bc-3fde-4473-8873-f1a51b457443
+    Mesh22: 722be6be-d622-412d-99a7-24422a17c317
+    Mesh23: a116073d-94c3-4b87-ba7b-af78d7067726
+    Mesh24: a63d2b67-cb79-4f04-80ae-421288445e6f
+    Mesh25: 4b7619e4-981c-48e4-83b2-b390041289f0
+    Mesh3: 052c680b-eb44-4d99-99fd-f9686a8765df
+    Mesh4: f561123f-2cc5-4d1c-ac3b-603bba58cd92
+    Mesh5: 5b43a692-7444-4e65-94c4-6bd55c8089cc
+    Mesh6: ef30f87b-6182-41dd-ae49-8efe810abb0a
+    Mesh7: f46b3820-00c9-4584-8b5d-53240e75df39
+    Mesh8: c7713dee-2f01-44ef-89e4-17af8259014e
+    Mesh9: 9b3ed8b4-a8ac-40d8-b77d-9d0ba948442f
+    Scene: 01101663-31cd-4cdc-8448-dc5028a82766
+    a6a6c718-ca8d-4aa7-bedc-27c0d0884a7b: a887af30-c3be-44eb-b8d4-f847c9c61a5d
+    e5a92cfa-9220-4cb4-9a53-750a24cb0d08: 4fb38503-ef5d-4d75-82d4-c693bb08e25e
+    white: 12cf05ae-b083-4c27-a279-078aebbf1e5c
+    "|_3DSceneImportRoot_0|": 4d6bd794-6714-4dc3-b5d4-9afb51fd5a5f
+    "|_3DSceneImportRoot_0|_whole_anchovy_11|": e4197fb7-0f2b-43d7-9bc1-6bd8de440316
+    "|_3DSceneImportRoot_0|_whole_anchovy_11|_whole_anchovy | Geometric_0|": a3c63b72-ccb7-4beb-8efa-709a8408df70
+    "|_3DSceneImportRoot_0|_whole_anchovy_11|_whole_anchovy | Geometric_0|_RenderMeshVisual_0|": 39bc2fbc-d037-435a-a7ee-e51913c2ac9e
+    "|_3DSceneImportRoot_0|_whole_blackOlive_14|": f76c4ea8-913b-4a01-b535-330a0792ca67
+    "|_3DSceneImportRoot_0|_whole_blackOlive_14|_whole_blackOlive | Geometric_0|": d82181f4-470e-4410-b7d9-0bb9ed49860d
+    "|_3DSceneImportRoot_0|_whole_blackOlive_14|_whole_blackOlive | Geometric_0|_RenderMeshVisual_0|": 09ea20f4-fa26-43ef-bf96-7292eb98772d
+    "|_3DSceneImportRoot_0|_whole_blackOlive_14|_whole_blackOlive | Geometric_0|_RenderMeshVisual_1|": 47266675-b33d-4979-9c86-f0636bb52e3a
+    "|_3DSceneImportRoot_0|_whole_blackOlive_14|_whole_blackOlive | Geometric_0|_RenderMeshVisual_2|": aad676e7-f9ab-40e5-9921-5792a8258177
+    "|_3DSceneImportRoot_0|_whole_candy_8|": 1099d87d-d03b-4285-b9c5-32bb0d6d6772
+    "|_3DSceneImportRoot_0|_whole_candy_8|_whole_candy | Geometric_0|": 0fd54cfd-d359-4b2b-8ed9-c1ce37650b91
+    "|_3DSceneImportRoot_0|_whole_candy_8|_whole_candy | Geometric_0|_RenderMeshVisual_0|": f37162a6-dae4-468b-8dbf-31cd016e328e
+    "|_3DSceneImportRoot_0|_whole_candy_8|_whole_candy | Geometric_0|_RenderMeshVisual_1|": d6b77ee6-8617-4408-9fc7-0eb2eb507ae7
+    "|_3DSceneImportRoot_0|_whole_candy_8|_whole_candy | Geometric_0|_RenderMeshVisual_2|": 6def65ad-9258-4485-8560-571bd081aa5b
+    "|_3DSceneImportRoot_0|_whole_chocolate_9|": 1cc31942-36d2-4d37-bc11-8f43df16d42b
+    "|_3DSceneImportRoot_0|_whole_chocolate_9|_whole_chocolate | Geometric_0|": 68814a87-0eeb-4ada-b57a-99a2615d2bd4
+    "|_3DSceneImportRoot_0|_whole_chocolate_9|_whole_chocolate | Geometric_0|_RenderMeshVisual_0|": 1e577409-a58b-4ebc-b614-9f0b29541a4c
+    "|_3DSceneImportRoot_0|_whole_eggplant_10|": ad60d171-a9ec-4304-92a1-97abc0c0c0e8
+    "|_3DSceneImportRoot_0|_whole_eggplant_10|_whole_eggplant | Geometric_0|": 5a4d1633-2275-4696-9afe-9fa9e47db859
+    "|_3DSceneImportRoot_0|_whole_eggplant_10|_whole_eggplant | Geometric_0|_RenderMeshVisual_0|": 04e3dc26-de10-41c7-98ff-bc1eac9e1365
+    "|_3DSceneImportRoot_0|_whole_fry_0|": f540dede-0747-4a83-87a1-2b6b0c1a96be
+    "|_3DSceneImportRoot_0|_whole_fry_0|_whole_fry | Geometric_0|": af9f8b17-5e08-4268-98b7-c59a06f02b20
+    "|_3DSceneImportRoot_0|_whole_fry_0|_whole_fry | Geometric_0|_RenderMeshVisual_0|": 3eefe441-4b54-488d-ab36-1725e82bf857
+    "|_3DSceneImportRoot_0|_whole_greenPepper_12|": 2c121bbd-b4c9-4c5f-beef-a0616cceaf9d
+    "|_3DSceneImportRoot_0|_whole_greenPepper_12|_whole_greenPepper | Geometric_0|": a4df2cda-538f-4562-8f12-062a72715bce
+    "|_3DSceneImportRoot_0|_whole_greenPepper_12|_whole_greenPepper | Geometric_0|_RenderMeshVisual_0|": 19cb2f46-11e2-4a7d-8d25-4791243fac6d
+    "|_3DSceneImportRoot_0|_whole_ham_13|": c7addd94-61ca-41ef-b899-b3250280bb48
+    "|_3DSceneImportRoot_0|_whole_ham_13|_whole_ham | Geometric_0|": 10ff3854-c282-495a-9160-806834a1c03d
+    "|_3DSceneImportRoot_0|_whole_ham_13|_whole_ham | Geometric_0|_RenderMeshVisual_0|": 85d463ab-7e21-460f-87c0-d26f48591de8
+    "|_3DSceneImportRoot_0|_whole_marshmallow_1|": 8d4e5f7d-009c-404c-bd42-8291706b4240
+    "|_3DSceneImportRoot_0|_whole_marshmallow_1|_whole_marshmallow | Geometric_0|": 00fedb91-8a71-4c54-a369-d265e55f9465
+    "|_3DSceneImportRoot_0|_whole_marshmallow_1|_whole_marshmallow | Geometric_0|_RenderMeshVisual_0|": e68a8f21-96ce-4b5f-a05e-498b7074392e
+    "|_3DSceneImportRoot_0|_whole_marshmallow_1|_whole_marshmallow | Geometric_0|_RenderMeshVisual_1|": f0ac14a8-bd83-45e4-aadb-d4693384cf97
+    "|_3DSceneImportRoot_0|_whole_mushroom_2|": 83607e48-49ea-450f-bfde-384e5bc23f1c
+    "|_3DSceneImportRoot_0|_whole_mushroom_2|_whole_mushroom | Geometric_0|": 7ca6acc7-bf51-4d87-b9e3-133add86f99d
+    "|_3DSceneImportRoot_0|_whole_mushroom_2|_whole_mushroom | Geometric_0|_RenderMeshVisual_0|": 1a732eda-3c57-42b5-9f0c-a8f409ae3c4f
+    "|_3DSceneImportRoot_0|_whole_olive_3|": c5918cf0-ec7f-4f9b-a97d-560e2ffe6489
+    "|_3DSceneImportRoot_0|_whole_olive_3|_whole_olive | Geometric_0|": 26dc883f-adc2-4f19-bf0b-072ca870677c
+    "|_3DSceneImportRoot_0|_whole_olive_3|_whole_olive | Geometric_0|_RenderMeshVisual_0|": 34980441-ec2c-4429-9013-cb870bb837a6
+    "|_3DSceneImportRoot_0|_whole_olive_3|_whole_olive | Geometric_0|_RenderMeshVisual_1|": 8ee78cbb-d361-4fce-aa19-4e90423d05f3
+    "|_3DSceneImportRoot_0|_whole_olive_3|_whole_olive | Geometric_0|_RenderMeshVisual_2|": 4ad71df2-2b80-4e26-ac5b-e14fea5a5405
+    "|_3DSceneImportRoot_0|_whole_olive_3|_whole_olive | Geometric_0|_RenderMeshVisual_3|": 72284f66-13b5-496d-b5b1-add0c0452708
+    "|_3DSceneImportRoot_0|_whole_onion_15|": 64c4121e-b829-491b-805a-44419d4beca1
+    "|_3DSceneImportRoot_0|_whole_onion_15|_whole_onion | Geometric_0|": f2e085d3-523d-4bb9-895e-c6b70d823f3d
+    "|_3DSceneImportRoot_0|_whole_onion_15|_whole_onion | Geometric_0|_RenderMeshVisual_0|": f4905c32-1952-4d6c-9a19-13d3873542e8
+    "|_3DSceneImportRoot_0|_whole_pepperoni_6|": 3f68aa7a-c4ef-4985-adb6-5c1386f63904
+    "|_3DSceneImportRoot_0|_whole_pepperoni_6|_whole_pepperoni | Geometric_0|": be053881-796d-44ef-b5f4-492ede94a7e9
+    "|_3DSceneImportRoot_0|_whole_pepperoni_6|_whole_pepperoni | Geometric_0|_RenderMeshVisual_0|": 39298790-4207-4c1e-a04e-6a7317ce2823
+    "|_3DSceneImportRoot_0|_whole_pineapple_4|": c35ca1be-ccc8-4494-8321-445cdf8e3e6a
+    "|_3DSceneImportRoot_0|_whole_pineapple_4|_whole_pineapple | Geometric_0|": 3b75a970-a9d9-492d-8fde-950b6ba47c28
+    "|_3DSceneImportRoot_0|_whole_pineapple_4|_whole_pineapple | Geometric_0|_RenderMeshVisual_0|": cdd724d7-270b-4bab-acb8-6c615a18e1cc
+    "|_3DSceneImportRoot_0|_whole_redpepper_5|": 9ce1b1fa-39c3-44b1-9e4d-81b1ab3705fc
+    "|_3DSceneImportRoot_0|_whole_redpepper_5|_whole_redpepper | Geometric_0|": 2f8447a1-5d26-407a-aedd-71efc4238d18
+    "|_3DSceneImportRoot_0|_whole_redpepper_5|_whole_redpepper | Geometric_0|_RenderMeshVisual_0|": 6ce6cdc5-8bd3-40be-8d8f-05661dccdc81
+    "|_3DSceneImportRoot_0|_whole_redpepper_5|_whole_redpepper | Geometric_0|_RenderMeshVisual_1|": bdeadd62-1876-4e2b-9d10-ddf2e434daae
+    "|_3DSceneImportRoot_0|_whole_sardines_7|": dc48dc94-acc6-4b77-9348-3b44fcd8f66e
+    "|_3DSceneImportRoot_0|_whole_sardines_7|_whole_sardines | Geometric_0|": 455e7f11-f617-41c5-b488-ea64ebe256e3
+    "|_3DSceneImportRoot_0|_whole_sardines_7|_whole_sardines | Geometric_0|_RenderMeshVisual_0|": e038cb1d-2c4b-42ea-9965-45ed59bf415d
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 01101663-31cd-4cdc-8448-dc5028a82766
+  PackageType: CanBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

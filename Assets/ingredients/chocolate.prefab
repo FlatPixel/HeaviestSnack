@@ -1,0 +1,54 @@
+- !<ObjectPrefab/59f0fe8a-4cb6-4a9b-954b-d811a45a0ff4>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 16d43dff-44a7-4133-83f6-2274e8a859a2
+  Name: ""
+- !<SceneObject/01ab4c3e-dc23-4dcf-be04-05128e7360af>
+  Name: whole_chocolate | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: -6.0006484985351562, z: 1.9073486328125e-06}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 90e00a1b-b68f-4391-ae7d-548efa1e9c72
+  PrefabRemaps:
+    []
+- !<SceneObject/16d43dff-44a7-4133-83f6-2274e8a859a2>
+  Name: chocolate
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 01ab4c3e-dc23-4dcf-be04-05128e7360af
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/90e00a1b-b68f-4391-ae7d-548efa1e9c72>
+  Mesh: !<reference> c7713dee-2f01-44ef-89e4-17af8259014e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_16
+  Enabled: true
+  PrefabRemaps:
+    []

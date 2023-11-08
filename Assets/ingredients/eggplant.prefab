@@ -1,0 +1,54 @@
+- !<ObjectPrefab/689bbe3c-5967-4ebf-9afb-b48c93f1cb60>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 7e6d7f66-46c8-4855-8bbf-2e3029dde1f7
+  Name: ""
+- !<RenderMeshVisual/7bf4deeb-7c46-402e-8f45-db588ba22012>
+  Mesh: !<reference> 9b3ed8b4-a8ac-40d8-b77d-9d0ba948442f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_17
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/7e6d7f66-46c8-4855-8bbf-2e3029dde1f7>
+  Name: eggplant
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> e73d684f-b1b0-43af-855b-172692e12a29
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/e73d684f-b1b0-43af-855b-172692e12a29>
+  Name: whole_eggplant | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: -6.67572021484375e-06, y: -22.375926971435547, z: -0.59757232666015625}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 7bf4deeb-7c46-402e-8f45-db588ba22012
+  PrefabRemaps:
+    []
