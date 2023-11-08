@@ -341,7 +341,7 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 0, z: 0}
+    position: {x: 0, y: 900, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 0.75, y: 0.75, z: 0.75}
   Children:

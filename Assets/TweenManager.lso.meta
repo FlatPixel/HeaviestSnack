@@ -60,10 +60,8 @@
     0005fc13-b76c-5846-0000-000000056674: 81d9f67b-7393-4408-bb41-222d504aa2c2
     0005fc13-b76c-59b4-0000-000000056676: b3dc3022-ceb4-4cf0-87d7-b2ebf35822dc
     0005fc13-b76c-5b52-0000-000000056679: c3bea09f-162f-4d94-a65a-ca69a6859e01
-    3c97dc0a-c128-44c8-8299-9cdf0fc53305: 300a7e0b-ede5-416f-9275-7ec6d60bfa76
-    40f3bd21-6561-47e7-8cca-004c3cf18bb8: 7eb8104e-1842-435d-8d71-0a9677dc36b0
-    4a254000-6b41-4b5d-92cd-c05cfd4e4c9a: a250e747-bd7c-44dd-a2a5-4fccbf236573
-    72300f7f-d86c-4fe9-b875-4ad2ef63ee37: 200242a0-7c82-418f-b674-7c0be5a58b9f
+    0ca47570-b0d5-4b35-8b74-74e73fefd10c: c8d981ba-f8c8-49d1-ad3d-226fd2dac932
+    56edbd1a-a376-4430-a71b-0818b376fa76: 80d2ff06-de35-4842-a6f7-21d0b10e0792
     ExampleResources [REMOVE_ME]/ExampleTweenValueScript: 9ae935c8-5b97-46de-9d5d-9f5342ca22e8
     ExampleResources [REMOVE_ME]/Materials/Image Unlit: d741af95-e8e7-4636-975c-50d7faa01a26
     ExampleResources [REMOVE_ME]/Materials/TweenBoxDiffuse: 233ba9eb-92f2-47fb-a8c2-10dcdbfee007
@@ -83,8 +81,10 @@
     TweenTypes/TweenTransform: 265aa63f-6a62-46a8-8fa3-4dca91bcc466
     TweenTypes/TweenValue: 9a1c92ad-38d1-4304-ad0d-f4575e5301c4
     Visual Scripting Custom Nodes/All Tween Nodes: 4e38ca6e-18cb-4077-918e-cbe5e2aed1f2
-    a119994d-7118-4ffc-8853-0fb9d9cba565: 9d280878-5a84-47fe-bc12-d4d8148999f6
-    a622b3f0-02d3-4a4c-880f-5d9ad53693a4: a43260a1-bb06-41d7-90ea-d37d4fbec29a
+    a040bee8-f2c1-4f68-8db7-30362f821de8: c80e841c-d0b4-4bc4-8417-0a7fdec32c46
+    d7d4014d-7902-486e-998d-29da58e325d6: 35c0725c-2422-413a-a28f-95fdc9f0a123
+    e28aa548-52b9-4dc5-ac10-6d2a68387a55: 83e043c0-289f-41e1-b822-a6e992c6234d
+    f2454ec8-a7dc-419b-9326-c784bf2dd09c: 2621b61c-b996-4ed9-a3c3-a9b0dee08a14
     ffffffff-ffff-ffd6-0000-000000000001: 49c53da0-ab4a-4b9f-a071-09c105be1247
   ImporterName: LensCoreImporter
   PrimaryAsset: !<reference> dce72920-8f2c-44d4-9294-b41bb6fb41ec

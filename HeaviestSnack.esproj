@@ -11,11 +11,11 @@ viewConfig:
     fullFrameAspect: .nan
     viewport: Normal
     output: Live
-  cameraType: Back
+  cameraType: Front
 metaInfo:
   hints:
     []
-  lensName: Untitled
+  lensName: Pot Luck
   lensDescriptors:
     []
   lensApplicability:
@@ -23,11 +23,10 @@ metaInfo:
     - Back
   lensClientCompatibilities:
     - Mobile
-    - Web
-  iconHash: ""
+  iconHash: 9b9ca312ab35930d18f31f6f24ed2402
   isSGEnabled: false
   fromTemplateName: Empty Project
   fromTemplateUrl: Lens Studio Fiji 5.0.0.1104
-  activationCamera: Front
+  activationCamera: Rear
   hasVideoPreview: false
   apiAccessLevel: Public

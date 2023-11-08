@@ -70,12 +70,12 @@ script.createEvent("UpdateEvent").bind(function (a) {
 
     sec += dt;
 
-    if (global.counter >= 1 && hasWon == false) {
+    if (global.counter >= 5 && hasWon == false) {
         // print("You made a receipe.");
         print(JSON.stringify(ingredients));
         // print("TODO call ChatGPT API + show texte");
         script.GPTBoxBoard.enabled = true;
-        // promptController.api.build(ingredients);
+        promptController.api.build(ingredients);
         // print("TODO call animation Pot + Gfx");
         script.potAnimationMixer.start("BaseLayer", 0, 1);
         vfxController.api.startSmoke();
