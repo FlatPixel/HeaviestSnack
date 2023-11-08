@@ -21,16 +21,16 @@
 - !<Canvas/05a1a96a-73ea-4a39-b890-74bc8f165015>
   UnitType: World
   WorldSpaceRect:
-    left: -8
-    bottom: -4.5
-    right: 8
-    top: 4.5
+    left: -10
+    bottom: -10
+    right: 10
+    top: 10
   Name: Canvas
   Enabled: true
   PrefabRemaps:
     []
 - !<Text/0f771ea2-09ad-4bfd-b041-4356c4b91ab1>
-  Text: Description
+  Text: A delightful dish inspired by a quirky candy shop in the heart of New Orleans, combining the smoky flavors of sausage with the unexpected sweetness of caramelized onions and a touch of candy for a truly unique culinary experience.
   SizeToFit: false
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
@@ -38,7 +38,7 @@
   FontSize: 24
   Fill:
     mode: Solid
-    color: {x: 0.25490197539329529, y: 0, z: 0.60000002384185791, w: 1}
+    color: {x: 0.0078431377187371254, y: 0.17254902422428131, z: 0.32941177487373352, w: 1}
     texture: 0
   Dropshadow:
     enabled: false
@@ -100,16 +100,16 @@
     deactivatedFixedPivot: false
   Pivot: {x: 0, y: 0}
   Transform:
-    position: {x: 0, y: 0, z: -1}
-    rotation: {x: 0, y: 0, z: 0}
+    position: {x: 0.030486583709716797, y: -6.0365867614746094, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1
-    bottom: -1
-    right: 1
-    top: 0
+    left: -0.65853679180145264
+    bottom: -0.89634120464324951
+    right: 0.664634108543396
+    top: -0.31097611784934998
   Offset:
     left: 0
     bottom: 0
@@ -183,22 +183,55 @@
   Children:
     - !<own> ac959222-b227-462e-a44a-8478a9af8e67
     - !<own> 164027d3-eb92-4f28-8def-890f873e3f58
-    - !<own> f46becdd-329b-4d1c-91dc-a2b7495e3628
     - !<own> 7202769a-4729-46a8-b2d8-6e4342b490ce
+    - !<own> d8c0adbc-7462-4e22-81d3-ad3af842b1a6
   Components:
     - !<own> 05a1a96a-73ea-4a39-b890-74bc8f165015
+    - !<own> b569a0be-24eb-4842-b922-0c7802337e75
+  PrefabRemaps:
+    []
+- !<ScreenTransform/5feb8cb7-b6cd-4dcf-928f-ac45aa94efc9>
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0, y: 0}
+  Transform:
+    position: {x: 0, y: 0, z: -1}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1
+    bottom: -1
+    right: 1
+    top: 1
+  Offset:
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+  Name: Screen Transform
+  Enabled: true
   PrefabRemaps:
     []
 - !<Text/642cf479-9bf2-4025-9aaf-1403ced85da4>
-  Text: "Title\n"
+  Text: Sweet and Savory Sausage Surprise with Onion and Candy
   SizeToFit: false
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
-  DepthTest: false
+  DepthTest: true
   FontSize: 48
   Fill:
     mode: Solid
-    color: {x: 1, y: 1, z: 1, w: 1}
+    color: {x: 0.99215686321258545, y: 0.94901961088180542, z: 0.27058824896812439, w: 1}
     texture: 0
   Dropshadow:
     enabled: true
@@ -206,10 +239,10 @@
       mode: Solid
       color: {x: 0, y: 0, z: 0, w: 1}
       texture: 0
-    offsetX: 0.5
-    offsetY: 1
+    offsetX: 0.25
+    offsetY: 0.25
   Outline:
-    enabled: true
+    enabled: false
     fill:
       mode: Solid
       color: {x: 0, y: 0, z: 0, w: 1}
@@ -260,16 +293,16 @@
     deactivatedFixedPivot: false
   Pivot: {x: 0, y: 0}
   Transform:
-    position: {x: 0, y: 0, z: -1}
-    rotation: {x: 0, y: 0, z: 0}
+    position: {x: 0.067080497741699219, y: -0.27438938617706299, z: -1}
+    rotation: {x: 0, y: -0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -1
-    bottom: 0
-    right: 1
-    top: 1
+    left: -0.83902418613433838
+    bottom: -0.28048813343048096
+    right: 0.8524402379989624
+    top: 0.22561025619506836
   Offset:
     left: 0
     bottom: 0
@@ -354,6 +387,16 @@
     - !<own> 69845c3c-cba3-4a9b-b2df-a59b3c98117c
   PrefabRemaps:
     []
+- !<LookAtComponent/b569a0be-24eb-4842-b922-0c7802337e75>
+  LookAtMode: LookAtDirection
+  AimVectors: ZAimYUp
+  WorldUpVector: SceneUp
+  Target: !<reference> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
+  OffsetRotation: {x: 0, y: 0, z: 0}
+  Name: LookAtComponent
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<ScriptComponent/bcfed918-60a6-461a-8999-69ca9f92aed1>
   ScriptAsset: !<reference> e12760b7-9f8a-4057-bae9-e31d281644ca
   ScriptInputs:
@@ -379,8 +422,8 @@
   Pivot: {x: 0, y: 0}
   Size: {x: 1, y: 1}
   Materials:
-    - !<reference> 33547a15-d1e8-44b5-86c4-fa37e11cff95
-  StretchMode: Stretch
+    - !<reference> 769927a4-b203-4e48-be06-833b37ab238a
+  StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center
   MeshShadowMode: None
@@ -389,6 +432,22 @@
   RenderOrder: 0
   Name: Image
   Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/d8c0adbc-7462-4e22-81d3-ad3af842b1a6>
+  Name: Board
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> f46becdd-329b-4d1c-91dc-a2b7495e3628
+    - !<own> adead76c-cafa-4f8b-bc91-8075b0e99740
+    - !<own> 4477642d-c891-4ea8-8e9b-823852fdcdd7
+  Components:
+    - !<own> 5feb8cb7-b6cd-4dcf-928f-ac45aa94efc9
   PrefabRemaps:
     []
 - !<SceneObject/f46becdd-329b-4d1c-91dc-a2b7495e3628>
@@ -400,8 +459,7 @@
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
-    - !<own> adead76c-cafa-4f8b-bc91-8075b0e99740
-    - !<own> 4477642d-c891-4ea8-8e9b-823852fdcdd7
+    []
   Components:
     - !<own> 822492ad-e7bd-4a83-b309-1f36899f9e7b
     - !<own> d1b32ad8-14c5-450e-a733-51d90d253cde
