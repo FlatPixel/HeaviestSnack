@@ -50,7 +50,7 @@
   Pivot: {x: 0, y: 0}
   Size: {x: 1, y: 1}
   Materials:
-    - !<reference> a566998f-b8ad-47a5-bd8e-8e51280cbe42
+    - !<reference> c402ba7e-7392-4122-bfb1-db4be1792ea7
   StretchMode: Fit
   VerticalAlignment: Center
   HorizontalAlignment: Center

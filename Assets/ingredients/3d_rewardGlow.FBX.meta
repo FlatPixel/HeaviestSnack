@@ -1,0 +1,30 @@
+- !<AssetImportMetadata/dffd7f86-22e0-448b-a644-6565346992b0>
+  ImporterSettings: !<FbxImporterSettings/c0b28242-3b66-40ec-bde0-2a103703117c>
+    RegenerateNormalsForSkinnedMeshes: true
+    GeneratePivots: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+    ImportVertexColor: true
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30
+  ImportedAssetIds:
+    .hidden/uber: f4257eef-e848-4e82-8662-4990f1ca51c2
+    02 - Default: d654fc9b-751c-449b-950e-8d6e132ec29a
+    163534cf-a6ac-4907-b373-0972801b2b26: 8c089c9f-a080-4a1c-bedd-5826986626d0
+    Mesh1: e9ee873a-d761-4404-ad1e-ff934b6fcb1f
+    Scene: 9bda08b7-7ca4-42b4-af02-1cdf4c985b0a
+    Texture1: 41b4cb6f-d170-4488-b46b-89591fd0dd9c
+    a7b362ea-2c83-4cf9-946c-86b5c704d59b: a960a8b2-b51b-460a-aabb-2b4d704c52aa
+    white: ec830ccd-dbf2-4170-a4f4-b83a08f4adb0
+    "|_3DSceneImportRoot_0|": 291108aa-26f2-4371-b3dc-0f5ddd86aa09
+    "|_3DSceneImportRoot_0|_rewardGlow_0|": aa4de61c-be08-47ff-8b3b-e3f69d60aa21
+    "|_3DSceneImportRoot_0|_rewardGlow_0|_rewardGlow | Geometric_0|": 9d736db8-e4e9-4cfd-b1aa-503f3e3ec335
+    "|_3DSceneImportRoot_0|_rewardGlow_0|_rewardGlow | Geometric_0|_RenderMeshVisual_0|": 8dbde1f7-450d-41fb-bf3c-c2880e6b0e6d
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 9bda08b7-7ca4-42b4-af02-1cdf4c985b0a
+  PackageType: CanBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

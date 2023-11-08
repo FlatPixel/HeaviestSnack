@@ -1,0 +1,60 @@
+- !<Material/13becf15-2f4a-4f0e-a5ef-2fb1a89d2068>
+  PassesInfo:
+    - !<own> d432aa0b-9248-415a-b690-97be912994fe
+  Name: ""
+- !<PassInfo/d432aa0b-9248-415a-b690-97be912994fe>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - ENABLE_BASE_TEX
+    - Tweak_N67
+    - uv2EnableAnimation
+    - NODE_27_DROPLIST_ITEM 2
+  BlendMode: Add
+  Properties:
+    Port_Default_N204:
+      typeIdx: 1
+      value: 1
+    Port_Speed_N022:
+      typeIdx: 1
+      value: 0
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 0.58823531866073608}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 2ff44b50-ec3a-4485-abe0-cbbf962a259e
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    uv2Offset:
+      typeIdx: 3
+      value: {x: 0.25, y: 0}
+    uv2Scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+  Pass: !<reference> 3bcd5807-356e-4861-8433-0cc86266df0b
