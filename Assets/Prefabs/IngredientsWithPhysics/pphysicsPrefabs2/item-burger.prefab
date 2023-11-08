@@ -1,10 +1,10 @@
-- !<ObjectPrefab/2885c7b2-e3bd-4f8e-8af6-bac158af360d>
+- !<ObjectPrefab/b798aa70-8aa3-4edb-9437-5b3d0ddfd38b>
   LazyLoading: false
   RetainAssets: true
   objects:
-    - !<own> d504c00e-e2f9-45cf-9715-63b3c01b81b1
+    - !<own> c945b8cf-da4a-4418-bbc5-a378ab068add
   Name: ""
-- !<BodyComponent/049b9fb6-77c1-4da0-a26c-f9d0fbc6c98b>
+- !<BodyComponent/2e6d813b-ed24-4048-b6ed-13509aeb991f>
   Dynamic: true
   BodySetting: Density
   BodySettingValue: 1
@@ -12,7 +12,7 @@
   AngularDamping: 0
   Shape: Box
   Axis: X
-  FitVisual: true
+  FitVisual: false
   ForceCompound: false
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
@@ -22,7 +22,7 @@
   EnableSmoothing: false
   Radius: 6
   Length: 18
-  Size: {x: 15, y: 15, z: 15}
+  Size: {x: 1, y: 0.5, z: 2}
   PositionTension: 30
   RotationTension: 30
   Asset: !<reference> 00000000-0000-0000-0000-000000000000
@@ -31,21 +31,7 @@
   Enabled: true
   PrefabRemaps:
     []
-- !<SceneObject/0d0aeacd-641b-4aff-b748-bfc7b5abaf79>
-  Name: chocolate
-  Enabled: true
-  Layer: 0
-  LocalTransform:
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 0.029999999329447746, y: 0.029999999329447746, z: 0.029999999329447746}
-  Children:
-    - !<own> c446c006-329e-492e-be91-50c9393b0fb5
-  Components:
-    []
-  PrefabRemaps:
-    []
-- !<RenderMeshVisual/817e36d1-de55-4b5e-af03-c80d35fa15a5>
+- !<RenderMeshVisual/5add477c-bd61-4cab-8169-5f84dc0796e5>
   Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
@@ -65,12 +51,12 @@
   Enabled: false
   PrefabRemaps:
     []
-- !<ScriptComponent/908731f1-988b-4f7f-b855-f730bd37ad70>
+- !<ScriptComponent/a644dc45-02e4-47a0-b3eb-67142ff214b3>
   ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
   ScriptInputs:
     "":
-      positionSync: local
-      rotationSync: local
+      positionSync: world
+      rotationSync: world
       scaleSync: none
       persistence: Session
       sendsPerSecondLimit: !<float> 10
@@ -83,15 +69,15 @@
   Enabled: true
   PrefabRemaps:
     []
-- !<RenderMeshVisual/9372026c-1054-4480-871c-4bfacdf2dbfb>
-  Mesh: !<reference> c7713dee-2f01-44ef-89e4-17af8259014e
+- !<RenderMeshVisual/ab872863-3246-42e6-8462-6bc71ac0694e>
+  Mesh: !<reference> 08b21986-646b-4e50-9266-11621505f33b
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false
   BlendShapes:
     {}
   Materials:
-    - !<reference> 720bc94a-7bdb-410b-8823-90edeeed86b0
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -99,37 +85,37 @@
   ShadowColor: {x: 1, y: 1, z: 1, w: 1}
   ShadowDensity: 1
   RenderOrder: 0
-  Name: component_16
+  Name: component_5
   Enabled: true
   PrefabRemaps:
     []
-- !<SceneObject/c446c006-329e-492e-be91-50c9393b0fb5>
-  Name: whole_chocolate | Geometric
+- !<SceneObject/c945b8cf-da4a-4418-bbc5-a378ab068add>
+  Name: item-burger
   Enabled: true
-  Layer: 0
+  Layer: 1
   LocalTransform:
-    position: {x: 0, y: -6.0006484985351562, z: 1.9073486328125e-06}
-    rotation: {x: -90, y: -0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
-  Children:
-    []
-  Components:
-    - !<own> 9372026c-1054-4480-871c-4bfacdf2dbfb
-  PrefabRemaps:
-    []
-- !<SceneObject/d504c00e-e2f9-45cf-9715-63b3c01b81b1>
-  Name: item-chocolate
-  Enabled: true
-  Layer: 0
-  LocalTransform:
-    position: {x: 47.85906982421875, y: 28.947551727294922, z: 116.56211090087891}
+    position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
-    - !<own> 0d0aeacd-641b-4aff-b748-bfc7b5abaf79
+    - !<own> e71b263d-4fa1-41fe-8a7b-2ba56d39a465
   Components:
-    - !<own> 817e36d1-de55-4b5e-af03-c80d35fa15a5
-    - !<own> 049b9fb6-77c1-4da0-a26c-f9d0fbc6c98b
-    - !<own> 908731f1-988b-4f7f-b855-f730bd37ad70
+    - !<own> 5add477c-bd61-4cab-8169-5f84dc0796e5
+    - !<own> 2e6d813b-ed24-4048-b6ed-13509aeb991f
+    - !<own> a644dc45-02e4-47a0-b3eb-67142ff214b3
+  PrefabRemaps:
+    []
+- !<SceneObject/e71b263d-4fa1-41fe-8a7b-2ba56d39a465>
+  Name: burger
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.019999999552965164, y: 0.019999999552965164, z: 0.019999999552965164}
+  Children:
+    []
+  Components:
+    - !<own> ab872863-3246-42e6-8462-6bc71ac0694e
   PrefabRemaps:
     []

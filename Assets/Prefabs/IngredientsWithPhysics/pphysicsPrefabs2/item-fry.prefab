@@ -1,0 +1,135 @@
+- !<ObjectPrefab/ed73bcb1-3940-4ca9-8bbf-a5a7c1975d33>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> b6d77911-2602-4310-9717-b70e1367fb2f
+  Name: ""
+- !<SceneObject/085bcf34-12d4-4de5-944d-877911214cda>
+  Name: whole_fry | Geometric
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 3.814697265625e-06, y: -41.429145812988281, z: -0.99250030517578125}
+    rotation: {x: -90, y: -0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 651793f5-3436-47ca-923e-d270c1a61aff
+  PrefabRemaps:
+    []
+- !<BodyComponent/17da8da0-da2c-43af-bc11-e056609b1b44>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Box
+  Axis: X
+  FitVisual: false
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 1, y: 0.5, z: 2}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/651793f5-3436-47ca-923e-d270c1a61aff>
+  Mesh: !<reference> 266dcb2b-f8b3-4429-9e51-854d7c113c55
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> c8779fa7-b8c3-4962-a1f0-1031675c9318
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/b6d77911-2602-4310-9717-b70e1367fb2f>
+  Name: item-fry
+  Enabled: true
+  Layer: 1
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> c399b5aa-3916-478b-9761-dce22e0a59f3
+  Components:
+    - !<own> fa8305ab-635c-40d3-b57f-573894ea22fe
+    - !<own> 17da8da0-da2c-43af-bc11-e056609b1b44
+    - !<own> eafeacec-8b87-49fd-abba-af91a76b3574
+  PrefabRemaps:
+    []
+- !<SceneObject/c399b5aa-3916-478b-9761-dce22e0a59f3>
+  Name: fry
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 0.029999999329447746, y: 0.029999999329447746, z: 0.029999999329447746}
+  Children:
+    - !<own> 085bcf34-12d4-4de5-944d-877911214cda
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<ScriptComponent/eafeacec-8b87-49fd-abba-af91a76b3574>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/fa8305ab-635c-40d3-b57f-573894ea22fe>
+  Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []

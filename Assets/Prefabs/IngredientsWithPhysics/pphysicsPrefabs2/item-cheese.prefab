@@ -1,0 +1,121 @@
+- !<ObjectPrefab/cea070f3-a580-4a84-b450-668c6608e60c>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> 0c576c11-90d5-4550-9ebe-86390b0d9d1c
+  Name: ""
+- !<SceneObject/0c576c11-90d5-4550-9ebe-86390b0d9d1c>
+  Name: item-cheese
+  Enabled: true
+  Layer: 1
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> 2dce92fd-8de6-49a6-9d33-b22812339689
+  Components:
+    - !<own> 890a56ef-d2a1-495b-ab92-03423fe4d500
+    - !<own> f304a272-ff56-41a2-8d4e-0d859c9874d4
+    - !<own> 11977a1d-ee66-4790-92cb-47f267bd6d8c
+  PrefabRemaps:
+    []
+- !<ScriptComponent/11977a1d-ee66-4790-92cb-47f267bd6d8c>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/2dce92fd-8de6-49a6-9d33-b22812339689>
+  Name: cheese
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.019999999552965164, y: 0.019999999552965164, z: 0.019999999552965164}
+  Children:
+    []
+  Components:
+    - !<own> 513d533c-cc6d-443d-a432-292548e3414a
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/513d533c-cc6d-443d-a432-292548e3414a>
+  Mesh: !<reference> 4ba3a1c4-4138-4f10-b4ae-ba8760a9feb6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_0
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/890a56ef-d2a1-495b-ab92-03423fe4d500>
+  Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []
+- !<BodyComponent/f304a272-ff56-41a2-8d4e-0d859c9874d4>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Box
+  Axis: X
+  FitVisual: false
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 1, y: 0.5, z: 2}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []

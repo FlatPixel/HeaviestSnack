@@ -1,0 +1,121 @@
+- !<ObjectPrefab/3169eea6-e6ca-48f6-9af2-a92c1eea57fc>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> e59aaa6c-13e1-4e89-8622-756954a54926
+  Name: ""
+- !<RenderMeshVisual/66724ab8-0e38-43fe-8cb1-de1c3a2e1367>
+  Mesh: !<reference> 71ab7bc9-16e3-475f-b045-a35bc68bb696
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 00000000-0000-0000-0000-000000000000
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: Render Mesh Visual
+  Enabled: false
+  PrefabRemaps:
+    []
+- !<SceneObject/689dfd0b-8532-4ea8-8543-2ac9b62b9304>
+  Name: broccoli
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.029999999329447746, y: 0.029999999329447746, z: 0.029999999329447746}
+  Children:
+    []
+  Components:
+    - !<own> dd0eec5d-bf8b-4b0f-bdb6-63be77b5c923
+  PrefabRemaps:
+    []
+- !<BodyComponent/ca0f92cd-838d-41cd-af33-23bb3301647a>
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1
+  Damping: 0
+  AngularDamping: 0
+  Shape: Box
+  Axis: X
+  FitVisual: false
+  ForceCompound: false
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
+  ShowCollider: false
+  Intangible: false
+  EnableSmoothing: false
+  Radius: 6
+  Length: 18
+  Size: {x: 1, y: 0.5, z: 2}
+  PositionTension: 30
+  RotationTension: 30
+  Asset: !<reference> 00000000-0000-0000-0000-000000000000
+  Mesh: !<reference> 00000000-0000-0000-0000-000000000000
+  Name: Physics Body
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<RenderMeshVisual/dd0eec5d-bf8b-4b0f-bdb6-63be77b5c923>
+  Mesh: !<reference> bdad8443-8a5d-4f60-8927-5b41bdc08fca
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> b64a4c0e-90f8-4850-8e72-60822db58780
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_6
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/e59aaa6c-13e1-4e89-8622-756954a54926>
+  Name: item-broccoli
+  Enabled: true
+  Layer: 1
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 20, y: 20, z: 20}
+  Children:
+    - !<own> 689dfd0b-8532-4ea8-8543-2ac9b62b9304
+  Components:
+    - !<own> 66724ab8-0e38-43fe-8cb1-de1c3a2e1367
+    - !<own> ca0f92cd-838d-41cd-af33-23bb3301647a
+    - !<own> f3a7b857-1e3b-4678-b300-7f5c5c17dca9
+  PrefabRemaps:
+    []
+- !<ScriptComponent/f3a7b857-1e3b-4678-b300-7f5c5c17dca9>
+  ScriptAsset: !<reference> eb82042f-db7a-4688-84a8-0158acb979af
+  ScriptInputs:
+    "":
+      positionSync: world
+      rotationSync: world
+      scaleSync: none
+      persistence: Session
+      sendsPerSecondLimit: !<float> 10
+      useSmoothing: false
+      interpolationTarget: -0.25
+  ScriptTypes:
+    "":
+      {}
+  Name: SyncTransform
+  Enabled: true
+  PrefabRemaps:
+    []
