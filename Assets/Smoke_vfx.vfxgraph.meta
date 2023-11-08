@@ -7,12 +7,14 @@
         FeedbackProperties:
           {}
         SimulateProperties:
-          {}
+          burstDuration:
+            typeIdx: 1
+            value: 0
         RenderProperties:
           Tweak_N36:
             typeIdx: 9
             value:
-              id: 3f982ea7-0b72-4190-90b4-8124e2364247
+              id: 6513d375-237d-4bb5-a7af-a2bfea7f09bd
               sampler:
                 filteringMode: Trilinear
                 wrapModeU: Repeat
@@ -22,7 +24,7 @@
                 mipmaps: false
           Tweak_N33:
             typeIdx: 3
-            value: {x: 2, y: 2}
+            value: {x: 3, y: 2}
   ImportedAssetIds:
     VFXGraph: 719097f8-4949-4bec-8843-d4e44fd4963e
   ImporterName: VFXAssetImporter
