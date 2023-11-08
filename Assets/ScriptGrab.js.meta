@@ -12,6 +12,8 @@
     MaxVisibility: Editable
     ScriptInputsHidden:
       cam: false
+      collider: false
+      counter: false
       cursor: false
       debug: false
       scene: false
