@@ -338,7 +338,7 @@
     []
 - !<SceneObject/16c624c5-efb8-4ee9-ba96-8672032c65e1>
   Name: 3d_pot_new
-  Enabled: false
+  Enabled: true
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
@@ -651,7 +651,7 @@
   Layer: 1
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> b464963b-4446-4938-91b4-7017807b417e
@@ -997,7 +997,7 @@
   BlendShapes:
     {}
   Materials:
-    - !<reference> 5d09fbe4-9f52-4db0-8841-c0973141283d
+    - !<reference> 38be8f4e-5fad-4ef0-82a5-c73ea08947f4
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
@@ -1071,7 +1071,7 @@
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> ed251400-7886-4675-a384-9b9d79f2f4ef
@@ -5417,7 +5417,7 @@
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
-  ShowCollider: true
+  ShowCollider: false
   Intangible: false
   EnableSmoothing: false
   Radius: 6
@@ -5860,7 +5860,7 @@
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   WorldSettings: !<reference> 1d6e6379-4f6a-4ec7-8d71-3ce6775fffd9
-  ShowCollider: true
+  ShowCollider: false
   Intangible: false
   EnableSmoothing: false
   Radius: 6
